@@ -2,18 +2,25 @@
 
 Find the proper FOUNDATION model for research (empirical study, including instruct tuning, RLHF, accelerate, etc,.)
 
+**Table of Contents**
+
+- [Datasets](#datasets)
+  - [Instructions](#instructions)
+- [Baselines](#baselines)
+- [Benchmarks](#benchmark)
+
 ## Datasets
 
-### Instructs
+### Instructions
 
 1. Commonly Used
 
-| Data     | Language                                                                            | Source                                     | prompt                                                                   | Size | Link                                                                                                       |
-| -------- | ----------------------------------------------------------------------------------- | ------------------------------------------ | ------------------------------------------------------------------------ | ---- | ---------------------------------------------------------------------------------------------------------- |
-| [Alpaca](https://github.com/tatsu-lab/stanford_alpaca)   | English                                                                             | text-davinci-003                           | [prompt](https://github.com/tatsu-lab/stanford_alpaca/blob/main/prompt.txt) | 52k  | [Alpaca](https://github.com/tatsu-lab/stanford_alpaca/blob/main/alpaca_data.json)                             |
-| [Belle](https://github.com/LianjiaTech/BELLE)    | Chinese                                                                             | text-davinci-003                           | [prompt](https://github.com/LianjiaTech/BELLE/blob/main/prompt_cn.txt)      | 543k | [Belle (0.5M)](https://huggingface.co/datasets/BelleGroup/generated_train_0.5M_CN)                            |
-| [Luotuo](https://github.com/LC1332/Chinese-alpaca-lora)   | Chinese                                                                             | text-davinci-003+ChatGPT (Tranlate Alpaca) | -                                                                        | 52k  | [Alpaca_Chinese](https://github.com/LC1332/Chinese-alpaca-lora/blob/main/data/trans_chinese_alpaca_data.json) |
-| [Guannaco](https://guanaco-model.github.io/) | English<br />Simplified Chinese<br />Traditional Chinese<br />Japanese<br />Deutsch |                                            |                                                                          | 534k | [Guannaco](https://huggingface.co/datasets/JosephusCheung/GuanacoDataset)                                     |
+| Data                                                 | Language                                                                            | Source                                     | prompt                                                                   | Size | Link                                                                                                       |
+| ---------------------------------------------------- | ----------------------------------------------------------------------------------- | ------------------------------------------ | ------------------------------------------------------------------------ | ---- | ---------------------------------------------------------------------------------------------------------- |
+| [Alpaca](https://github.com/tatsu-lab/stanford_alpaca)  | English                                                                             | text-davinci-003                           | [prompt](https://github.com/tatsu-lab/stanford_alpaca/blob/main/prompt.txt) | 52k  | [Alpaca](https://github.com/tatsu-lab/stanford_alpaca/blob/main/alpaca_data.json)                             |
+| [Belle](https://github.com/LianjiaTech/BELLE)           | Chinese                                                                             | text-davinci-003                           | [prompt](https://github.com/LianjiaTech/BELLE/blob/main/prompt_cn.txt)      | 543k | [Belle (0.5M)](https://huggingface.co/datasets/BelleGroup/generated_train_0.5M_CN)                            |
+| [Luotuo](https://github.com/LC1332/Chinese-alpaca-lora) | Chinese                                                                             | text-davinci-003+ChatGPT (Tranlate Alpaca) | -                                                                        | 52k  | [Alpaca_Chinese](https://github.com/LC1332/Chinese-alpaca-lora/blob/main/data/trans_chinese_alpaca_data.json) |
+| [Guannaco](https://guanaco-model.github.io/)            | English<br />Simplified Chinese<br />Traditional Chinese<br />Japanese<br />Deutsch |                                            |                                                                          | 534k | [Guannaco](https://huggingface.co/datasets/JosephusCheung/GuanacoDataset)                                     |
 
 2. COT
 
@@ -35,6 +42,6 @@ Find the proper FOUNDATION model for research (empirical study, including instru
 
 ## Benchmark
 
-| Benchmarks | Tuning          | Language | Result                                                  |
-| ---------- | --------------- | -------- | ------------------------------------------------------- |
-| [Z-Bench](https://github.com/zhenbench/z-bench)    | Instruct Tuning | Chinese  | [Basic](evaluations/zbench_basic.csv) <space>\|<space> Advanced |
+| Benchmarks                                   | Tuning          | Language | Result                                                               |
+| -------------------------------------------- | --------------- | -------- | -------------------------------------------------------------------- |
+| [Z-Bench](https://github.com/zhenbench/z-bench) | Instruct Tuning | Chinese  | [Basic](evaluations/zbench_basic.csv) `<space>`\|`<space>` Advanced |
