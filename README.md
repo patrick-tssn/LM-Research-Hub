@@ -44,4 +44,4 @@ Find the proper FOUNDATION model for research (empirical study, including instru
 
 | Benchmarks                                   | Tuning          | Language | Result                                                               |
 | -------------------------------------------- | --------------- | -------- | -------------------------------------------------------------------- |
-| [Z-Bench](https://github.com/zhenbench/z-bench) | Instruct Tuning | Chinese  | [Basic](evaluations/zbench_basic.csv) `<space>`\|`<space>` Advanced |
+| [Z-Bench](https://github.com/zhenbench/z-bench) | Instruct Tuning with the above multilingual instructions | Chinese  | [Basic](evaluations/zbench_basic.csv) `<space>`\|`<space>` Advanced |
