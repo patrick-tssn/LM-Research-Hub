@@ -1,6 +1,6 @@
 # LLM4Academic
 
-Find the proper FOUNDATION model for research (empirical study, including instruct tuning, RLHF, accelerate, etc,.)
+empirical study of 10B-level LLM, including instruct tuning, RLHF, accelerate, etc,.
 
 **Table of Contents**
 
