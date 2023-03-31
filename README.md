@@ -1,17 +1,26 @@
 # LLM4Academic
 
-Find the proper FOUNDATION model for research (empirical study, including instruct tuning, RLHF, accelerate, etc,.)
+Empirical study of common foundation models, which aims to find the proper FOUNDATION model for research (instruct tuning, RLHF, accelerate, etc,.)
 
 **Table of Contents**
 
-- [Datasets](#datasets)
-  - [Instructions](#instructions)
-- [Baselines](#baselines)
-- [Benchmarks](#benchmark)
+- [Instruction Tuning](#instruction-tuning)
+  - [Datasets](#datasets)
+  - [Experiments](#experiments)
+    - [Model Cards](#model-cards)
+    - [Usage](#usage)
+  - [Results](#results)
+- [RLHF](#rlhf)
+- [Accelerate](#accelerate)
+- [Multimodal](#accelerate)
+- [Augmumented](#augumented)
+- [Reference](#reference)
+  - [Open Source Repository](#open-source-repositories)
+  - [Learning Materials](#tutorial-course-blog-talk-curated-list)
 
-## Datasets
+## Instruction tuning
 
-### Instructions
+### Datasets
 
 1. Commonly Used
 
@@ -28,7 +37,9 @@ Find the proper FOUNDATION model for research (empirical study, including instru
 | -------------------------------------------------- | -------- | -------------------------------------------- | ------------------------------------------------------------------------------------ | ---------------- |
 | [Alpaca-Cot](https://github.com/PhoebusSi/Alpaca-CoT) | English  | [Flan](https://github.com/google-research/FLAN) | [Flan-template](https://github.com/google-research/FLAN/blob/main/flan/v2/templates.py) | 9 datasets (75k) |
 
-## Baselines
+### Experiments
+
+#### Model Cards
 
 | Model     | Params | Pretrianed                                                                                                                                   | Language | Affiliation | Foundation | tuning                             |
 | --------- | ------ | -------------------------------------------------------------------------------------------------------------------------------------------- | -------- | ----------- | ---------- | ---------------------------------- |
@@ -40,8 +51,149 @@ Find the proper FOUNDATION model for research (empirical study, including instru
 | GLM-CN    | 10b    | WuDaoCorpora (3T/200G)                                                                                                                       | Chinese  | THUDM       | GLM        |                                    |
 | ChatGLM   | 6b     | Self-construct (1T)                                                                                                                          |          | THUDM       | GLM        | +fintune<br />+instruct<br />+rlhf |
 
-## Benchmark
+#### Usage
 
-| Benchmarks                                   | Tuning          | Language | Result                                                               |
-| -------------------------------------------- | --------------- | -------- | -------------------------------------------------------------------- |
-| [Z-Bench](https://github.com/zhenbench/z-bench) | Instruct Tuning | Chinese  | [Basic](evaluations/zbench_basic.csv) `<space>`\|`<space>` Advanced |
+##### Traning
+
+The code is heavily based on [stanford_alpaca](https://github.com/tatsu-lab/stanford_alpaca), and we use the A100 (80G) for training
+
+- Llama
+
+  ```
+  torchrun --nproc_per_node=4 --master_port=10017 train.py \
+      --model_name_or_path /prev_trained_models/llama-7b-hf \
+      --data_path ../data/instructs/alpaca_mix.json \
+      --bf16 True \
+      --output_dir output/llama-mix \
+      --num_train_epochs 3 \
+      --per_device_train_batch_size 4 \
+      --per_device_eval_batch_size 4 \
+      --gradient_accumulation_steps 8 \
+      --evaluation_strategy "no" \
+      --save_strategy "steps" \
+      --save_steps 2000 \
+      --save_total_limit 1 \
+      --learning_rate 2e-5 \
+      --weight_decay 0. \
+      --warmup_ratio 0.03 \
+      --lr_scheduler_type "cosine" \
+      --logging_steps 1 \
+      --fsdp "full_shard auto_wrap" \
+      --fsdp_transformer_layer_cls_to_wrap 'LlamaDecoderLayer' \
+      --tf32 True
+  ```
+- Bloomz
+
+  ```
+  torchrun --nproc_per_node=4 --master_port=10013 train.py \
+      --model_name_or_path /prev_trained_models/bloomz-7b1-mt \
+      --data_path ./instructs/alpaca_mix.json \
+      --bf16 True \
+      --output_dir output/bloomz-mix \
+      --num_train_epochs 3 \
+      --per_device_train_batch_size 4 \
+      --per_device_eval_batch_size 4 \
+      --gradient_accumulation_steps 8 \
+      --evaluation_strategy "no" \
+      --save_strategy "steps" \
+      --save_steps 2000 \
+      --save_total_limit 1 \
+      --learning_rate 2e-5 \
+      --weight_decay 0. \
+      --warmup_ratio 0.03 \
+      --lr_scheduler_type "cosine" \
+      --logging_steps 1 \
+      --fsdp "full_shard auto_wrap" \
+      --fsdp_transformer_layer_cls_to_wrap 'BloomBlock' \
+      --tf32 True
+  ```
+- Galactica
+
+  ```
+  torchrun --nproc_per_node=4 --master_port=10014 train.py \
+      --model_name_or_path /prev_trained_models/galactica-6b \
+      --data_path ./instructs/alpaca_mix.json \
+      --bf16 True \
+      --output_dir output/galactica-mix \
+      --num_train_epochs 3 \
+      --per_device_train_batch_size 4 \
+      --per_device_eval_batch_size 4 \
+      --gradient_accumulation_steps 8 \
+      --evaluation_strategy "no" \
+      --save_strategy "steps" \
+      --save_steps 2000 \
+      --save_total_limit 1 \
+      --learning_rate 2e-5 \
+      --weight_decay 0. \
+      --warmup_ratio 0.03 \
+      --lr_scheduler_type "cosine" \
+      --logging_steps 1 \
+      --fsdp "full_shard auto_wrap" \
+      --fsdp_transformer_layer_cls_to_wrap 'OPTDecoderLayer' \
+      --tf32 True
+  ```
+- Flan-T5
+
+  ```
+  torchrun --nproc_per_node=4 --master_port=10015 train.py \
+      --model_name_or_path /prev_trained_models/flan-t5-xxl \
+      --data_path ./instructs/alpaca_mix.json \
+      --bf16 True \
+      --output_dir output/flant5-mix \
+      --num_train_epochs 3 \
+      --per_device_train_batch_size 1 \
+      --per_device_eval_batch_size 2 \
+      --gradient_accumulation_steps 32 \
+      --evaluation_strategy "no" \
+      --save_strategy "steps" \
+      --save_steps 2000 \
+      --save_total_limit 1 \
+      --learning_rate 2e-5 \
+      --weight_decay 0. \
+      --warmup_ratio 0.03 \
+      --lr_scheduler_type "cosine" \
+      --logging_steps 1 \
+      --fsdp "full_shard auto_wrap" \
+      --fsdp_transformer_layer_cls_to_wrap 'T5Block' \
+      --tf32 True
+  ```
+
+##### Evaluating
+
+```
+python evaluate.py
+```
+
+### Results
+
+| Benchmarks                                   | Data                                     | Language                          | Result                                               |
+| -------------------------------------------- | ---------------------------------------- | --------------------------------- | ---------------------------------------------------- |
+| [Z-Bench](https://github.com/zhenbench/z-bench) | Alpaca, Alpaca_CN, Belle(0.5M), Guannaco | Chinese, English, Japanese, Dutch | [Basic](evaluations/zbench_basic.csv), Advanced, Domain |
+
+## RLHF
+
+## Accelerate
+
+## Multimodal
+
+## Augumented
+
+## Reference
+
+### Open Source Repositories
+
+| Open Source Repository                                          | Base Language Model | Language         | Accelerate                                                                                          | Tuning                   |
+| --------------------------------------------------------------- | ------------------- | ---------------- | --------------------------------------------------------------------------------------------------- | ------------------------ |
+| [stanford_alpaca](https://github.com/tatsu-lab/stanford_alpaca)    | Llama7B             | English          | [fsdp](https://huggingface.co/docs/accelerate/usage_guides/fsdp)                                       | Instruction Tuning       |
+| [alpaca-lora](https://github.com/tloen/alpaca-lora)                | Llama7B             | English          | [peft](https://github.com/huggingface/peft), [bitsandbytes](https://github.com/TimDettmers/bitsandbytes) | Instruction Tuning       |
+| [Luotuo-Chinese-LLM](https://github.com/LC1332/Luotuo-Chinese-LLM) | Llama7B             | Chinese          | [peft](https://github.com/huggingface/peft)                                                            | Instruction Tuning       |
+| [Alpaca-CoT](https://github.com/PhoebusSi/Alpaca-CoT)              | Llama7B             | Chinese, English | [peft](https://github.com/huggingface/peft), [bitsandbytes](https://github.com/TimDettmers/bitsandbytes) | Instruction Tuning       |
+| [Llama-X (Recommend)](https://github.com/AetherCortex/Llama-X)     | Llama               |                  |                                                                                                     |                          |
+| [BELLE](https://github.com/LianjiaTech/BELLE)                      | BLOOMZ-7B1-mtBloo   | Chinese          |                                                                                                     | Instruction Tuning       |
+| [ChatGLM-6B](https://github.com/THUDM/ChatGLM-6B)                  | GLM6B               | Chinese, English | [p-tuning](https://github.com/THUDM/ChatGLM-6B/blob/main/ptuning/README.md)                            | Instruciton Tuning, RLHF |
+
+### Tutorial, Course, Blog, Talk, Curated List
+
+[Awesome-LLM](https://github.com/Hannibal046/Awesome-LLM)
+
+[Awesome-Colorful-LLM](https://github.com/patrick-tssn/Awesome-Colorful-LLM)
