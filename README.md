@@ -195,5 +195,4 @@ python evaluate.py
 ### Tutorial, Course, Blog, Talk, Curated List
 
 [Awesome-LLM](https://github.com/Hannibal046/Awesome-LLM)
-
 [Awesome-Colorful-LLM](https://github.com/patrick-tssn/Awesome-Colorful-LLM)
