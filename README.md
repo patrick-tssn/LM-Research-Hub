@@ -166,9 +166,9 @@ python evaluate.py
 
 ### Results
 
-| Benchmarks                                   | Data                                     | Language                           | Result                                               |
-| -------------------------------------------- | ---------------------------------------- | ---------------------------------- | ---------------------------------------------------- |
-| [Z-Bench](https://github.com/zhenbench/z-bench) | Alpaca, Alpaca_CN, Belle(0.5M), Guannaco | Chinese, English, Japanese,Deutsch | [Basic](evaluations/zbench_basic.csv), Advanced, Domain |
+| Benchmarks                                   | Data                                     | Language                            | Result                                               |
+| -------------------------------------------- | ---------------------------------------- | ----------------------------------- | ---------------------------------------------------- |
+| [Z-Bench](https://github.com/zhenbench/z-bench) | Alpaca, Alpaca_CN, Belle(0.5M), Guannaco | Chinese, English, Japanese, Deutsch | [Basic](evaluations/zbench_basic.csv), Advanced, Domain |
 
 ## RLHF
 
