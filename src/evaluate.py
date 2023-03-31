@@ -118,9 +118,7 @@ def main(eval_file):
                 if model_name == 'flant5':
                     output_text = output.split("### Response:")[0].strip()
                 else:    
-                    output_text = output.split("### Response:")[1].strip()
-
-                output_text = 'test'
+                    output_text = output.split("### Response:")[-1].strip()    
                 result[model_name].append(output_text)
     head_index = []
     ori_cases = []
@@ -149,7 +147,7 @@ def main(eval_file):
         head_index.insert(-2, model_name)
     
     saved_eval_file = eval_file.replace('.csv', '_new.csv')
-    with open('../evaluations/'+saved_eval_file, 'w', newline='') as ch:
+    with open('../evaluations/z-bench/'+saved_eval_file.split('/')[-1], 'w', newline='') as ch:
         hwriter = csv.writer(ch)
         hwriter.writerow(head_index)
         hwriter.writerows(new_cases)
@@ -157,8 +155,8 @@ def main(eval_file):
 
 if __name__ == '__main__':    
     
-    main('chinese_eval_basic.csv')
-    main('chinese_eval_advanced.csv')
-    main('chinese_eval_advanced.csv')
+    main('../data/benchmarks/z-bench/chinese_eval_basic.csv')
+    main('../data/benchmarks/z-bench/chinese_eval_advanced.csv')
+    main('../data/benchmarks/z-bench/chinese_eval_domain.csv')
 
     
