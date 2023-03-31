@@ -166,9 +166,9 @@ python evaluate.py
 
 ### Results
 
-| Benchmarks                                   | Data                                     | Language                          | Result                                               |
-| -------------------------------------------- | ---------------------------------------- | --------------------------------- | ---------------------------------------------------- |
-| [Z-Bench](https://github.com/zhenbench/z-bench) | Alpaca, Alpaca_CN, Belle(0.5M), Guannaco | Chinese, English, Japanese, Dutch | [Basic](evaluations/zbench_basic.csv), Advanced, Domain |
+| Benchmarks                                   | Data                                     | Language                           | Result                                               |
+| -------------------------------------------- | ---------------------------------------- | ---------------------------------- | ---------------------------------------------------- |
+| [Z-Bench](https://github.com/zhenbench/z-bench) | Alpaca, Alpaca_CN, Belle(0.5M), Guannaco | Chinese, English, Japanese,Deutsch | [Basic](evaluations/zbench_basic.csv), Advanced, Domain |
 
 ## RLHF
 
@@ -189,7 +189,7 @@ python evaluate.py
 | [Luotuo-Chinese-LLM](https://github.com/LC1332/Luotuo-Chinese-LLM)    | Llama7B             | Chinese          | [peft](https://github.com/huggingface/peft)                                                            | Instruction Tuning       |
 | [Alpaca-CoT](https://github.com/PhoebusSi/Alpaca-CoT)                 | Llama7B             | Chinese, English | [peft](https://github.com/huggingface/peft), [bitsandbytes](https://github.com/TimDettmers/bitsandbytes) | Instruction Tuning       |
 | [Llama-X (Recommend)](https://github.com/AetherCortex/Llama-X)        | Llama               |                  |                                                                                                     |                          |
-| [Chinese-LLaMA-Alpaca](https://github.com/ymcui/Chinese-LLaMA-Alpaca) | Llama               |                  |                                                                                                     |                          |
+| [Chinese-LLaMA-Alpaca](https://github.com/ymcui/Chinese-LLaMA-Alpaca) | Llama               |                  |                                                                                                     | Instruction Tuning       |
 | [BELLE](https://github.com/LianjiaTech/BELLE)                         | BLOOMZ-7B1-mtBloo   | Chinese          |                                                                                                     | Instruction Tuning       |
 | [ChatGLM-6B](https://github.com/THUDM/ChatGLM-6B)                     | GLM6B               | Chinese, English | [p-tuning](https://github.com/THUDM/ChatGLM-6B/blob/main/ptuning/README.md)                            | Instruciton Tuning, RLHF |
 
