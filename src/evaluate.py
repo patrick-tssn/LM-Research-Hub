@@ -80,6 +80,7 @@ def main(eval_file):
     from collections import defaultdict
     result = defaultdict(list)
     for model_name in ['llama', 'bloomz', 'galactica']:
+    # for model_name in ['galactica']:
         if model_name == 'llama':
             tokenizer, model = init_llama()
         elif model_name == 'bloomz':
@@ -90,6 +91,8 @@ def main(eval_file):
             tokenizer, model = init_flant5()
         elif model_name == 'glm':
             tokenizer, model = init_glm()
+        
+        model.resize_token_embeddings(len(tokenizer))
 
         print(f'start generate for model {model_name}')
 
@@ -104,7 +107,7 @@ def main(eval_file):
         
                 instruction = input_text
                 prompt = generate_prompt(instruction)
-                inputs = tokenizer(prompt, return_tensors="pt")
+                inputs = tokenizer(prompt, return_tensors="pt", truncation="longest_first")
                 input_ids = inputs["input_ids"].cuda()
                 generation_output = model.generate(
                     input_ids=input_ids,
@@ -140,7 +143,7 @@ def main(eval_file):
     for i in range(len(ori_cases)):
         new_case = ori_cases[i]
         for model_name in result.keys():
-            print(new_case)
+            # print(new_case)
             new_case.insert(-2, result[model_name][i])
         new_cases.append(new_case)
     for model_name in result.keys():

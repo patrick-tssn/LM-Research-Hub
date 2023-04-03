@@ -166,9 +166,9 @@ python evaluate.py
 
 ### Results
 
-| Benchmarks                                   | Data                                     | Language                            | Result                                               |
-| -------------------------------------------- | ---------------------------------------- | ----------------------------------- | ---------------------------------------------------- |
-| [Z-Bench](https://github.com/zhenbench/z-bench) | Alpaca, Alpaca_CN, Belle(0.5M), Guannaco | Chinese, English, Japanese, Deutsch | [Basic](evaluations/zbench_basic.csv), Advanced, Domain |
+| Benchmarks                                   | Data                                     | Language                            | Result                  |
+| -------------------------------------------- | ---------------------------------------- | ----------------------------------- | ----------------------- |
+| [Z-Bench](https://github.com/zhenbench/z-bench) | Alpaca, Alpaca_CN, Belle(0.5M), Guannaco | Chinese, English, Japanese, Deutsch | Basic, Advanced, Domain |
 
 ## RLHF
 
@@ -178,22 +178,32 @@ python evaluate.py
 
 ## Augumented
 
+## Evaluation
+
+- [HELM](https://github.com/stanford-crfm/helm)
+
 ## Reference
 
 ### Open Source Repositories
 
-| Open Source Repository                                             | Base Language Model | Language         | Accelerate                                                                                          | Tuning                   |
-| ------------------------------------------------------------------ | ------------------- | ---------------- | --------------------------------------------------------------------------------------------------- | ------------------------ |
-| [stanford_alpaca](https://github.com/tatsu-lab/stanford_alpaca)       | Llama7B             | English          | [fsdp](https://huggingface.co/docs/accelerate/usage_guides/fsdp)                                       | Instruction Tuning       |
-| [alpaca-lora](https://github.com/tloen/alpaca-lora)                   | Llama7B             | English          | [peft](https://github.com/huggingface/peft), [bitsandbytes](https://github.com/TimDettmers/bitsandbytes) | Instruction Tuning       |
-| [Luotuo-Chinese-LLM](https://github.com/LC1332/Luotuo-Chinese-LLM)    | Llama7B             | Chinese          | [peft](https://github.com/huggingface/peft)                                                            | Instruction Tuning       |
-| [Alpaca-CoT](https://github.com/PhoebusSi/Alpaca-CoT)                 | Llama7B             | Chinese, English | [peft](https://github.com/huggingface/peft), [bitsandbytes](https://github.com/TimDettmers/bitsandbytes) | Instruction Tuning       |
-| [Llama-X](https://github.com/AetherCortex/Llama-X) (*Recommend*)    | Llama               |                  |                                                                                                     |                          |
-| [Chinese-LLaMA-Alpaca](https://github.com/ymcui/Chinese-LLaMA-Alpaca) | Llama               |                  |                                                                                                     | Instruction Tuning       |
-| [BELLE](https://github.com/LianjiaTech/BELLE)                         | BLOOMZ-7B1-mt       | Chinese          |                                                                                                     | Instruction Tuning       |
-| [ChatGLM-6B](https://github.com/THUDM/ChatGLM-6B)                     | GLM6B               | Chinese, English | [p-tuning](https://github.com/THUDM/ChatGLM-6B/blob/main/ptuning/README.md)                            | Instruciton Tuning, RLHF |
+| Open Source Repository                                                    | Base Language Model             | Language         | Accelerate                                                                                          | Tuning                                                     |
+| ------------------------------------------------------------------------- | ------------------------------- | ---------------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
+| [stanford_alpaca](https://github.com/tatsu-lab/stanford_alpaca)              | LLaMA7B                         | English          | [fsdp](https://huggingface.co/docs/accelerate/usage_guides/fsdp)                                       | Instruction Tuning                                         |
+| [alpaca-lora](https://github.com/tloen/alpaca-lora)                          | LLaMA7B                         | English          | [peft](https://github.com/huggingface/peft), [bitsandbytes](https://github.com/TimDettmers/bitsandbytes) | Instruction Tuning                                         |
+| [Luotuo-Chinese-LLM](https://github.com/LC1332/Luotuo-Chinese-LLM)           | LLaMA7B                         | Chinese          | [peft](https://github.com/huggingface/peft)                                                            | Instruction Tuning                                         |
+| [Alpaca-CoT](https://github.com/PhoebusSi/Alpaca-CoT)                        | LLaMA7B                         | Chinese, English | [peft](https://github.com/huggingface/peft), [bitsandbytes](https://github.com/TimDettmers/bitsandbytes) | Instruction Tuning                                         |
+| [Lit-LLaMA](https://github.com/Lightning-AI/lit-llama) *(Lightning)*      | LLaMA                           | English          | [LoRA](https://github.com/microsoft/LoRA)                                                              | Instruction Tuning                                         |
+| [Llama-X](https://github.com/AetherCortex/Llama-X) (*Recommend*)           | LLaMA                           |                  |                                                                                                     |                                                            |
+| [Coati](https://github.com/hpcaitech/ColossalAI/tree/main/applications/Chat) | LLaMA7B                         | English          |                                                                                                     | Instruction Tuning, RLHF                                   |
+| [Chinese-LLaMA-Alpaca](https://github.com/ymcui/Chinese-LLaMA-Alpaca)        | LLaMA                           |                  |                                                                                                     | Instruction Tuning                                         |
+| [Vicuna](https://github.com/lm-sys/FastChat)                                 | LLaMA13B                        | English          | [fsdp](https://huggingface.co/docs/accelerate/usage_guides/fsdp)                                       | Instruction Tuning                                         |
+| [Dolly](https://github.com/databrickslabs/dolly)                             | GPT-J                           | English          |                                                                                                     | Insturction Tuning                                         |
+| [BELLE](https://github.com/LianjiaTech/BELLE)                                | BLOOMZ-7B1-mt                   | Chinese          |                                                                                                     | Instruction Tuning                                         |
+| [ChatGLM-6B](https://github.com/THUDM/ChatGLM-6B)                            | GLM6B                           | Chinese, English | [p-tuning](https://github.com/THUDM/ChatGLM-6B/blob/main/ptuning/README.md)                            | Instruciton Tuning, RLHF                                   |
+| [LMFlow](https://github.com/OptimalScale/LMFlow)                             | LLaMA, GPT2, GPT-Neo, Galactica |                  | [deepspeed](https://www.deepspeed.ai/docs/config-json/)                                                | Instruction Tuning, Inference, Alignment Tuning (possible) |
 
 ### Tutorial, Course, Blog, Talk, Curated List
 
-[Awesome-LLM](https://github.com/Hannibal046/Awesome-LLM)
-[Awesome-Colorful-LLM](https://github.com/patrick-tssn/Awesome-Colorful-LLM)
+- [Awesome-LLM](https://github.com/Hannibal046/Awesome-LLM)
+- [Awesome-Colorful-LLM](https://github.com/patrick-tssn/Awesome-Colorful-LLM)
+- [Awesome-ALM](https://github.com/pbhu1024/awesome-augmented-language-model#action-and-plan)
