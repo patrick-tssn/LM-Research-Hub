@@ -77,9 +77,12 @@ Empirical study of common foundation models, which aims to find the proper FOUND
 
 ##### Traning
 
-The code is heavily based on [stanford_alpaca](https://github.com/tatsu-lab/stanford_alpaca), and we use the A100 (80G) for training
+**LOG:**
+- [X]  We adopt instruction tuning with 10b-level LLM (Llama-7b, galactica-6.7b, bloomz-7b1-mt, flant5-11b) on open source instructions (stanford_alpaca, chinese_alpaca, belle0.5m, guanaco)
 
-- Llama
+*NOTE: The code is heavily based on [stanford_alpaca](https://github.com/tatsu-lab/stanford_alpaca), and we use the A100 (80G) for training*
+
+- <details><summary>Llama</summary>
 
   ```
   torchrun --nproc_per_node=4 --master_port=10017 train.py \
@@ -104,7 +107,9 @@ The code is heavily based on [stanford_alpaca](https://github.com/tatsu-lab/stan
       --fsdp_transformer_layer_cls_to_wrap 'LlamaDecoderLayer' \
       --tf32 True
   ```
-- Bloomz
+
+  </details>
+- <details><summary>Bloomz</summary>
 
   ```
   torchrun --nproc_per_node=4 --master_port=10013 train.py \
@@ -129,7 +134,9 @@ The code is heavily based on [stanford_alpaca](https://github.com/tatsu-lab/stan
       --fsdp_transformer_layer_cls_to_wrap 'BloomBlock' \
       --tf32 True
   ```
-- Galactica
+
+  </details>
+- <details><summary>Galactica</summary>
 
   ```
   torchrun --nproc_per_node=4 --master_port=10014 train.py \
@@ -154,7 +161,9 @@ The code is heavily based on [stanford_alpaca](https://github.com/tatsu-lab/stan
       --fsdp_transformer_layer_cls_to_wrap 'OPTDecoderLayer' \
       --tf32 True
   ```
-- Flan-T5
+
+  </details>
+- <details><summary>Flan-T5</summary>
 
   ```
   torchrun --nproc_per_node=4 --master_port=10015 train.py \
@@ -179,6 +188,8 @@ The code is heavily based on [stanford_alpaca](https://github.com/tatsu-lab/stan
       --fsdp_transformer_layer_cls_to_wrap 'T5Block' \
       --tf32 True
   ```
+
+  </details>
 
 ##### Evaluating
 
