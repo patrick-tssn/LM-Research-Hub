@@ -4,6 +4,7 @@ Empirical study of common foundation models, which aims to find the proper FOUND
 
 **Table of Contents**
 
+- [Pretraining](#pretraining)
 - [Instruction Tuning](#instruction-tuning)
   - [Datasets](#datasets)
   - [Experiments](#experiments)
@@ -19,6 +20,8 @@ Empirical study of common foundation models, which aims to find the proper FOUND
     - [English Community](#english-community)
     - [Chinese Community](#chinese-community)
   - [Learning Materials](#tutorial-course-blog-talk-curated-list)
+
+## Pretraining
 
 ## Instruction tuning
 
@@ -214,7 +217,7 @@ python evaluate.py
 | [Alpaca-CoT](https://github.com/PhoebusSi/Alpaca-CoT)                                                      | LLaMA7B                                            | Chinese, English | [peft](https://github.com/huggingface/peft), [bitsandbytes](https://github.com/TimDettmers/bitsandbytes) | Instruction Tuning                                         |
 | [Dolly](https://github.com/databrickslabs/dolly)                                                           | GPT-J                                              | English          |                                                                                                     | Insturction Tuning                                         |
 | [Lit-LLaMA](https://github.com/Lightning-AI/lit-llama) *(Lightning)*                                    | LLaMA                                              | English          | [LoRA](https://github.com/microsoft/LoRA)                                                              | Instruction Tuning                                         |
-| [Llama-X](https://github.com/AetherCortex/Llama-X)                                                         | LLaMA                                              |                  |                                                                                                     | Instruction Tuning, RLHF ()), etc.                         |
+| [Llama-X](https://github.com/AetherCortex/Llama-X)                                                         | LLaMA                                              |                  |                                                                                                     | Instruction Tuning, RLHF (possible)), etc.                 |
 | [Open-Llama](https://github.com/s-JoL/Open-Llama)                                                          | Transformers-Llama                                 |                  |                                                                                                     | Pretraining, Tuning (possible), RLHF (possible)            |
 | [Koala (EasyLM)](https://bair.berkeley.edu/blog/2023/04/03/koala/)                                         | LLaMA, GPT-J, OPT, RoBERTa                         |                  | JAX/Flax                                                                                            | Instruction Tuning                                         |
 | [Vicuna (FastChat)](https://github.com/lm-sys/FastChat)                                                    | LLaMA13B                                           | English          | [fsdp](https://huggingface.co/docs/accelerate/usage_guides/fsdp)                                       | Instruction Tuning                                         |
