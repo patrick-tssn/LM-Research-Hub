@@ -16,6 +16,8 @@ Empirical study of common foundation models, which aims to find the proper FOUND
 - [Augmumented](#augumented)
 - [Reference](#reference)
   - [Open Source Repository](#open-source-repositories)
+    - [English Community](#english-community)
+    - [Chinese Community](#chinese-community)
   - [Learning Materials](#tutorial-course-blog-talk-curated-list)
 
 ## Instruction tuning
@@ -32,7 +34,7 @@ Empirical study of common foundation models, which aims to find the proper FOUND
 | [Luotuo](https://github.com/LC1332/Chinese-alpaca-lora)                                     | Chinese                                                                             | text-davinci-003+ChatGPT (Tranlate Alpaca) | -                                                                        | 52k  | [Alpaca_Chinese](https://github.com/LC1332/Chinese-alpaca-lora/blob/main/data/trans_chinese_alpaca_data.json) |
 | [Guannaco](https://guanaco-model.github.io/)                                                | English<br />Simplified Chinese<br />Traditional Chinese<br />Japanese<br />Deutsch |                                            |                                                                          | 534k | [Guannaco](https://huggingface.co/datasets/JosephusCheung/GuanacoDataset)                                     |
 | [Firefly](https://github.com/yangjianxin1/Firefly)                                          | Chinese                                                                             |                                            |                                                                          | 1.1M | [firefly-train-1.1M](https://huggingface.co/datasets/YeungNLP/firefly-train-1.1M)                             |
-| [Instruction Tuning with GPT-4](https://github.com/Instruction-Tuning-with-GPT-4/GPT-4-LLM) | English, Chinese                                                                    | GPT4                                       |                                                                          |      |                                                                                                            |
+| [Instruction Tuning with GPT-4](https://github.com/Instruction-Tuning-with-GPT-4/GPT-4-LLM) | English, Chinese                                                                    | GPT4                                       |                                                                          |      | [data-gpt4](https://github.com/Instruction-Tuning-with-GPT-4/GPT-4-LLM#data-release)                          |
 
 2. COT
 
@@ -203,12 +205,14 @@ python evaluate.py
 
 ### Open Source Repositories
 
+#### English Community
+
 | Open Source Repository                                                                                                 | Base Language Model             | Language         | Accelerate                                                                                          | Tuning                                                     |
 | ---------------------------------------------------------------------------------------------------------------------- | ------------------------------- | ---------------- | --------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
 | [stanford_alpaca](https://github.com/tatsu-lab/stanford_alpaca)                                                           | LLaMA7B                         | English          | [fsdp](https://huggingface.co/docs/accelerate/usage_guides/fsdp)                                       | Instruction Tuning                                         |
 | [alpaca-lora](https://github.com/tloen/alpaca-lora)                                                                       | LLaMA7B                         | English          | [peft](https://github.com/huggingface/peft), [bitsandbytes](https://github.com/TimDettmers/bitsandbytes) | Instruction Tuning                                         |
-| [Luotuo-Chinese-LLM](https://github.com/LC1332/Luotuo-Chinese-LLM)                                                        | LLaMA7B                         | Chinese          | [peft](https://github.com/huggingface/peft)                                                            | Instruction Tuning                                         |
 | [Alpaca-CoT](https://github.com/PhoebusSi/Alpaca-CoT)                                                                     | LLaMA7B                         | Chinese, English | [peft](https://github.com/huggingface/peft), [bitsandbytes](https://github.com/TimDettmers/bitsandbytes) | Instruction Tuning                                         |
+| [Dolly](https://github.com/databrickslabs/dolly)                                                                          | GPT-J                           | English          |                                                                                                     | Insturction Tuning                                         |
 | [Lit-LLaMA](https://github.com/Lightning-AI/lit-llama) *(Lightning)*                                                   | LLaMA                           | English          | [LoRA](https://github.com/microsoft/LoRA)                                                              | Instruction Tuning                                         |
 | [Llama-X](https://github.com/AetherCortex/Llama-X) (*Recommend*)                                                        | LLaMA                           |                  |                                                                                                     |                                                            |
 | [Koala (EasyLM)](https://bair.berkeley.edu/blog/2023/04/03/koala/)                                                        | LLaMA, GPT-J, OPT, RoBERTa      |                  | JAX/Flax                                                                                            | Instruction Tuning                                         |
@@ -216,11 +220,17 @@ python evaluate.py
 | [LMFlow](https://github.com/OptimalScale/LMFlow)                                                                          | LLaMA, GPT2, GPT-Neo, Galactica |                  | [deepspeed](https://www.deepspeed.ai/docs/config-json/)                                                | Instruction Tuning, Inference, Alignment Tuning (possible) |
 | [Coati](https://github.com/hpcaitech/ColossalAI/tree/main/applications/Chat)                                              | LLaMA7B                         | English          |                                                                                                     | Instruction Tuning, RLHF                                   |
 | [DeepSpeed-Chat](https://github.com/microsoft/DeepSpeedExamples/tree/master/applications/DeepSpeed-Chat) (*Recommend*) |                                 |                  |                                                                                                     | Instruction Tuning, RLHF                                   |
-| [Chinese-LLaMA-Alpaca](https://github.com/ymcui/Chinese-LLaMA-Alpaca)                                                     | LLaMA                           | Chinese          |                                                                                                     | Instruction Tuning                                         |
-| [Baize](https://github.com/project-baize/baize-chatbot)                                                                   | LLaMA                           | Chinese          | [LoRA](https://github.com/microsoft/LoRA)                                                              | Instruction Tuning                                         |
-| [Dolly](https://github.com/databrickslabs/dolly)                                                                          | GPT-J                           | English          |                                                                                                     | Insturction Tuning                                         |
-| [BELLE](https://github.com/LianjiaTech/BELLE)                                                                             | BLOOMZ-7B1-mt                   | Chinese          |                                                                                                     | Instruction Tuning                                         |
-| [ChatGLM-6B](https://github.com/THUDM/ChatGLM-6B)                                                                         | GLM6B                           | Chinese, English | [p-tuning](https://github.com/THUDM/ChatGLM-6B/blob/main/ptuning/README.md)                            | Instruciton Tuning, RLHF                                   |
+
+#### Chinese Community
+
+| Open Source Repository                                               | Base Language Model | Language         | Accelerate                                                               | Tuning                   |
+| -------------------------------------------------------------------- | ------------------- | ---------------- | ------------------------------------------------------------------------ | ------------------------ |
+| [骆驼 Luotuo-Chinese-LLM](https://github.com/LC1332/Luotuo-Chinese-LLM) | LLaMA7B             | Chinese          | [peft](https://github.com/huggingface/peft)                                 | Instruction Tuning       |
+| [Chinese-LLaMA-Alpaca](https://github.com/ymcui/Chinese-LLaMA-Alpaca)   | LLaMA               | Chinese          |                                                                          | Instruction Tuning       |
+| [白泽 Baize](https://github.com/project-baize/baize-chatbot)            | LLaMA               | Chinese          | [LoRA](https://github.com/microsoft/LoRA)                                   | Instruction Tuning       |
+| [流萤 Firefly](https://github.com/yangjianxin1/Firefly)                 | BLOOM               | Chinese          | [LLMPruner](https://github.com/yangjianxin1/LLMPruner)                      | Instruction Tuning       |
+| [BELLE](https://github.com/LianjiaTech/BELLE)                           | BLOOMZ-7B1-mt       | Chinese          |                                                                          | Instruction Tuning       |
+| [ChatGLM-6B](https://github.com/THUDM/ChatGLM-6B)                       | GLM6B               | Chinese, English | [p-tuning](https://github.com/THUDM/ChatGLM-6B/blob/main/ptuning/README.md) | Instruciton Tuning, RLHF |
 
 ### Tutorial, Course, Blog, Talk, Curated List
 
