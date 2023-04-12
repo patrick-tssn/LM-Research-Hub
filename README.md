@@ -76,7 +76,12 @@ Empirical study of common foundation models, which aims to find the proper FOUND
 #### Usage
 
 **LOG:**
-- [X]  We adopt instruction tuning on 10b-level LLM (Llama-7b, galactica-6.7b, bloomz-7b1-mt, flant5-11b) with open source instructions (stanford_alpaca, chinese_alpaca, belle0.5m, guanaco)
+
+- [X] We adopt instruction tuning on 10b-level LLM (Llama-7b, galactica-6.7b, bloomz-7b1-mt, flant5-11b) with open source instructions (stanford_alpaca, chinese_alpaca, belle0.5m, guanaco), and evaluate these models on Z-Bench.
+
+```
+cd instruction
+```
 
 ##### Traning
 

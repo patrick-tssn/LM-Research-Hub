@@ -1,12 +1,12 @@
 # user
-src/output
-src/slurm_logs
-src/debug.py
-src/*.sh
-src/server.py
-src/client.py
-src/demo.json
-src/generate_instruction.py
+instruction/output
+instruction/slurm_logs
+instruction/debug.py
+instruction/*.sh
+instruction/server.py
+instruction/client.py
+instruction/demo.json
+instruction/generate_instruction.py
 data/instructs/*
 
 
