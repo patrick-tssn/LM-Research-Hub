@@ -244,15 +244,16 @@ python evaluate.py
 
 #### Chinese Community
 
-| Open Source Repository                                               | Base Language Model | Language         | Accelerate                                                               | Tuning                   |
-| -------------------------------------------------------------------- | ------------------- | ---------------- | ------------------------------------------------------------------------ | ------------------------ |
-| [骆驼 Luotuo-Chinese-LLM](https://github.com/LC1332/Luotuo-Chinese-LLM) | LLaMA7B             | Chinese          | [peft](https://github.com/huggingface/peft)                                 | Instruction Tuning       |
-| [Chinese-LLaMA-Alpaca](https://github.com/ymcui/Chinese-LLaMA-Alpaca)   | LLaMA               | Chinese          |                                                                          | Instruction Tuning       |
-| [白泽 Baize](https://github.com/project-baize/baize-chatbot)            | LLaMA               | Chinese          | [LoRA](https://github.com/microsoft/LoRA)                                   | Instruction Tuning       |
-| [流萤 Firefly](https://github.com/yangjianxin1/Firefly)                 | BLOOM               | Chinese          | [LLMPruner](https://github.com/yangjianxin1/LLMPruner)                      | Instruction Tuning       |
-| [BELLE](https://github.com/LianjiaTech/BELLE)                           | BLOOMZ-7B1-mt       | Chinese          |                                                                          | Instruction Tuning       |
-| [ChatGLM-6B](https://github.com/THUDM/ChatGLM-6B)                       | GLM6B               | Chinese, English | [p-tuning](https://github.com/THUDM/ChatGLM-6B/blob/main/ptuning/README.md) | Instruciton Tuning, RLHF |
-| [InstructGLM](https://github.com/yanqiangmiffy/InstructGLM)             | ChatGLM-6B          | Chienese         | [deepspeed](https://www.deepspeed.ai/docs/config-json/)                     | Instruction Tuning       |
+| Open Source Repository                                               | Base Language Model | Language              | Accelerate                                                               | Tuning                   |
+| -------------------------------------------------------------------- | ------------------- | --------------------- | ------------------------------------------------------------------------ | ------------------------ |
+| [骆驼 Luotuo-Chinese-LLM](https://github.com/LC1332/Luotuo-Chinese-LLM) | LLaMA7B             | Chinese               | [peft](https://github.com/huggingface/peft)                                 | Instruction Tuning       |
+| [Chinese-LLaMA-Alpaca](https://github.com/ymcui/Chinese-LLaMA-Alpaca)   | LLaMA               | Chinese               |                                                                          | Instruction Tuning       |
+| [白泽 Baize](https://github.com/project-baize/baize-chatbot)            | LLaMA               | Chinese               | [LoRA](https://github.com/microsoft/LoRA)                                   | Instruction Tuning       |
+| [流萤 Firefly](https://github.com/yangjianxin1/Firefly)                 | BLOOM               | Chinese               | [LLMPruner](https://github.com/yangjianxin1/LLMPruner)                      | Instruction Tuning       |
+| [BELLE](https://github.com/LianjiaTech/BELLE)                           | BLOOMZ-7B1-mt       | Chinese               |                                                                          | Instruction Tuning       |
+| [ChatGLM-6B](https://github.com/THUDM/ChatGLM-6B)                       | GLM6B               | Chinese, English      | [p-tuning](https://github.com/THUDM/ChatGLM-6B/blob/main/ptuning/README.md) | Instruciton Tuning, RLHF |
+| [InstructGLM](https://github.com/yanqiangmiffy/InstructGLM)             | ChatGLM-6B          | Chienese              | [deepspeed](https://www.deepspeed.ai/docs/config-json/)                     | Instruction Tuning       |
+| [Phoenix](https://github.com/FreedomIntelligence/LLMZoo)                | LLaMA, Bloomz       | Chinese, Multilingual |                                                                          | Instruction Tuning       |
 
 ### Tutorial, Course, Blog, Talk, Curated List
 
