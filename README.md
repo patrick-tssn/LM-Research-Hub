@@ -39,8 +39,8 @@ Empirical study of common foundation models, which aims to find the proper FOUND
 | [Firefly](https://github.com/yangjianxin1/Firefly)                                          | Chinese                                                                             |                                             |                                                                          | 1.1M | [firefly-train-1.1M](https://huggingface.co/datasets/YeungNLP/firefly-train-1.1M)                             |
 | [Instruction Tuning with GPT-4](https://github.com/Instruction-Tuning-with-GPT-4/GPT-4-LLM) | English, Chinese                                                                    | GPT4                                        |                                                                          |      | [data-gpt4](https://github.com/Instruction-Tuning-with-GPT-4/GPT-4-LLM#data-release)                          |
 | [gpt4all](https://github.com/nomic-ai/gpt4all) | English | GPT4 | | | [gpt4all_data](https://github.com/nomic-ai/gpt4all#Reproducibility) |
-| [hh-rlhf](https://github.com/anthropics/hh-rlhf) | English | Human | | | [human preference data](https://github.com/anthropics/hh-rlhf#Human-preference-data-about-helpfulness-and-harmlessness), [red teaming data](https://github.com/anthropics/hh-rlhf#Red-teaming-data) |
 | [Dolly](https://github.com/databrickslabs/dolly/tree/master/data)                           | English                                                                             | Human (Databricks employee)                 |                                                                          | 15k  | [databricks-dolly-15k](https://github.com/databrickslabs/dolly/tree/master/data)                              |
+| [COIG](agithub.com/BAAI-Zlab/COIG) | Chinese | Dialogue, Code, Exam, Human, Translation | | | [COIG](agithub.com/BAAI-Zlab/COIG) |
 
 
 
@@ -63,6 +63,13 @@ Empirical study of common foundation models, which aims to find the proper FOUND
 | ------------------------------ | -------- | ------- | -------- | --------------------------------------------------------------- |
 | [ShareGPT](https://sharegpt.com/) |          | ChatGPT | 52K, 90K | [ShareGPT52K](https://huggingface.co/datasets/RyokoAI/ShareGPT52K) |
 |                                |          |         |          |                                                                 |
+
+
+5. Human Preference
+
+| Data                           | Language | Source  | Size     | Link                                                            |
+| ------------------------------ | -------- | ------- | -------- | --------------------------------------------------------------- |
+| [hh-rlhf](https://github.com/anthropics/hh-rlhf) | English | Human | | [human preference data](https://github.com/anthropics/hh-rlhf#Human-preference-data-about-helpfulness-and-harmlessness), [red teaming data](https://github.com/anthropics/hh-rlhf#Red-teaming-data) |
 
 ### Experiments
 
