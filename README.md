@@ -38,7 +38,11 @@ Empirical study of common foundation models, which aims to find the proper FOUND
 | [Guannaco](https://guanaco-model.github.io/)                                                | English<br />Simplified Chinese<br />Traditional Chinese<br />Japanese<br />Deutsch |                                             |                                                                          | 534k | [Guannaco](https://huggingface.co/datasets/JosephusCheung/GuanacoDataset)                                     |
 | [Firefly](https://github.com/yangjianxin1/Firefly)                                          | Chinese                                                                             |                                             |                                                                          | 1.1M | [firefly-train-1.1M](https://huggingface.co/datasets/YeungNLP/firefly-train-1.1M)                             |
 | [Instruction Tuning with GPT-4](https://github.com/Instruction-Tuning-with-GPT-4/GPT-4-LLM) | English, Chinese                                                                    | GPT4                                        |                                                                          |      | [data-gpt4](https://github.com/Instruction-Tuning-with-GPT-4/GPT-4-LLM#data-release)                          |
+| [gpt4all](https://github.com/nomic-ai/gpt4all) | English | GPT4 | | [gpt4all_data](https://github.com/nomic-ai/gpt4all#Reproducibility) |
+| [hh-rlhf](https://github.com/anthropics/hh-rlhf) | English | Human | | [human preference data](https://github.com/anthropics/hh-rlhf#Human-preference-data-about-helpfulness-and-harmlessness), [red teaming data](https://github.com/anthropics/hh-rlhf#Red-teaming-data) |
 | [Dolly](https://github.com/databrickslabs/dolly/tree/master/data)                           | English                                                                             | Human (Databricks employee)                 |                                                                          | 15k  | [databricks-dolly-15k](https://github.com/databrickslabs/dolly/tree/master/data)                              |
+
+
 
 2. COT
 
@@ -241,6 +245,7 @@ python evaluate.py
 | [LMFlow](https://github.com/OptimalScale/LMFlow)                                                           | LLaMA, GPT2, GPT-Neo, Galactica                    |                  | [deepspeed](https://www.deepspeed.ai/docs/config-json/)                                                | Instruction Tuning, Inference, Alignment Tuning (possible) |
 | [Coati](https://github.com/hpcaitech/ColossalAI/tree/main/applications/Chat)                               | LLaMA7B                                            | English          |                                                                                                     | Instruction Tuning, RLHF                                   |
 | [DeepSpeed-Chat](https://github.com/microsoft/DeepSpeedExamples/tree/master/applications/DeepSpeed-Chat)  | OPT, BLOOM, GPT-NEOX, GPTJ, GPT-NEO, GPT2, CODEGEN |                  |                                                                                                     | Instruction Tuning, RLHF                                   |
+| [StableLM](https://github.com/Stability-AI/StableLM) | Transformer | English | | Pretraining, Fine-tuning |
 
 #### Chinese Community
 
@@ -254,6 +259,7 @@ python evaluate.py
 | [ChatGLM-6B](https://github.com/THUDM/ChatGLM-6B)                       | GLM6B               | Chinese, English      | [p-tuning](https://github.com/THUDM/ChatGLM-6B/blob/main/ptuning/README.md) | Instruciton Tuning, RLHF |
 | [InstructGLM](https://github.com/yanqiangmiffy/InstructGLM)             | ChatGLM-6B          | Chienese              | [deepspeed](https://www.deepspeed.ai/docs/config-json/)                     | Instruction Tuning       |
 | [Phoenix](https://github.com/FreedomIntelligence/LLMZoo)                | LLaMA, Bloomz       | Chinese, Multilingual |                                                                          | Instruction Tuning       |
+| [MOSS](https://github.com/OpenLMLab/MOSS) | Transformer | Chinese, English | | Pretraining, Fine-Tuning |
 
 ### Tutorial, Course, Blog, Talk, Curated List
 
