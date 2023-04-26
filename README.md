@@ -229,8 +229,9 @@ python evaluate.py
 
 ## Evaluation
 
-- [HELM](https://github.com/stanford-crfm/helm)
-- [LM-Evaluation-Harness](https://github.com/EleutherAI/lm-evaluation-harness)
+- [HELM](https://github.com/stanford-crfm/helm) | comprehensive
+- [LM-Evaluation-Harness](https://github.com/EleutherAI/lm-evaluation-harness) | safety
+- [LaMP](https://lamp-benchmark.github.io/) | personalization
 
 ## Reference
 
