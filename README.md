@@ -82,8 +82,7 @@ Empirical study of common foundation models, which aims to find the proper FOUND
 | Bloomz    | 7.1b   | [BigscienceCorpus (1.5T)](https://huggingface.co/spaces/bigscience/BigScienceCorpus) + [xP3mt](https://huggingface.co/datasets/bigscience/xP3mt) |          | Bigscience  | Bloom      | +finetune                          |
 | Flan-T5   | 11b    | [C4 (750G)](https://www.tensorflow.org/datasets/catalog/c) + Multitask Datasets                                                                |          | Google      | T5         | +finetune<br />+instruct           |
 | GLM       | 10b    | [Pile (825G)](https://pile.eleuther.ai/)                                                                                                        |          | THUDM       | GLM        |                                    |
-| GLM-CN    | 10b    | WuDaoCorpora (3T/200G)                                                                                                                       | Chinese  | THUDM       | GLM        |                                    |
-| ChatGLM   | 6b     | Self-construct (1T)                                                                                                                          |          | THUDM       | GLM        | +fintune<br />+instruct<br />+rlhf |
+| Pythia | 6.9b, 12b  | [the Pile](https://pile.eleuther.ai/) | |  Eleuth | Pythia |  | 
 
 #### Usage
 
@@ -231,6 +230,7 @@ python evaluate.py
 ## Evaluation
 
 - [HELM](https://github.com/stanford-crfm/helm)
+- [LM-Evaluation-Harness](https://github.com/EleutherAI/lm-evaluation-harness)
 
 ## Reference
 
