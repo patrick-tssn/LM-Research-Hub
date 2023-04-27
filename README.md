@@ -15,6 +15,7 @@ Empirical study of common foundation models, which aims to find the proper FOUND
 - [Accelerate](#accelerate)
 - [Multimodal](#accelerate)
 - [Augmumented](#augumented)
+- [Evaluation](#evaluation)
 - [Reference](#reference)
   - [Open Source Repository](#open-source-repositories)
     - [English Community](#english-community)
@@ -230,8 +231,10 @@ python evaluate.py
 ## Evaluation
 
 - [HELM](https://github.com/stanford-crfm/helm) | comprehensive
+- [AGIEval](https://github.com/microsoft/AGIEval) | comprehensive
 - [LM-Evaluation-Harness](https://github.com/EleutherAI/lm-evaluation-harness) | safety
 - [LaMP](https://lamp-benchmark.github.io/) | personalization
+
 
 ## Reference
 
