@@ -56,7 +56,7 @@ Empirical study of common foundation models, which aims to find the proper FOUND
 | Data             | Source | Size | Link                                                                        |
 | ---------------- | ------ | ---- | --------------------------------------------------------------------------- |
 | Instruct-to-Code |        | 700k | [Instruct-to-Code](https://huggingface.co/datasets/Graverman/Instruct-to-Code) |
-|                  |        |      |                                                                             |
+| BigCode                 |        |   [bigcode-dataset](https://github.com/bigcode-project/bigcode-dataset)   |                                                                             |
 
 4. Dialogue
 
@@ -233,6 +233,7 @@ python evaluate.py
 - [HELM](https://github.com/stanford-crfm/helm) | comprehensive
 - [AGIEval](https://github.com/microsoft/AGIEval) | comprehensive
 - [LM-Evaluation-Harness](https://github.com/EleutherAI/lm-evaluation-harness) | safety
+- [Safety-Prompts](https://github.com/thu-coai/Safety-Prompts) | safety
 - [LaMP](https://lamp-benchmark.github.io/) | personalization
 
 
@@ -250,7 +251,9 @@ python evaluate.py
 | [Alpaca-CoT](https://github.com/PhoebusSi/Alpaca-CoT)                                                      | LLaMA7B                                            | Chinese, English | [peft](https://github.com/huggingface/peft), [bitsandbytes](https://github.com/TimDettmers/bitsandbytes) | Instruction Tuning                                         |
 | [Lit-LLaMA](https://github.com/Lightning-AI/lit-llama) *(Lightning)*                                    | LLaMA                                              | English          | [LoRA](https://github.com/microsoft/LoRA)                                                              | Instruction Tuning                                         |
 | [Llama-X](https://github.com/AetherCortex/Llama-X)                                                         | LLaMA                                              |                  |                                                                                                     | Instruction Tuning, RLHF (possible)), etc.                 |
+| [PandaLM](https://github.com/WeOpenML/PandaLM) | LlaMA, BLOOM | English | | Instruction Tuning, evaluation |
 | [Open-Llama](https://github.com/s-JoL/Open-Llama)                                                          | Transformers-Llama                                 |                  |                                                                                                     | Pretraining, Tuning (possible), RLHF (possible)            |
+| [OpenAlpaca](https://github.com/yxuansu/OpenAlpaca) | OpenLLaMA  | English |  | Instruction Tuning |
 | [Dolly](https://github.com/databrickslabs/dolly), v2                                                       | GPT-J, EleutherAI pythia (v2)                      | English          |                                                                                                     | Insturction Tuning                                         |
 | [Koala (EasyLM)](https://bair.berkeley.edu/blog/2023/04/03/koala/)                                         | LLaMA, GPT-J, OPT, RoBERTa                         |                  | JAX/Flax                                                                                            | Instruction Tuning                                         |
 | [Vicuna (FastChat)](https://github.com/lm-sys/FastChat)                                                    | LLaMA13B                                           | English          | [fsdp](https://huggingface.co/docs/accelerate/usage_guides/fsdp)                                       | Instruction Tuning                                         |
@@ -258,6 +261,8 @@ python evaluate.py
 | [Coati](https://github.com/hpcaitech/ColossalAI/tree/main/applications/Chat)                               | LLaMA7B                                            | English          |                                                                                                     | Instruction Tuning, RLHF                                   |
 | [DeepSpeed-Chat](https://github.com/microsoft/DeepSpeedExamples/tree/master/applications/DeepSpeed-Chat)  | OPT, BLOOM, GPT-NEOX, GPTJ, GPT-NEO, GPT2, CODEGEN |                  |                                                                                                     | Instruction Tuning, RLHF                                   |
 | [StableLM](https://github.com/Stability-AI/StableLM) | Transformer | English | | Pretraining, Fine-tuning |
+| [LLM Foundary] | Transformer-GPT | English | | Pretraining, Fine-tuning |
+
 
 #### Chinese Community
 
@@ -272,6 +277,10 @@ python evaluate.py
 | [InstructGLM](https://github.com/yanqiangmiffy/InstructGLM)             | ChatGLM-6B          | Chienese              | [deepspeed](https://www.deepspeed.ai/docs/config-json/)                     | Instruction Tuning       |
 | [Phoenix](https://github.com/FreedomIntelligence/LLMZoo)                | LLaMA, Bloomz       | Chinese, Multilingual |                                                                          | Instruction Tuning       |
 | [MOSS](https://github.com/OpenLMLab/MOSS) | Transformer | Chinese, English | | Pretraining, Fine-Tuning |
+
+#### Related Repositories
+- [LLM-Zoo](https://github.com/DAMO-NLP-SG/LLM-Zoo)
+- [FindTheChatGPTer](https://github.com/chenking2020/FindTheChatGPTer)
 
 ### Tutorial, Course, Blog, Talk, Curated List
 
