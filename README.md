@@ -261,7 +261,7 @@ python evaluate.py
 | [Coati](https://github.com/hpcaitech/ColossalAI/tree/main/applications/Chat)                               | LLaMA7B                                            | English          |                                                                                                     | Instruction Tuning, RLHF                                   |
 | [DeepSpeed-Chat](https://github.com/microsoft/DeepSpeedExamples/tree/master/applications/DeepSpeed-Chat)  | OPT, BLOOM, GPT-NEOX, GPTJ, GPT-NEO, GPT2, CODEGEN |                  |                                                                                                     | Instruction Tuning, RLHF                                   |
 | [StableLM](https://github.com/Stability-AI/StableLM) | Transformer | English | | Pretraining, Fine-tuning |
-| [LLM Foundary] | Transformer-GPT | English | | Pretraining, Fine-tuning |
+| [LLM Foundary](https://github.com/mosaicml/llm-foundry) | Transformer-GPT | English | | Pretraining, Fine-tuning |
 
 
 #### Chinese Community
