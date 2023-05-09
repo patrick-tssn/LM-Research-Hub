@@ -270,6 +270,7 @@ python evaluate.py
 | -------------------------------------------------------------------- | ------------------- | --------------------- | ------------------------------------------------------------------------ | ------------------------ |
 | [骆驼 Luotuo-Chinese-LLM](https://github.com/LC1332/Luotuo-Chinese-LLM) | LLaMA7B             | Chinese               | [peft](https://github.com/huggingface/peft)                                 | Instruction Tuning       |
 | [Chinese-LLaMA-Alpaca](https://github.com/ymcui/Chinese-LLaMA-Alpaca)   | LLaMA               | Chinese               |                                                                          | Instruction Tuning       |
+| [Chinese-Vicuna](https://github.com/Facico/Chinese-Vicuna) | LLaMA | Chinese  | LoRA | Instruction Tuning |
 | [白泽 Baize](https://github.com/project-baize/baize-chatbot)            | LLaMA               | Chinese               | [LoRA](https://github.com/microsoft/LoRA)                                   | Instruction Tuning       |
 | [流萤 Firefly](https://github.com/yangjianxin1/Firefly)                 | BLOOM               | Chinese               | [LLMPruner](https://github.com/yangjianxin1/LLMPruner)                      | Instruction Tuning       |
 | [BELLE](https://github.com/LianjiaTech/BELLE)                           | BLOOMZ-7B1-mt       | Chinese               |                                                                          | Instruction Tuning       |
