@@ -12,6 +12,7 @@ Empirical study of common foundation models, which aims to find the proper FOUND
     - [Usage](#usage)
   - [Results](#results)
 - [RLHF](#rlhf)
+- [Personalization](#personalization)
 - [Accelerate](#accelerate)
 - [Multimodal](#accelerate)
 - [Augmumented](#augumented)
@@ -221,6 +222,8 @@ python evaluate.py
 | [Z-Bench](https://github.com/zhenbench/z-bench) | Alpaca, Alpaca_CN, Belle(0.5M), Guannaco | Chinese, English, Japanese, Deutsch | [Basic](evaluations/z-bench/chinese_eval_basic_new.csv), [Advanced](evaluations/z-bench/chinese_eval_advanced_new.csv), [Domain](evaluations/z-bench/chinese_eval_domain_new.csv) |
 
 ## RLHF
+
+## Personalization
 
 ## Accelerate
 
