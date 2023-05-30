@@ -235,6 +235,8 @@ python evaluate.py
 
 - [HELM](https://github.com/stanford-crfm/helm) | comprehensive
 - [AGIEval](https://github.com/microsoft/AGIEval) | comprehensive
+- [C-Eval](https://github.com/SJTU-LIT/ceval) | comprehensive, Chinese
+- [SuperCLUE](https://github.com/CLUEbenchmark/SuperCLUE) | comprehensive, Chinese
 - [LM-Evaluation-Harness](https://github.com/EleutherAI/lm-evaluation-harness) | safety
 - [Safety-Prompts](https://github.com/thu-coai/Safety-Prompts) | safety
 - [LaMP](https://lamp-benchmark.github.io/) | personalization
