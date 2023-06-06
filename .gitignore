@@ -9,7 +9,8 @@ instruction/demo.json
 instruction/generate_instruction.py
 data/instructs/*
 
-
+# github
+.github/
 
 # default
 # Byte-compiled / optimized / DLL files
