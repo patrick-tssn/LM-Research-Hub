@@ -288,6 +288,7 @@ python client.py
 | [白泽 Baize](https://github.com/project-baize/baize-chatbot)            | LLaMA               | Chinese               | [LoRA](https://github.com/microsoft/LoRA)                                   | Instruction Tuning       |
 | [流萤 Firefly](https://github.com/yangjianxin1/Firefly)                 | BLOOM               | Chinese               | [LLMPruner](https://github.com/yangjianxin1/LLMPruner)                      | Instruction Tuning       |
 | [BELLE](https://github.com/LianjiaTech/BELLE)                           | BLOOMZ-7B1-mt       | Chinese               |                                                                          | Instruction Tuning       |
+| [TigerBot](https://github.com/TigerResearch/TigerBot) | BLOOM | Chinese, English | GPTQ | Pretrain, Tuning |
 | [ChatGLM-6B](https://github.com/THUDM/ChatGLM-6B)                       | GLM6B               | Chinese, English      | [p-tuning](https://github.com/THUDM/ChatGLM-6B/blob/main/ptuning/README.md) | Instruciton Tuning, RLHF |
 | [InstructGLM](https://github.com/yanqiangmiffy/InstructGLM)             | ChatGLM-6B          | Chienese              | [deepspeed](https://www.deepspeed.ai/docs/config-json/)                     | Instruction Tuning       |
 | [Phoenix](https://github.com/FreedomIntelligence/LLMZoo)                | LLaMA, Bloomz       | Chinese, Multilingual |                                                                          | Instruction Tuning       |
