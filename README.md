@@ -253,7 +253,7 @@ cd API/claude-inslack-api/
 python client.py
 ```
 
-### ChatGPT
+### OPENAI + GPT
 
 - openai API (mirror): [GPT_API_free](https://github.com/chatanywhere/GPT_API_free)
 
