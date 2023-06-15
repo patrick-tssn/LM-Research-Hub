@@ -242,6 +242,8 @@ python evaluate.py
 
 ## API
 
+*create your token_id in .env*
+
 ### Claude
 
 - Slack API: [claude-in-slack-api](https://github.com/yokonsan/claude-in-slack-api)
