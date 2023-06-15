@@ -285,6 +285,7 @@ python demo.py
 | [DeepSpeed-Chat](https://github.com/microsoft/DeepSpeedExamples/tree/master/applications/DeepSpeed-Chat)  | OPT, BLOOM, GPT-NEOX, GPTJ, GPT-NEO, GPT2, CODEGEN |                  |                                                                                                     | Instruction Tuning, RLHF                                   |
 | [StableLM](https://github.com/Stability-AI/StableLM)                                                       | Transformer                                        | English          |                                                                                                     | Pretraining, Fine-tuning                                   |
 | [LLM Foundary](https://github.com/mosaicml/llm-foundry)                                                    | Transformer-GPT                                    | English          |                                                                                                     | Pretraining, Fine-tuning                                   |
+| [WizardLM](https://github.com/nlpxucan/WizardLM) | LLaMA | English | | Instruction-tuning |
 
 #### Chinese Community
 
@@ -301,6 +302,7 @@ python demo.py
 | [InstructGLM](https://github.com/yanqiangmiffy/InstructGLM)             | ChatGLM-6B          | Chienese              | [deepspeed](https://www.deepspeed.ai/docs/config-json/)                     | Instruction Tuning       |
 | [Phoenix](https://github.com/FreedomIntelligence/LLMZoo)                | LLaMA, Bloomz       | Chinese, Multilingual |                                                                          | Instruction Tuning       |
 | [MOSS](https://github.com/OpenLMLab/MOSS)                               | Transformer         | Chinese, English      |                                                                          | Pretraining, Fine-Tuning |
+| [baichuan](https://github.com/baichuan-inc/baichuan-7B) | Transformer | Chinese, English |  | Pretraining |
 
 #### Related Repositories
 
