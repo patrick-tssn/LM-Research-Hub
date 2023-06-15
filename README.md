@@ -231,6 +231,7 @@ python evaluate.py
 
 ## Evaluation
 
+- [AlpacaEval](https://tatsu-lab.github.io/alpaca_eval/) | comprehensive
 - [HELM](https://github.com/stanford-crfm/helm) | comprehensive
 - [AGIEval](https://github.com/microsoft/AGIEval) | comprehensive
 - [C-Eval](https://github.com/SJTU-LIT/ceval) | comprehensive, Chinese
