@@ -5,6 +5,7 @@ Empirical study of common foundation models, which aims to find the proper FOUND
 **Table of Contents**
 
 - [Pretraining](#pretraining)
+- [architecture](#architecture)
 - [Instruction Tuning](#instruction-tuning)
   - [Datasets](#datasets)
   - [Experiments](#experiments)
@@ -25,6 +26,8 @@ Empirical study of common foundation models, which aims to find the proper FOUND
   - [Learning Materials](#tutorial-course-blog-talk-curated-list)
 
 ## Pretraining
+
+## Architecture
 
 ## Instruction tuning
 
