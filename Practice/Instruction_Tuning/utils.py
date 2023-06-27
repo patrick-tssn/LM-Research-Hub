@@ -37,7 +37,8 @@ class OpenAIDecodingArguments(object):
 
 
 def openai_completion(
-    prompts: Union[str, Sequence[str], Sequence[dict[str, str]], dict[str, str]],
+    # prompts: Union[str, Sequence[str], Sequence[dict[str, str]], dict[str, str]],
+    prompts,
     decoding_args: OpenAIDecodingArguments,
     model_name="text-davinci-003",
     sleep_time=2,
@@ -46,7 +47,8 @@ def openai_completion(
     max_batches=sys.maxsize,
     return_text=False,
     **decoding_kwargs,
-) -> Union[Union[StrOrOpenAIObject], Sequence[StrOrOpenAIObject], Sequence[Sequence[StrOrOpenAIObject]],]:
+):
+# ) -> Union[Union[StrOrOpenAIObject], Sequence[StrOrOpenAIObject], Sequence[Sequence[StrOrOpenAIObject]],]:
     """Decode with OpenAI API.
 
     Args:

@@ -8,9 +8,10 @@ LLM4Academic is a repository for everything I want to know about large language 
 
 - [Theory](#theory)
 
-  - [Datasets](#datasets)
+  - [Reading List](#reading-list)
+  - [Dataset Collections](#datasets)
   - [Open Source LLM](#open-source-llms)
-  - [Evaluation](#evaluation)
+  - [Evaluation Benchmarks](#evaluation-benchmarks)
 - [Practice](#Practice)
 
   - [API](#api)
@@ -20,6 +21,7 @@ LLM4Academic is a repository for everything I want to know about large language 
 
 ### Reading List
 
+Reading list and related notes for LLM, see [Reading List](Theory/ReadingList.md) for details.
 
 ### Datasets
 
@@ -29,16 +31,9 @@ Datasets for Pretrain/Finetune/Instruction-tune LLMs, see [Datasets](Theory/Data
 
 Collection of various open-source LLMs, see [Open Souce LLMs](Theory/OpenSourceLLM.md) for details.
 
-### Evaluation
+### Evaluation Benchmarks
 
-- [AlpacaEval](https://tatsu-lab.github.io/alpaca_eval/) | comprehensive
-- [HELM](https://github.com/stanford-crfm/helm) | comprehensive
-- [AGIEval](https://github.com/microsoft/AGIEval) | comprehensive
-- [C-Eval](https://github.com/SJTU-LIT/ceval) | comprehensive, Chinese
-- [SuperCLUE](https://github.com/CLUEbenchmark/SuperCLUE) | comprehensive, Chinese
-- [LM-Evaluation-Harness](https://github.com/EleutherAI/lm-evaluation-harness) | safety
-- [Safety-Prompts](https://github.com/thu-coai/Safety-Prompts) | safety
-- [LaMP](https://lamp-benchmark.github.io/) | personalization
+Collection of automatic evaluation benchmarks, see [Evaluation Benchmarks](Theory/EvaluationBenchmarks.md) for details.
 
 ## Practice
 
@@ -48,4 +43,7 @@ LLM API demos, see [API](Practice/API/README.md) for details.
 
 ### Instruction Tuning
 
-Instruction Tuning on 4 LLM with multilingual instructions, see [Instruction Tuning](Practice/Instruction_Tuning/READEME.md) for details.
+- Instruction Construct
+  Construct Instruction through
+- Fine Tuning
+  Instruction Tuning on 4 LLM with multilingual instructions, see [Instruction Tuning](Practice/Instruction_Tuning/READEME.md) for details.
