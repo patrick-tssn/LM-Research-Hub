@@ -1,6 +1,6 @@
 # LLM4Academic
 
-LLM4Academic is a repository about everything I would like to know about large language models (LLMs). There are two parts in this repository: (1) Practice: insightful experiment, demo, framework; (2) Theory: reading list, survey, curated sources
+LLM4Academic is a repository about everything I would like to know about large language models (LLMs). There are two parts in this repository: (1) Theory: reading list, survey, curated sources; (2) Practice: insightful experiment, demo, framework.
 
 > *"Talk is cheap, show me the code."*
 
@@ -66,6 +66,7 @@ LLM4Academic is a repository about everything I would like to know about large l
 
 ### Evaluation
 
+- [AlpacaEval](https://tatsu-lab.github.io/alpaca_eval/) | comprehensive
 - [HELM](https://github.com/stanford-crfm/helm) | comprehensive
 - [AGIEval](https://github.com/microsoft/AGIEval) | comprehensive
 - [C-Eval](https://github.com/SJTU-LIT/ceval) | comprehensive, Chinese
@@ -98,6 +99,7 @@ LLM4Academic is a repository about everything I would like to know about large l
 | [DeepSpeed-Chat](https://github.com/microsoft/DeepSpeedExamples/tree/master/applications/DeepSpeed-Chat)  | OPT, BLOOM, GPT-NEOX, GPTJ, GPT-NEO, GPT2, CODEGEN |                  |                                                                                                     | Instruction Tuning, RLHF                                   |
 | [StableLM](https://github.com/Stability-AI/StableLM)                                                       | Transformer                                        | English          |                                                                                                     | Pretraining, Fine-tuning                                   |
 | [LLM Foundary](https://github.com/mosaicml/llm-foundry)                                                    | Transformer-GPT                                    | English          |                                                                                                     | Pretraining, Fine-tuning                                   |
+| [WizardLM](https://github.com/nlpxucan/WizardLM) | LLaMA | English | | Instruction-tuning |
 
 #### Chinese Community
 
@@ -114,6 +116,7 @@ LLM4Academic is a repository about everything I would like to know about large l
 | [InstructGLM](https://github.com/yanqiangmiffy/InstructGLM)             | ChatGLM-6B          | Chienese              | [deepspeed](https://www.deepspeed.ai/docs/config-json/)                     | Instruction Tuning       |
 | [Phoenix](https://github.com/FreedomIntelligence/LLMZoo)                | LLaMA, Bloomz       | Chinese, Multilingual |                                                                          | Instruction Tuning       |
 | [MOSS](https://github.com/OpenLMLab/MOSS)                               | Transformer         | Chinese, English      |                                                                          | Pretraining, Fine-Tuning |
+| [baichuan](https://github.com/baichuan-inc/baichuan-7B) | Transformer | Chinese, English |  | Pretraining |
 
 #### Related Repositories
 
