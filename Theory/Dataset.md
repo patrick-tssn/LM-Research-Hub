@@ -1,0 +1,55 @@
+# Datasets
+
+Commonly Used Datasets for Pretraining, Finetuning, Instruction Tuning
+
+Table of Contents
+
+- [Pretraining Corpora](#pretraining)
+- [Instruction](#instruction)
+
+## Pretraining
+
+
+## Instruction
+
+
+1. Commonly Used
+
+| Data                                                                                     | Language                                                                            | Source                                      | prompt                                                                   | Size | Link                                                                                                       |
+| ---------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ------------------------------------------- | ------------------------------------------------------------------------ | ---- | ---------------------------------------------------------------------------------------------------------- |
+| [OIG](https://laion.ai/blog/oig-dataset/)                                                   |                                                                                     |                                             |                                                                          | 43M  | [OIG](https://huggingface.co/datasets/laion/OIG)                                                              |
+| [Alpaca](https://github.com/tatsu-lab/stanford_alpaca)                                      | English                                                                             | text-davinci-003                            | [prompt](https://github.com/tatsu-lab/stanford_alpaca/blob/main/prompt.txt) | 52k  | [Alpaca](https://github.com/tatsu-lab/stanford_alpaca/blob/main/alpaca_data.json)                             |
+| [Belle](https://github.com/LianjiaTech/BELLE)                                               | Chinese                                                                             | text-davinci-003                            | [prompt](https://github.com/LianjiaTech/BELLE/blob/main/prompt_cn.txt)      | 543k | [Belle (0.5M)](https://huggingface.co/datasets/BelleGroup/generated_train_0.5M_CN)                            |
+| [Luotuo](https://github.com/LC1332/Chinese-alpaca-lora)                                     | Chinese                                                                             | text-davinci-003+ChatGPT (Translate Alpaca) | -                                                                        | 52k  | [Alpaca_Chinese](https://github.com/LC1332/Chinese-alpaca-lora/blob/main/data/trans_chinese_alpaca_data.json) |
+| [Guannaco](https://guanaco-model.github.io/)                                                | English<br />Simplified Chinese<br />Traditional Chinese<br />Japanese<br />Deutsch |                                             |                                                                          | 534k | [Guannaco](https://huggingface.co/datasets/JosephusCheung/GuanacoDataset)                                     |
+| [Firefly](https://github.com/yangjianxin1/Firefly)                                          | Chinese                                                                             |                                             |                                                                          | 1.1M | [firefly-train-1.1M](https://huggingface.co/datasets/YeungNLP/firefly-train-1.1M)                             |
+| [Instruction Tuning with GPT-4](https://github.com/Instruction-Tuning-with-GPT-4/GPT-4-LLM) | English, Chinese                                                                    | GPT4                                        |                                                                          |      | [data-gpt4](https://github.com/Instruction-Tuning-with-GPT-4/GPT-4-LLM#data-release)                          |
+| [gpt4all](https://github.com/nomic-ai/gpt4all)                                              | English                                                                             | GPT4                                        |                                                                          |      | [gpt4all_data](https://github.com/nomic-ai/gpt4all#Reproducibility)                                           |
+| [Dolly](https://github.com/databrickslabs/dolly/tree/master/data)                           | English                                                                             | Human (Databricks employee)                 |                                                                          | 15k  | [databricks-dolly-15k](https://github.com/databrickslabs/dolly/tree/master/data)                              |
+| [COIG](agithub.com/BAAI-Zlab/COIG)                                                          | Chinese                                                                             | Dialogue, Code, Exam, Human, Translation    |                                                                          |      | [COIG](agithub.com/BAAI-Zlab/COIG)                                                                            |
+
+2. COT
+
+| Data                                               | Language | Source                                       | Template                                                                             | Statistic        |
+| -------------------------------------------------- | -------- | -------------------------------------------- | ------------------------------------------------------------------------------------ | ---------------- |
+| [Alpaca-Cot](https://github.com/PhoebusSi/Alpaca-CoT) | English  | [Flan](https://github.com/google-research/FLAN) | [Flan-template](https://github.com/google-research/FLAN/blob/main/flan/v2/templates.py) | 9 datasets (75k) |
+
+3. Code
+
+| Data             | Source | Size                                                               | Link                                                                        |
+| ---------------- | ------ | ------------------------------------------------------------------ | --------------------------------------------------------------------------- |
+| Instruct-to-Code |        | 700k                                                               | [Instruct-to-Code](https://huggingface.co/datasets/Graverman/Instruct-to-Code) |
+| BigCode          |        | [bigcode-dataset](https://github.com/bigcode-project/bigcode-dataset) |                                                                             |
+
+4. Dialogue
+
+| Data                           | Language | Source  | Size     | Link                                                            |
+| ------------------------------ | -------- | ------- | -------- | --------------------------------------------------------------- |
+| [ShareGPT](https://sharegpt.com/) |          | ChatGPT | 52K, 90K | [ShareGPT52K](https://huggingface.co/datasets/RyokoAI/ShareGPT52K) |
+
+5. Human Preference
+
+| Data                                          | Language | Source | Size | Link                                                                                                                                                                                          |
+| --------------------------------------------- | -------- | ------ | ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [hh-rlhf](https://github.com/anthropics/hh-rlhf) | English  | Human  |      | [human preference data](https://github.com/anthropics/hh-rlhf#Human-preference-data-about-helpfulness-and-harmlessness), [red teaming data](https://github.com/anthropics/hh-rlhf#Red-teaming-data) |
+
