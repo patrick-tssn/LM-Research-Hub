@@ -55,7 +55,7 @@ def request_status():
     }
 
 if __name__ == '__main__':
-    messages = [{'role': 'user','content': 'are your gpt3.5 or gpt4'},]
+    messages = [{'role': 'user','content': 'pharaphase the following email: I am sorry for the late registration, I have received the registration confirmation mail from ACL 2023. Is it possible for me to know the promblem with my registration?'},]
     print(gpt_35_api_stream(messages))
     print(messages)
     # request_status()

@@ -3,7 +3,6 @@
 Table of Contents
 
 - [English](#english)
-
   - [Comprehensive](#comprehensive)
   - [Knowledge](#knowledge)
   - [Reason](#reason)
@@ -11,7 +10,6 @@ Table of Contents
   - [Code](#code)
   - [Personalization](#personalization)
 - [Chinese](#chinese)
-
   - [Comprehensive](#comprehensive-1)
   - [Safety](#safety)
 - [Multilingual]()
