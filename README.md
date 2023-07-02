@@ -23,9 +23,14 @@ LLM4Academic is a repository for everything I want to know about large language 
 
 Reading list and related notes for LLM, see [Reading List](Theory/ReadingList.md) for details.
 
+> - Instruction Tuning
+
 ### Datasets
 
 Datasets for Pretrain/Finetune/Instruction-tune LLMs, see [Datasets](Theory/Dataset.md) for details.
+
+> - Pretraining Corpora
+> - Instruction
 
 ### Open Source LLMs
 
@@ -48,7 +53,6 @@ Collection of various open-source LLMs, see [Open Souce LLMs](Theory/OpenSourceL
 ### Evaluation Benchmarks
 
 Collection of automatic evaluation benchmarks, see [Evaluation Benchmarks](Theory/EvaluationBenchmarks.md) for details.
-
 
 > - English
 >   - Comprehensive
