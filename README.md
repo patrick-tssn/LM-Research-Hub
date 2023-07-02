@@ -49,6 +49,7 @@ Collection of various open-source LLMs, see [Open Souce LLMs](Theory/OpenSourceL
 >   - accelerate
 >   - evaluation
 >   - deployment/demo
+> - Reference
 
 ### Evaluation Benchmarks
 

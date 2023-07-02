@@ -15,6 +15,7 @@ Table of Contents
   - [accelerate](#accelerate)
   - [evaluation](#evaluation)
   - [deployment/demo](#deploymentdemo)
+- [Reference](#reference)
 
 notes:
 
