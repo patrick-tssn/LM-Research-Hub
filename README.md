@@ -78,8 +78,8 @@ LLM API demos, see [API](Practice/API/README.md) for details.
 
 ### Instruction Tuning
 
-- Instruction Construct: Construct Instruction by mixture or self-instruct
-- Fine Tuning: Instruction Tuning on 4 LLM with multilingual instructions
+1. Instruction Construct: Construct Instruction by mixture or self-instruct
+2. Fine Tuning: Instruction Tuning on 4 LLM with multilingual instructions
 
 see [Instruction Tuning](Practice/Instruction_Tuning/READEME.md) for details.
 
