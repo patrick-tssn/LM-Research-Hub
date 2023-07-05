@@ -55,7 +55,20 @@ def request_status():
     }
 
 if __name__ == '__main__':
-    messages = [{'role': 'user','content': 'pharaphase the following email: I am sorry for the late registration, I have received the registration confirmation mail from ACL 2023. Is it possible for me to know the promblem with my registration?'},]
-    print(gpt_35_api_stream(messages))
-    print(messages)
+    
+    while True:
+        input_text = input('You: ').strip()
+        if len(input_text) == 0:
+            print('**no response**')
+            continue
+        else:
+            messages = [{'role': 'user','content': input_text},]
+            print(gpt_35_api_stream(messages))
+            print('ChatGPT: ' + messages[1]['content'])
+            
+    
+    # messages = [{'role': 'user','content': 'pharaphase the following email: I am sorry for the late registration, I have received the registration confirmation mail from ACL 2023. Is it possible for me to know the promblem with my registration?'},]
+    # print(gpt_35_api_stream(messages))
+    # print(messages)
+    
     # request_status()

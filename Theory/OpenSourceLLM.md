@@ -72,6 +72,7 @@ notes:
 | ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- | ------------ | ---------- | ------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ----- | ------------- |
 | OpenChat                | [13B-2K](https://huggingface.co/openchat/openchat)/[13B-8K](https://huggingface.co/openchat/openchat_8192)                                                            | 2K/8K | Dec          | LLaMA      | [filterd](https://huggingface.co/datasets/openchat/openchat_sharegpt4_dataset) (6K from ShareGPT)                                 | [code](https://github.com/imoneoi/openchat)                                                                                                                 | 07/23 | personal      |
 | LongChat                | [7B](https://huggingface.co/lmsys/longchat-7b-16k)/[13B](https://huggingface.co/lmsys/longchat-13b-16k)                                                               | 16K   | Dec          | LLaMA      | [self-construct](https://lmsys.org/blog/2023-06-29-longchat/#step-2-finetuning-on-curated-conversation-data) (FastChat pipeline) | [code](https://github.com/DachengLi1/LongChat), [blog](https://lmsys.org/blog/2023-06-29-longchat)                                                             | 06/23 | LMSYS         |
+| Tulu                    | [65B](https://huggingface.co/allenai/tulu-65b)                                                                                                                     | 2K    | Dec          | LLaMA      | Tulu mix (Human+GPT mixture)                                                                                                   | [paper](https://arxiv.org/abs/2306.04751), [code](https://github.com/allenai/open-instruct)                                                                   | 06/23 | AI2           |
 | WizardCoder `code`    | [15B](https://huggingface.co/WizardLM/WizardCoder-15B-V1.0)                                                                                                        | 8K    | Dec          | StarCoder  | (code)                                                                                                                         | [paper](https://arxiv.org/abs/2306.08568), [code](https://github.com/nlpxucan/WizardLM/tree/main/WizardCoder)                                                  | 06/23 | MSRA          |
 | WizardLM                | [7B](https://huggingface.co/WizardLM/WizardLM-7B-V1.0)/[13B](https://huggingface.co/WizardLM/WizardLM-13B-V1.0)/[30B](https://huggingface.co/WizardLM/WizardLM-30B-V1.0) | 2K    | Dec          | LLaMA      | [Evol-Instruct](https://huggingface.co/datasets/WizardLM/WizardLM_evol_instruct_V2_196k) (143K instruction)                      | [paper](https://arxiv.org/abs/2304.12244), [code](https://github.com/nlpxucan/WizardLM)                                                                        | 06/23 | MSRA          |
 | Lion                    | [7B](https://huggingface.co/YuxinJiang/Lion)                                                                                                                       | 2K    | Dec          | LLaMA      | distill (70K instruction)                                                                                                      | [paper](https://arxiv.org/abs/2305.12870), [code](https://github.com/YJiangcm/Lion)                                                                            | 05/23 | HKUST         |
@@ -132,14 +133,15 @@ notes:
 
 ## Domain Finetuned Model
 
-| Model                       | Available Size                                                                                                                                 | CTX | Base Model | Domain  | Tuning Data                                                                                   | Link                                                                                | Date  | Affiliation |
-| --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | --- | ---------- | ------- | --------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- | ----- | ----------- |
-| Lawyer-LLamA                | [13B](https://huggingface.co/pkupie/lawyer-llama-13b-beta1.0), [Original](https://github.com/AndrewZhe/lawyer-llama/blob/main/demo/run_inference.md) | 2K  | LLaMA      | Law     | [self-construct](https://github.com/AndrewZhe/lawyer-llama#%E8%AE%AD%E7%BB%83%E6%95%B0%E6%8D%AE) | [code](https://github.com/AndrewZhe/lawyer-llama)                                      | 05/23 | PKU         |
-| medAlpaca                   | [7B](https://huggingface.co/medalpaca/medalpaca-7b)/[13B](https://huggingface.co/medalpaca/medalpaca-13b)                                            | 2K  | LLaMA      | Medical | [self-construct](https://github.com/kbressem/medAlpaca#data)                                     | [paper](https://arxiv.org/abs/2304.08247), [code](https://github.com/kbressem/medAlpaca) | 04/23 | TUM         |
-| BenTsao/HuaTuo (本草/华佗) | 7B,[Original](https://github.com/SCIR-HI/Huatuo-Llama-Med-Chinese#%E6%A8%A1%E5%9E%8B%E4%B8%8B%E8%BD%BD)                                           | 2K  | LLaMA      | Medical | self-construct ([cMeKG](https://github.com/king-yyf/CMeKG_tools), Chinese)                       | [code](https://github.com/SCIR-HI/Huatuo-Llama-Med-Chinese)                            | 03/23 | HIT         |
-| ChatDoctor                  | 7B,[Original](https://drive.google.com/drive/folders/11-qPzz9ZdHD6pc47wBSOUSU61MaDPyRh?usp=sharing)                                               | 2K  | LLaMA      | Medical | [ChatDoctor Dataset](https://github.com/Kent0n-Li/ChatDoctor#data-and-model)                     | [code](https://github.com/Kent0n-Li/ChatDoctor)                                        | 03/23 | personal    |
+| Model                       | Available Size                                                                                                                                 | CTX | Base Model | Domain  | Tuning Data                                                                                              | Link                                                                                  | Date  | Affiliation |
+| --------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- | --- | ---------- | ------- | -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ----- | ----------- |
+| ChatLaw                     | 13B/33B                                                                                                                                        | 2K  | LLaMA      | Law     | [self-construct](https://github.com/PKU-YuanGroup/ChatLaw#%E6%95%B0%E6%8D%AE-dataset) (Chinese)            | [paper](https://arxiv.org/abs/2306.16092), [code](https://github.com/PKU-YuanGroup/ChatLaw) | 07/23 | PKU         |
+| Lawyer-LLamA                | [13B](https://huggingface.co/pkupie/lawyer-llama-13b-beta1.0), [Original](https://github.com/AndrewZhe/lawyer-llama/blob/main/demo/run_inference.md) | 2K  | LLaMA      | Law     | [self-construct](https://github.com/AndrewZhe/lawyer-llama#%E8%AE%AD%E7%BB%83%E6%95%B0%E6%8D%AE) (Chinese) | [code](https://github.com/AndrewZhe/lawyer-llama)                                        | 05/23 | PKU         |
+| medAlpaca                   | [7B](https://huggingface.co/medalpaca/medalpaca-7b)/[13B](https://huggingface.co/medalpaca/medalpaca-13b)                                            | 2K  | LLaMA      | Medical | [self-construct](https://github.com/kbressem/medAlpaca#data)                                                | [paper](https://arxiv.org/abs/2304.08247), [code](https://github.com/kbressem/medAlpaca)   | 04/23 | TUM         |
+| BenTsao/HuaTuo (本草/华佗) | 7B,[Original](https://github.com/SCIR-HI/Huatuo-Llama-Med-Chinese#%E6%A8%A1%E5%9E%8B%E4%B8%8B%E8%BD%BD)                                           | 2K  | LLaMA      | Medical | self-construct ([cMeKG](https://github.com/king-yyf/CMeKG_tools), Chinese)                                  | [code](https://github.com/SCIR-HI/Huatuo-Llama-Med-Chinese)                              | 03/23 | HIT         |
+| ChatDoctor                  | 7B,[Original](https://drive.google.com/drive/folders/11-qPzz9ZdHD6pc47wBSOUSU61MaDPyRh?usp=sharing)                                               | 2K  | LLaMA      | Medical | [ChatDoctor Dataset](https://github.com/Kent0n-Li/ChatDoctor#data-and-model)                                | [code](https://github.com/Kent0n-Li/ChatDoctor)                                          | 03/23 | personal    |
 
-*Toys*: [Robin-medical](https://github.com/OptimalScale/LMFlow#model-zoo) (LLamA+INST-medical),
+*Toys*: [Robin-medical](https://github.com/OptimalScale/LMFlow#model-zoo) (LLamA+INST-medical)
 
 ## Open Source Projects
 
@@ -181,6 +183,11 @@ Additional open source projects for LLM research
   - *by Collosal.AI, 2023.03*
   - chat-model: Coati-7B
 
+#### (3) Specific domain
+
+- [FinGPT](https://github.com/AI4Finance-Foundation/FinGPT): Open-source for open finance
+  - domain: finance
+
 ### accelerate
 
 - [QLoRA](https://github.com/artidoro/qlora): an efficient finetuning approach that reduces memory usage enough to finetune a 65B parameter model on a single 48GB GPU while preserving full 16-bit finetuning task performance
@@ -199,6 +206,7 @@ Additional open source projects for LLM research
 
 ### deployment/demo
 
+- [vLLM](https://github.com/vllm-project/vllm): A high-throughput and memory-efficient inference and serving engine for LLMs
 - [OpenAssistant](https://github.com/LAION-AI/Open-Assistant): Open Assistant is a project meant to give everyone access to a great chat based large language model.
   - *by LAION-AI, 2023.04*, [doc](https://projects.laion.ai/Open-Assistant/docs/intro), [demo](https://huggingface.co/chat)
 - [GPT4ALL](https://github.com/nomic-ai/gpt4all): GPT4All is an ecosystem to train and deploy **powerful** and **customized** large language models that run locally on consumer grade CPUs
@@ -211,6 +219,7 @@ Additional open source projects for LLM research
 
 ## Reference
 
+- [Awesome-Chinese-LLM](https://github.com/HqWu-HITCS/Awesome-Chinese-LLM), 整理开源的中文大语言模型，以规模较小、可私有化部署、训练成本较低的模型为主，包括底座模型，垂直领域微调及应用，数据集与教程等
 - [LLM-Zoo](https://github.com/DAMO-NLP-SG/LLM-Zoo), collects information of various open- and closed-source LLMs
 - [FindTheChatGPTer](https://github.com/chenking2020/FindTheChatGPTer), 汇总那些ChatGPT的开源平替们，包括文本大模型、多模态大模型等
 - [中国大模型](https://github.com/wgwang/LLMs-In-China), 旨在记录中国大模型情况

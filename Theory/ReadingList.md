@@ -13,3 +13,6 @@ Papers/blogs about Instruction Tuning, see [Instruction Tuning](InstructionTunin
 > - Reference
 
 ## References
+
+- [LLMSurvey](https://github.com/RUCAIBox/LLMSurvey), A collection of papers and resources related to Large Language Models
+  - [survey](https://arxiv.org/abs/2303.18223)

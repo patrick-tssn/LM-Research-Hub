@@ -1,6 +1,6 @@
 # LLM4Academic
 
-LLM4Academic is a repository for everything I want to know about large language models (LLMs). There are two parts in this repository: (1) Theory: reading list, survey, curated sources; (2) Practice: insightful experiment, demo, framework.
+LLM4Academic is a repository for everything I want to know about large language models (LLMs). There are two parts in this repository: (1) Theory: reading list, survey, curated sources; (2) Practice: insightful experiment (demo, framework, etc.) implemented by myself.
 
 > *"**In theory, theory and practice are the same. In practice, they are not**."*
 
