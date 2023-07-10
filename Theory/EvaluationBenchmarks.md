@@ -121,3 +121,4 @@ Table of Contents
 ## Reference
 
 - [Instruction Tuning阶段性总结](https://yaofu.notion.site/2023-06-Instruction-Tuning-935b48e5f26448e6868320b9327374a1), by 符尧 (Yao Fu), 2023.06
+- [Evaluations of LLM](https://github.com/MLGroupJLU/LLM-eval-survey), The official GitHub page for the survey paper "A Survey on Evaluation of Large Language Models"

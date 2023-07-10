@@ -4,14 +4,14 @@ Commonly Used Datasets for Pretraining, Finetuning, Instruction Tuning
 
 Table of Contents
 
-- [Pretraining Corpora](#pretraining)
+- [Pretraining Corpora](#pretraining-corpora)
 - [Instruction](#instruction)
 
-## Pretraining
+## Pretraining corpora
 
+- [MNBVC](https://github.com/esbatmop/MNBVC), MNBVC(Massive Never-ending BT Vast Chinese corpus)超大规模中文语料集。对标chatGPT训练的40T数据。MNBVC数据集不但包括主流文化，也包括各个小众文化甚至火星文的数据。MNBVC数据集包括新闻、作文、小说、书籍、杂志、论文、台词、帖子、wiki、古诗、歌词、商品介绍、笑话、糗事、聊天记录等一切形式的纯文本中文数据。
 
 ## Instruction
-
 
 1. Commonly Used
 
@@ -53,3 +53,19 @@ Table of Contents
 | --------------------------------------------- | -------- | ------ | ---- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [hh-rlhf](https://github.com/anthropics/hh-rlhf) | English  | Human  |      | [human preference data](https://github.com/anthropics/hh-rlhf#Human-preference-data-about-helpfulness-and-harmlessness), [red teaming data](https://github.com/anthropics/hh-rlhf#Red-teaming-data) |
 
+6. Social interactions
+
+| Data                                           | Language | Source            | Size | Link                                                   |
+| ---------------------------------------------- | -------- | ----------------- | ---- | ------------------------------------------------------ |
+| [KokoMind](https://github.com/CHATS-lab/KokoMind) | English  | GPT4, Movie, ToMi | 770  | [KokoMind](https://github.com/CHATS-lab/KokoMind#dataset) |
+
+6. Specific Domain
+
+| Data                                                        | Language | Source | Size  | Link                                                        |
+| ----------------------------------------------------------- | -------- | ------ | ----- | ----------------------------------------------------------- |
+| [Mol-Instructions](https://github.com/zjunlp/Mol-Instructions) | English  |        | 2052K | [Mol-Instructions](https://github.com/zjunlp/Mol-Instructions) |
+
+## Reference
+
+- [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts), This repo includes ChatGPT prompt curation to use ChatGPT better
+- [🧠ChatGPT 中文调教指南](https://github.com/PlexPt/awesome-chatgpt-prompts-zh), ChatGPT 中文调教指南。各种场景使用指南。学习怎么让它听你的话
