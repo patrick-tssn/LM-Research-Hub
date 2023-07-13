@@ -9,6 +9,7 @@ LLM4Academic is a repository for everything I want to know about large language 
 - [Theory](#theory)
 
   - [Reading List](#reading-list)
+  - [Courses](#courses)
   - [Dataset Collections](#dataset-collections)
   - [Open Source LLM](#open-source-llms)
   - [Evaluation Benchmarks](#evaluation-benchmarks)
@@ -23,6 +24,7 @@ LLM4Academic is a repository for everything I want to know about large language 
 
 Reading list and related notes for LLM, see [Reading List](Theory/ReadingList.md) for details.
 
+> - Key Findings
 > - Instruction Tuning
 > - In Context Learning
 > - Chain of Thought
