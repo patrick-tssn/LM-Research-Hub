@@ -50,6 +50,12 @@ Short survey about Abstract Reasoning, see [Abstract Reasoning](reasoning/AR.md)
 > - Models
 > - Representative works
 
+## Mixture of Experts (MoE)
+Papers about Mixture of Experts (MoE), see [Mixture of Experts](MoE.md) for details.
+
+> - Papers
+> - Reference
+
 ## References
 
 - [LLMSurvey](https://github.com/RUCAIBox/LLMSurvey), A collection of papers and resources related to Large Language Models

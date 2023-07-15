@@ -28,6 +28,8 @@ Reading list and related notes for LLM, see [Reading List](Theory/ReadingList.md
 > - Instruction Tuning
 > - In Context Learning
 > - Chain of Thought
+> - Abstract Reasoning
+> - Mixture of Experts
 > - Reference (survey, lists, and etc.)
 
 ### Courses
@@ -102,3 +104,10 @@ see [Instruction Tuning](Practice/Instruction_Tuning/READEME.md) for details.
 >   - Model Cards
 >   - Usage
 > - Results
+
+### Constrained Generation
+
+constrain LLM to generate specific answer, see [Constrained Generate](Practice/ConstrainedGenerate/README.md) for details.
+
+> - Common method (constrain vocabulary + sample algorithm)
+> - Trie + Beam search (has issues currently)

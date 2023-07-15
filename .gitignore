@@ -1,13 +1,7 @@
 # user
-instruction/output
-instruction/slurm_logs
-instruction/debug.py
-instruction/*.sh
-instruction/server.py
-instruction/client.py
-instruction/demo.json
-instruction/generate_instruction.py
-data/instructs/*
+*.pkl
+*.bin
+Practice/ConstrainedGenerate/TrieConstrain/hf_entity_disambiguation_aidayago
 
 # github
 .github/
