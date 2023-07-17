@@ -1,4 +1,3 @@
-
 # Abstract Reasoning
 
 *keywords: abstract reasoning, Raven's Progressive Matrices (RPM), abstrct visual reasoning*
@@ -113,7 +112,7 @@ summary:
 
 **Abstract Visual Reasoning: An Algebraic Approach for Solving Raven’s Progressive Matrices**, CVPR 2023
 
-*SOTA*
+*SOTA, algebra?*
 
 INSIGHTS: not that insightful
 

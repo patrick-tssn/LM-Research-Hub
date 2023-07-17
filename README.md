@@ -17,6 +17,7 @@ LLM4Academic is a repository for everything I want to know about large language 
 
   - [API](#api)
   - [Instruction Tuning](#instruction-tuning)
+  - [Constrained Generation](#constrained-generation)
 
 ## Theory
 
