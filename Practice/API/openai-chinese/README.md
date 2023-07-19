@@ -1,6 +1,12 @@
-# GPT-API-free
+# OPENAI-API
 
-[GPT-API-free](https://github.com/chatanywhere/GPT_API_free)
+## GPT-API-free
+
+[GPT-API-free](https://github.com/chatanywhere/GPT_API_free), mirror link
+
+## Pandora
+
+[pandora](https://github.com/pengzhile/pandora), web page
 
 ## API USAGE
 

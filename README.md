@@ -18,6 +18,7 @@ LLM4Academic is a repository for everything I want to know about large language 
   - [API](#api)
   - [Instruction Tuning](#instruction-tuning)
   - [Constrained Generation](#constrained-generation)
+  - [Reference](#reference)
 
 ## Theory
 
@@ -112,3 +113,7 @@ constrain LLM to generate specific answer, see [Constrained Generate](Practice/C
 
 > - Common method (constrain vocabulary + sample algorithm)
 > - Trie + Beam search (has issues currently)
+
+### Reference
+
+- [llm-action](https://github.com/liguodongiot/llm-action), 本项目旨在分享大模型相关技术原理以及实战经验
