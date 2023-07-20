@@ -27,19 +27,23 @@ LLM4Academic is a repository for everything I want to know about large language 
 Reading list and related notes for LLM, see [Reading List](Theory/ReadingList.md) for details.
 
 > - Key Findings
+
+> - Architecture
+> - Efficiency
 > - Instruction Tuning
 > - In Context Learning
-> - Chain of Thought
-> - Abstract Reasoning
 > - Mixture of Experts
+> - Reasoning
+>   - Abstract Reasoning
+>   - Chain of Thought
 > - Reference (survey, lists, and etc.)
 
 ### Courses
 
 - **Johns Hopkins University**: CS 601.x71 NLP: Self-supervised Models [Spring 2023](https://self-supervised.cs.jhu.edu/sp2023/)/[Fall 2022](https://self-supervised.cs.jhu.edu/fa2022/)
+- **Princeton University**: COS 597G: Understanding Large Language Models [Fall 2022](https://www.cs.princeton.edu/courses/archive/fall22/cos597G/)
 - **Stanford University**: CS25: Transformers United V2 [Fall 2021](https://web.stanford.edu/class/cs25/prev_years/2021_fall/)/[Winter 2023](https://web.stanford.edu/class/cs25/)
 - **Stanford University**: CS 324 - Advances in Foundation Models [Winter 2022](https://stanford-cs324.github.io/winter2022/)/[Winter 2023](https://stanford-cs324.github.io/winter2023/)
-- **Princeton University**: COS 597G: Understanding Large Language Models [Fall 2022](https://www.cs.princeton.edu/courses/archive/fall22/cos597G/)
 
 ### Dataset Collections
 
@@ -109,7 +113,7 @@ see [Instruction Tuning](Practice/Instruction_Tuning/READEME.md) for details.
 
 ### Constrained Generation
 
-constrain LLM to generate specific answer, see [Constrained Generate](Practice/ConstrainedGenerate/README.md) for details.
+constrain LLM to generate specific answer (e.g., some open ended QA, limited vocabulary tasks), see [Constrained Generate](Practice/ConstrainedGenerate/README.md) for details.
 
 > - Common method (constrain vocabulary + sample algorithm)
 > - Trie + Beam search (has issues currently)
