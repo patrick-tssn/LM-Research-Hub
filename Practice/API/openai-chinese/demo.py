@@ -27,7 +27,7 @@ def gpt_35_api_stream(messages: list):
     """
     try:
         response = openai.ChatCompletion.create(
-            model='gpt-3.5-turbo-0613', # gpt-3.5-turbo
+            model='gpt-4', # gpt-3.5-turbo
             messages=messages,
             stream=True,
         )
@@ -67,7 +67,7 @@ if __name__ == '__main__':
             print('ChatGPT: ' + messages[1]['content'])
             
     
-    # messages = [{'role': 'user','content': 'pharaphase the following email: I am sorry for the late registration, I have received the registration confirmation mail from ACL 2023. Is it possible for me to know the promblem with my registration?'},]
+    # messages = [{'role': 'user','content': 'polish the utterance: '},]
     # print(gpt_35_api_stream(messages))
     # print(messages)
     
