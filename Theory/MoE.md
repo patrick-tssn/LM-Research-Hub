@@ -9,6 +9,7 @@ Table of Content
 
 | Title                                                       | Pub       | Preprint                                    | Supplementary                                                         |
 | ----------------------------------------------------------- | --------- | ------------------------------------------- | --------------------------------------------------------------------- |
+| Towards Understanding Mixture of Experts in Deep Learning   |           | [2208.02813](https://arxiv.org/abs/2208.02813) | UCLA                                                                  |
 | Sparse Mixture-of-Experts are Domain Generalizable Learners | ICLR 2023 | [2206.04046](https://arxiv.org/abs/2206.04046) | [GMoE](https://github.com/Luodian/Generalizable-Mixture-of-Experts), NTU |
 
 ## Reference

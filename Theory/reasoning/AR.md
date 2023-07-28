@@ -15,7 +15,9 @@ Table of Content
 * Synthetic RPMs: first-order logic
 * D-Set and G-Set
 * PGM: relation, object, attribute
-* RAVEN: hierarchical structure (relation, attributes)
+* RAVEN: hierarchical structure (relation, attributes):
+
+  ![1690165690319](image/AR/1690165690319.png)
 
   > entity: type/shape, size, color
   > layout: number, position

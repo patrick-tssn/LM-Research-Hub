@@ -56,19 +56,19 @@ def request_status():
 
 if __name__ == '__main__':
     
-    while True:
-        input_text = input('You: ').strip()
-        if len(input_text) == 0:
-            print('**no response**')
-            continue
-        else:
-            messages = [{'role': 'user','content': input_text},]
-            print(gpt_35_api_stream(messages))
-            print('ChatGPT: ' + messages[1]['content'])
-            
+    # while True:
+    #     input_text = input('You: ').strip()
+    #     if len(input_text) == 0:
+    #         print('**no response**')
+    #         continue
+    #     else:
+    #         messages = [{'role': 'user','content': input_text},]
+    #         print(gpt_35_api_stream(messages))
+    #         print('ChatGPT: ' + messages[1]['content'])
     
-    # messages = [{'role': 'user','content': 'polish the utterance: '},]
-    # print(gpt_35_api_stream(messages))
-    # print(messages)
+    prompt = ''
+    messages = [{'role': 'user','content': prompt},]
+    print(gpt_35_api_stream(messages))
+    print(messages[1]["content"])
     
     # request_status()
