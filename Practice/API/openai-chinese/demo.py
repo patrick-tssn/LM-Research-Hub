@@ -5,9 +5,16 @@ from os import getenv
 from dotenv import load_dotenv
 # openai.log = "debug"
 load_dotenv()
+
+# chat anywhere
 OPENAI_TOKEN = getenv("OPENAI_TOKEN")
 openai.api_key = OPENAI_TOKEN
 openai.api_base = "https://api.chatanywhere.com.cn/v1"
+
+# # close AI
+# CLOSEAI_TOKEN = getenv("CLOSEAI_TOKEN")
+# openai.api_key = CLOSEAI_TOKEN
+# openai.api_base = "https://api.closeai-proxy.xyz"
 
 
 
@@ -27,7 +34,7 @@ def gpt_35_api_stream(messages: list):
     """
     try:
         response = openai.ChatCompletion.create(
-            model='gpt-4', # gpt-3.5-turbo
+            model='gpt-3.5-turbo', # gpt-3.5-turbo
             messages=messages,
             stream=True,
         )
@@ -44,15 +51,6 @@ def gpt_35_api_stream(messages: list):
     except Exception as err:
         return (False, f'OpenAI API 异常: {err}')
     
-def request_status():
-    # https://api.chatanywhere.cn/#/
-    import requests
-    usage_url = "https://api.chatanywhere.cn/v1/query/usage"
-    balance_url = "https://api.chatanywhere.cn/v1/query/balance"
-    headers = {
-        "Content-Type": "application/json",
-        "Authorization":OPENAI_TOKEN
-    }
 
 if __name__ == '__main__':
     
@@ -66,9 +64,8 @@ if __name__ == '__main__':
     #         print(gpt_35_api_stream(messages))
     #         print('ChatGPT: ' + messages[1]['content'])
     
-    prompt = ''
+    prompt = 'show the semantic similarity of person and animal: '
     messages = [{'role': 'user','content': prompt},]
     print(gpt_35_api_stream(messages))
+    # print(messages)
     print(messages[1]["content"])
-    
-    # request_status()
