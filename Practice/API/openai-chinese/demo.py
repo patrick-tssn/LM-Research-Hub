@@ -34,7 +34,7 @@ def gpt_35_api_stream(messages: list):
     """
     try:
         response = openai.ChatCompletion.create(
-            model='gpt-3.5-turbo', # gpt-3.5-turbo
+            model='gpt-4', # gpt-3.5-turbo
             messages=messages,
             stream=True,
         )
@@ -64,7 +64,7 @@ if __name__ == '__main__':
     #         print(gpt_35_api_stream(messages))
     #         print('ChatGPT: ' + messages[1]['content'])
     
-    prompt = 'show the semantic similarity of person and animal: '
+    prompt = '润色这封情况说明邮件：各位领导好， 本人汪宇轩，特此邮件说明企业微信打卡的迟到早退情况。因为企业微信打卡没有后台自动打卡功能（其自动打卡功能需要手动打开APP），出勤后需要主动打开手机APP进行打卡。本人出勤后没有养成打开手机的习惯，只在小憩时想起打卡，故时有迟到。下班签退因为怕忘记签退，会在晚饭时间主动多次打卡，由于晚饭时间早于签退时间，故时有早退。至于实际出勤情况，可参考同院无线网登陆日志（本人使用个人笔记本 mac pro 2020 ip地址 10.1.121.116），如有需求，我可寻求科技大厦物业调取7月出入监控或者请4楼保洁阿姨做旁证。本人生活单调，包括节假日和周末，大部分时间都在通院度过，虽然能力一般，可保证出勤时间。之后，我会设置多个闹钟提醒自己打卡，以免造成不必要的麻烦。'
     messages = [{'role': 'user','content': prompt},]
     print(gpt_35_api_stream(messages))
     # print(messages)
