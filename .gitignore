@@ -2,7 +2,6 @@
 *.pkl
 *.bin
 Practice/ConstrainedGenerate/TrieConstrain/hf_entity_disambiguation_aidayago
-Practice/API/openai-chinese/demo.py
 
 # github
 .github/
