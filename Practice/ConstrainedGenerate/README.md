@@ -7,13 +7,15 @@ Table of Content
 
 ## Common method
 
-- [ ] generation method: sample/greedy search/beam search + constrained vocabulary
+generation method: sample/greedy search/beam search + constrained **vocabulary**
+
+>  this method can adapt generative language model to classification task (multiple choices), see `VocabConstrain/generate.ipynb` for details
 
 ## Trie + Beam search
 
 paper [Autoregressive Entity Retrieval](https://arxiv.org/abs/2010.00904 "https://arxiv.org/abs/2010.00904") (ICLR 2021) proposed the constrained sample method (i.e, trie + beam search)
 
-see `generate.ipynb` for details
+see `TrieConstrain/generate.ipynb` for details
 
 reference:  [GENRE](https://github.com/facebookresearch/GENRE/blob/main/genre)
 
