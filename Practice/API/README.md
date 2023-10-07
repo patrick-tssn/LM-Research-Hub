@@ -30,6 +30,9 @@ python demo.py
 
 ```
 
+- Azure API application
+> see Azure/demo.ipynb for reference
+
 ## Reference
 
 - [Public-APIs](https://github.com/public-apis/public-apis), A collective list of free APIs for use in software and web development
