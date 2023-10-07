@@ -17,8 +17,6 @@ Table of Content
 * PGM: relation, object, attribute
 * RAVEN: hierarchical structure (relation, attributes):
 
-  ![1690165690319](image/AR/1690165690319.png)
-
   > entity: type/shape, size, color
   > layout: number, position
   > component structure: L-R, U-D, O-IC, O-IG
