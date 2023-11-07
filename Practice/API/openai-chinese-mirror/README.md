@@ -2,11 +2,11 @@
 
 ## GPT-API-free
 
-[GPT-API-free](https://github.com/chatanywhere/GPT_API_free), mirror link
+[GPT-API-free](https://github.com/chatanywhere/GPT_API_free), mirror link in Chinese
 
 ## CloseAI
 
-[CloseAI](https://console.closeai-asia.com/dashboard), mirror link
+[CloseAI](https://console.closeai-asia.com/dashboard), mirror link in Chinese
 
 ## Pandora
 

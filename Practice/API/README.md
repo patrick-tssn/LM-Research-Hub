@@ -20,17 +20,16 @@ python client.py
 
 ## ChatGPT
 
-- openai API (mirror): [GPT_API_free](https://github.com/chatanywhere/GPT_API_free)
+- openai API
 
-```
+> see openai/ for details
 
-cd openai-chinese/
+- openai API (Chinese mirror)
 
-python demo.py
-
-```
+> see openai-chinese-mirror/ for details
 
 - Azure API application
+
 > see Azure/demo.ipynb for reference
 
 ## Reference
