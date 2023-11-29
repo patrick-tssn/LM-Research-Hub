@@ -1,5 +1,7 @@
 # Constrained Generation method for LM
 
+**This part help you to generate results in your vocabulary without tuning! e.g., `A, B, C, D`**
+
 Table of Content
 
 - [Common method](#common-method)
@@ -9,7 +11,7 @@ Table of Content
 
 generation method: sample/greedy search/beam search + constrained **vocabulary**
 
->  this method can adapt generative language model to classification task (multiple choices), see `VocabConstrain/generate.ipynb` for details
+> this method can adapt generative language model to classification task (multiple choices), see `VocabConstrain/generate.ipynb` for details
 
 ## Trie + Beam search
 
