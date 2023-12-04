@@ -1,6 +1,6 @@
 # LLM4Academic
 
-LLM4Academic is a repository for everything I want to know about large language models (LLMs). There are two parts in this repository: (1) Theory: reading list, survey, curated resources; (2) Practice: insightful experiment (demo, framework, etc.) implemented by myself.
+LLM4Academic is a repository for everything I want to know about large language models (LLMs) themselves. There are two parts in this repository: (1) Theory: reading list, courses, opensource LLMs and benchmarks; (2) Practice: insightful experiment (demo, framework, etc.) implemented by myself.
 
 > *"**In theory, theory and practice are the same. In practice, they are not**."*
 
@@ -91,7 +91,7 @@ Collection of automatic evaluation benchmarks, see [Evaluation Benchmarks](Theor
 
 ### API
 
-LLM API demos, see [API](Practice/API/README.md) for details.
+LLM API demos (including mirror links), see [API](Practice/API/README.md) for details.
 
 > - Claude
 > - ChatGPT
