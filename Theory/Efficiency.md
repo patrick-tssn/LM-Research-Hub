@@ -11,6 +11,6 @@
 
 ## Reference
 
-[Awesome-LLM-Compression](https://github.com/HuangOwen/Awesome-LLM-Compression), Awesome LLM compression research papers and tools to accelerate the LLM training and inference
-
-[Awesome-Long-Context](https://github.com/showlab/Awesome-Long-Context), A curated list of resources about long-context in large-language models and video understanding.
+- [Awesome-LLM-Inferenc](https://github.com/DefTruth/Awesome-LLM-Inference), A small Collection for Awesome LLM Inference [Papers|Blogs|Docs] with codes, contains TensorRT-LLM, streaming-llm, SmoothQuant, WINT8/4, Continuous Batching, FlashAttention, PagedAttention etc.
+- [Awesome-LLM-Compression](https://github.com/HuangOwen/Awesome-LLM-Compression), Awesome LLM compression research papers and tools to accelerate the LLM training and inference
+- [Awesome-Long-Context](https://github.com/showlab/Awesome-Long-Context), A curated list of resources about long-context in large-language models and video understanding.
