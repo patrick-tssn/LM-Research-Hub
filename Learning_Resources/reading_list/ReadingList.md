@@ -7,6 +7,7 @@ Table of Contents
 *arranged in alphabetical order*
 
 - [Architecture](#architecture)
+- [Code Learning](#code-learning)
 - [Efficiency](#efficiency)
 - [Extensibility](#extensibility)
 - [Instruction Tuning](#instruction-tuning)
