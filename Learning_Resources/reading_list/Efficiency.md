@@ -1,6 +1,6 @@
 # Efficiency
 
-## Paper
+## Papers
 
 | Title                                                                          | Pub       | Preprint                                    | Supplementary                                                         |
 | ------------------------------------------------------------------------------ | --------- | ------------------------------------------- | --------------------------------------------------------------------- |
@@ -8,9 +8,3 @@
 | LLM-QAT: Data-Free Quantization Aware Training for Large Language Models       |           | [2305.17888](https://arxiv.org/abs/2305.17888) | Meta                                                                  |
 | LoRA: Low-Rank Adaptation of Large Language Models                             | ICLR 2022 | [2106.09685](https://arxiv.org/abs/2106.09685) | LoRA, Microsoft                                                       |
 | MoEfication: Transformer Feed-forward Layers are Mixtures of Experts           | ACL 2022  | [2110.01786](https://arxiv.org/abs/2110.01786) | [MoEfication](https://github.com/thunlp/MoEfication), THU                |
-
-## Reference
-
-- [Awesome-LLM-Inference](https://github.com/DefTruth/Awesome-LLM-Inference), A small Collection for Awesome LLM Inference [Papers|Blogs|Docs] with codes, contains TensorRT-LLM, streaming-llm, SmoothQuant, WINT8/4, Continuous Batching, FlashAttention, PagedAttention etc.
-- [Awesome-LLM-Compression](https://github.com/HuangOwen/Awesome-LLM-Compression), Awesome LLM compression research papers and tools to accelerate the LLM training and inference
-- [Awesome-Long-Context](https://github.com/showlab/Awesome-Long-Context), A curated list of resources about long-context in large-language models and video understanding.

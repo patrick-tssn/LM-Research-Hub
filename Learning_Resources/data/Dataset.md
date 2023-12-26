@@ -64,10 +64,3 @@ Table of Contents
 | Data                                                        | Language | Source | Size  | Link                                                        |
 | ----------------------------------------------------------- | -------- | ------ | ----- | ----------------------------------------------------------- |
 | [Mol-Instructions](https://github.com/zjunlp/Mol-Instructions) | English  |        | 2052K | [Mol-Instructions](https://github.com/zjunlp/Mol-Instructions) |
-
-## Reference
-
-- [LLMDataHub](https://github.com/Zjh-819/LLMDataHub), A quick guide (especially) for trending instruction finetuning datasets
-- [Awesome Instruction Datasets](https://github.com/jianzhnie/awesome-instruction-datasets), A collection of awesome-prompt-datasets, awesome-instruction-dataset, to train ChatLLM such as chatgpt 收录各种各样的指令数据集, 用于训练 ChatLLM 模型
-- [Awesome ChatGPT Prompts](https://github.com/f/awesome-chatgpt-prompts), This repo includes ChatGPT prompt curation to use ChatGPT better
-- [🧠ChatGPT 中文调教指南](https://github.com/PlexPt/awesome-chatgpt-prompts-zh), ChatGPT 中文调教指南。各种场景使用指南。学习怎么让它听你的话

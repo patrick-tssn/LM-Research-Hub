@@ -20,6 +20,11 @@ Table of Content
 | Beyond Distillation: Task-level Mixture-of-Experts for Efficient Inference                  | EMNLP 2021    | [2110.03742](https://arxiv.org/abs/2110.03742) | Google                                                                                                    |
 | Hash Layers For Large Sparse Models                                                         | NeurIPS 2021 | [2106.04426](https://arxiv.org/abs/2106.04426) | [code](https://github.com/facebookresearch/ParlAI/tree/main/projects/params_vs_compute), hash routing, Meta |
 
+## Projects
+
+- [LLaMA-MoE](https://github.com/pjlab-sys4nlp/llama-moe), LLaMA-MoE is a series of open-sourced Mixture-of-Expert (MoE) models based on LLaMA and SlimPajama. 
+
+
 ## Blogs
 
 - [2022-11] [Mixture-of-Experts with Expert Choice Routing](https://ai.googleblog.com/2022/11/mixture-of-experts-with-expert-choice.html), Google

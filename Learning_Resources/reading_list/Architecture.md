@@ -2,6 +2,11 @@
 
 elegant architecture for **longer context** and **faster speed**
 
+## Table of Contents
+
+- [Papers](#papers)
+- [Projects](#projects)
+
 ## Papers
 
 | Title                                                                                         | Pub       | Preprint                                    | Supplementary                              |

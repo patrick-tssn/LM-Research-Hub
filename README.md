@@ -1,30 +1,40 @@
-# LLM4Academic
+<div align="center">
 
-LLM4Academic is a repository for everything I want to know about large language models (LLMs) themselves. There are two parts in this repository: (1) Theory: reading list, courses, opensource LLMs and benchmarks; (2) Practice: insightful experiment (demo, framework, etc.) implemented by myself.
+# Language Modeling Research Hub
 
-> *"**In theory, theory and practice are the same. In practice, they are not**."*
+</div>
 
-**Table of Contents**
+Welcome to the Language Modeling Research Hub, an open-source nexus for enthusiasts and scholars diving into the world of large language models (LLM). This repository is neatly organized into:
 
-- [Theory](#theory)
+- **Learning Resources**: A selection of articles, courses, open-source projects, and data designed to enhance your LLM knowledge.
+- **Practices**: A showcase of my experiments and code, offering interactive demos and frameworks that highlight LLM's potential.
+
+Dive in to explore, contribute, and expand the horizons of language modeling with us!
+
+> *"**In theory, theory and practice are the same. In practice, they are not**."  --Albert Einstein*
+
+## 📑 Table of Contents
+
+- [📖 Learning Resources](#-learning-resources)
 
   - [Reading List](#reading-list)
   - [Courses](#courses)
+  - [Open-source LLMs](#open-source-llms)
   - [Dataset Collections](#dataset-collections)
-  - [Open Source LLM](#open-source-llms)
   - [Evaluation Benchmarks](#evaluation-benchmarks)
-- [Practice](#Practice)
+  - [Prompt Engineering](#prompt-engineering)
+- [💻 Practice](#-practice)
 
   - [API](#api)
   - [Instruction Tuning](#instruction-tuning)
   - [Constrained Generation](#constrained-generation)
-  - [Reference](#reference)
+- [🤝 Related Collections](#-related-collections)
 
-## Theory
+## 📖 Learning Resources
 
 ### Reading List
 
-Reading list and related notes for LLM, see [Reading List](Theory/ReadingList.md) for details.
+Reading list and related notes for LLM research, see [Reading List](Learning_Resources/reading_list/ReadingList.md) for details.
 
 > - Key Findings
 
@@ -36,7 +46,6 @@ Reading list and related notes for LLM, see [Reading List](Theory/ReadingList.md
 > - Reasoning
 >   - Abstract Reasoning
 >   - Chain of Thought
-> - Reference (survey, lists, and etc.)
 
 ### Courses
 
@@ -45,16 +54,9 @@ Reading list and related notes for LLM, see [Reading List](Theory/ReadingList.md
 - **Stanford University**: CS25: Transformers United V2 [Fall 2021](https://web.stanford.edu/class/cs25/prev_years/2021_fall/)/[Winter 2023](https://web.stanford.edu/class/cs25/)
 - **Stanford University**: CS 324 - Advances in Foundation Models [Winter 2022](https://stanford-cs324.github.io/winter2022/)/[Winter 2023](https://stanford-cs324.github.io/winter2023/)
 
-### Dataset Collections
-
-Datasets for Pretrain/Finetune/Instruction-tune LLMs, see [Datasets](Theory/Dataset.md) for details.
-
-> - Pretraining Corpora
-> - Instruction
-
 ### Open Source LLMs
 
-Collection of various open-source LLMs, see [Open Souce LLMs](Theory/OpenSourceLLM.md) for details.
+Collection of various open-source LLMs, see [Open-source LLMs](Learning_Resources/OpenSourceLLM.md) for details.
 
 > - Pretrained Model
 > - Multitask Supervised Finetuned Model
@@ -69,11 +71,33 @@ Collection of various open-source LLMs, see [Open Souce LLMs](Theory/OpenSourceL
 >   - accelerate
 >   - evaluation
 >   - deployment/demo
-> - Reference
+
+
+Related Collections
+- [open-llms](https://github.com/eugeneyan/open-llms) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/eugeneyan/open-llms?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/eugeneyan/open-llms.svg?style=social&label=Star), A list of open LLMs available for commercial use.
+- [LLM-Zoo](https://github.com/DAMO-NLP-SG/LLM-Zoo) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/DAMO-NLP-SG/LLM-Zoo?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/DAMO-NLP-SG/LLM-Zoo.svg?style=social&label=Star), collects information of various open- and closed-source LLMs
+- [FindTheChatGPTer](https://github.com/chenking2020/FindTheChatGPTer) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/chenking2020/FindTheChatGPTer?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/chenking2020/FindTheChatGPTer.svg?style=social&label=Star), 汇总那些ChatGPT的开源平替们，包括文本大模型、多模态大模型等
+
+
+- [中国大模型](https://github.com/wgwang/LLMs-In-China) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/wgwang/LLMs-In-China?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/wgwang/LLMs-In-China.svg?style=social&label=Star), 旨在记录中国大模型情况
+- [Awesome-Chinese-LLM](https://github.com/HqWu-HITCS/Awesome-Chinese-LLM) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/HqWu-HITCS/Awesome-Chinese-LLM?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/HqWu-HITCS/Awesome-Chinese-LLM.svg?style=social&label=Star), 整理开源的中文大语言模型，以规模较小、可私有化部署、训练成本较低的模型为主，包括底座模型，垂直领域微调及应用，数据集与教程等
+
+
+### Dataset Collections
+
+Datasets for Pretrain/Finetune/Instruction-tune LLMs, see [Datasets](Learning_Resources/data/Dataset.md) for details.
+
+> - Pretraining Corpora
+> - Instruction
+
+Related Collections
+
+- [LLMDataHub](https://github.com/Zjh-819/LLMDataHub) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/Zjh-819/LLMDataHub?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/Zjh-819/LLMDataHub.svg?style=social&label=Star), A quick guide (especially) for trending instruction finetuning datasets
+- [Awesome Instruction Datasets](https://github.com/jianzhnie/awesome-instruction-datasets) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/jianzhnie/awesome-instruction-datasets?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/jianzhnie/awesome-instruction-datasets.svg?style=social&label=Star), A collection of awesome-prompt-datasets, awesome-instruction-dataset, to train ChatLLM such as chatgpt 收录各种各样的指令数据集, 用于训练 ChatLLM 模型
 
 ### Evaluation Benchmarks
 
-Collection of automatic evaluation benchmarks, see [Evaluation Benchmarks](Theory/EvaluationBenchmarks.md) for details.
+Collection of automatic evaluation benchmarks, see [Evaluation Benchmarks](Learning_Resources/data/EvaluationBenchmarks.md) for details.
 
 > - English
 >   - Comprehensive
@@ -87,7 +111,15 @@ Collection of automatic evaluation benchmarks, see [Evaluation Benchmarks](Theor
 >   - Safety
 > - Multilingual
 
-## Practice
+Related Collections
+
+[Evaluations of LLM](https://github.com/MLGroupJLU/LLM-eval-survey) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/MLGroupJLU/LLM-eval-survey?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/MLGroupJLU/LLM-eval-survey.svg?style=social&label=Star), The official GitHub page for the survey paper "A Survey on Evaluation of Large Language Models"
+
+### Prompt Engineering
+
+Collection of tricks of writing a perfect prompt, see [Prompt](Learning_Resources/Prompt.md) for details.
+
+## 💻 Practice
 
 ### API
 
@@ -118,6 +150,9 @@ constrain LLM to generate specific answer (e.g., some open ended QA, limited voc
 > - Common method (constrain vocabulary + sample algorithm)
 > - Trie + Beam search (has issues currently)
 
-### Reference
+## 🤝 Related Collections
 
-- [llm-action](https://github.com/liguodongiot/llm-action), 本项目旨在分享大模型相关技术原理以及实战经验
+- [LLMSurvey](https://github.com/RUCAIBox/LLMSurvey) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/RUCAIBox/LLMSurvey?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/RUCAIBox/LLMSurvey.svg?style=social&label=Star), A collection of papers and resources related to Large Language Models
+- [LLMsPracticalGuide](https://github.com/Mooler0410/LLMsPracticalGuide) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/Mooler0410/LLMsPracticalGuide?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/Mooler0410/LLMsPracticalGuide.svg?style=social&label=Star), A curated list of practical guide resources of LLMs (LLMs Tree, Examples, Papers)
+- [Awesome-LLM](https://github.com/Hannibal046/Awesome-LLM) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/Hannibal046/Awesome-LLM?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/Hannibal046/Awesome-LLM.svg?style=social&label=Star), a curated list of Large Language Model
+- [llm-action](https://github.com/liguodongiot/llm-action) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/liguodongiot/llm-action?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/liguodongiot/llm-action.svg?style=social&label=Star), 本项目旨在分享大模型相关技术原理以及实战经验

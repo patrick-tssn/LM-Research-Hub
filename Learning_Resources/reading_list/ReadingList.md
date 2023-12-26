@@ -29,17 +29,22 @@ Table of Contents
 
 ## Architecture
 
-Papers about Architecturn/Framework of neural network/language model, see [Architecture](Architecture.md) for details.
+Papers about Architecturn/Framework of neural network/language model, primarily concentrate on the scalability and extensibility of LMs, see [Architecture](Architecture.md) for details.
 
 > - Papers
-> - Reference
+> - Projects
 
 ## Efficiency
 
 Papers about Efficiency/Compression of neural network/language model, see [Efficiency](Efficiency.md) for details.
 
 > - Papers
-> - Reference
+
+Related Collections
+
+- [Awesome-LLM-Inference](https://github.com/DefTruth/Awesome-LLM-Inference) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/DefTruth/Awesome-LLM-Inference?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/DefTruth/Awesome-LLM-Inference.svg?style=social&label=Star), A small Collection for Awesome LLM Inference [Papers|Blogs|Docs] with codes, contains TensorRT-LLM, streaming-llm, SmoothQuant, WINT8/4, Continuous Batching, FlashAttention, PagedAttention etc.
+- [Awesome-LLM-Compression](https://github.com/HuangOwen/Awesome-LLM-Compression) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/HuangOwen/Awesome-LLM-Compression?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/HuangOwen/Awesome-LLM-Compression.svg?style=social&label=Star), Awesome LLM compression research papers and tools to accelerate the LLM training and inference
+- [Awesome-Long-Context](https://github.com/showlab/Awesome-Long-Context) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/showlab/Awesome-Long-Context?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/showlab/Awesome-Long-Context.svg?style=social&label=Star), A curated list of resources about long-context in large-language models and video understanding.
 
 ## Instruction Tuning
 
@@ -80,11 +85,3 @@ Short survey about Abstract Reasoning, see [Abstract Reasoning](reasoning/AR.md)
 > - Learning Methods
 > - Models
 > - Representative works
-
-## References
-
-- [LLMSurvey](https://github.com/RUCAIBox/LLMSurvey), A collection of papers and resources related to Large Language Models
-  - [survey](https://arxiv.org/abs/2303.18223)
-- [LLMsPracticalGuide](https://github.com/Mooler0410/LLMsPracticalGuide), A curated list of practical guide resources of LLMs (LLMs Tree, Examples, Papers)
-  - [survey](https://arxiv.org/abs/2304.13712), [blog](https://jingfengyang.github.io/gpt)
-- [Awesome-LLM](https://github.com/Hannibal046/Awesome-LLM), a curated list of Large Language Model

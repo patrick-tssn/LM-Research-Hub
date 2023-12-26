@@ -15,7 +15,6 @@ Table of Contents
   - [accelerate](#accelerate)
   - [evaluation](#evaluation)
   - [deployment/demo](#deploymentdemo)
-- [Reference](#reference)
 
 notes:
 
@@ -230,12 +229,3 @@ Additional open source projects for LLM research
 - [LangChain](https://github.com/hwchase17/langchain): Building applications with LLMs through composability
   - tutorial: [LanChain中文入门教程](https://github.com/liaokongVFX/LangChain-Chinese-Getting-Started-Guide)
   - *2023.03*
-
-## Reference
-
-- [open-llms](https://github.com/eugeneyan/open-llms), A list of open LLMs available for commercial use.
-- [Awesome-Chinese-LLM](https://github.com/HqWu-HITCS/Awesome-Chinese-LLM), 整理开源的中文大语言模型，以规模较小、可私有化部署、训练成本较低的模型为主，包括底座模型，垂直领域微调及应用，数据集与教程等
-- [LLM-Zoo](https://github.com/DAMO-NLP-SG/LLM-Zoo), collects information of various open- and closed-source LLMs
-- [FindTheChatGPTer](https://github.com/chenking2020/FindTheChatGPTer), 汇总那些ChatGPT的开源平替们，包括文本大模型、多模态大模型等
-- [中国大模型](https://github.com/wgwang/LLMs-In-China), 旨在记录中国大模型情况
-- [Awesome-LLM](https://github.com/Hannibal046/Awesome-LLM#open-llm): a curated list of Large Language Model
