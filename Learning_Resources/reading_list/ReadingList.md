@@ -29,10 +29,9 @@ Table of Contents
 
 ## Architecture
 
-Papers about Architecturn/Framework of neural network/language model, primarily concentrate on the scalability and extensibility of LMs, see [Architecture](Architecture.md) for details.
+Papers about Architecturn/Framework of neural network/language model beyond Transformer, see [Architecture](Architecture.md) for details.
 
 > - Papers
-> - Projects
 
 ## Efficiency
 
@@ -44,7 +43,17 @@ Related Collections
 
 - [Awesome-LLM-Inference](https://github.com/DefTruth/Awesome-LLM-Inference) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/DefTruth/Awesome-LLM-Inference?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/DefTruth/Awesome-LLM-Inference.svg?style=social&label=Star), A small Collection for Awesome LLM Inference [Papers|Blogs|Docs] with codes, contains TensorRT-LLM, streaming-llm, SmoothQuant, WINT8/4, Continuous Batching, FlashAttention, PagedAttention etc.
 - [Awesome-LLM-Compression](https://github.com/HuangOwen/Awesome-LLM-Compression) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/HuangOwen/Awesome-LLM-Compression?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/HuangOwen/Awesome-LLM-Compression.svg?style=social&label=Star), Awesome LLM compression research papers and tools to accelerate the LLM training and inference
+
+## Extensibility
+
+Papers concentrate on the scalability and extensibility of LMs, i.e. longer context
+
+> - Projects
+
+Related Collections
+
 - [Awesome-Long-Context](https://github.com/showlab/Awesome-Long-Context) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/showlab/Awesome-Long-Context?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/showlab/Awesome-Long-Context.svg?style=social&label=Star), A curated list of resources about long-context in large-language models and video understanding.
+
 
 ## Instruction Tuning
 
@@ -52,7 +61,10 @@ Papers/blogs about Instruction Tuning, see [Instruction Tuning](InstructionTunin
 
 > - Papers
 > - Blogs
-> - Reference
+
+- [Instruction-Tuning-Papers](https://github.com/SinclairCoder/Instruction-Tuning-Papers) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/SinclairCoder/Instruction-Tuning-Papers?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/SinclairCoder/Instruction-Tuning-Papers.svg?style=social&label=Star), A trend starts from Natrural-Instruction (ACL 2022), FLAN (ICLR 2022) and T0 (ICLR 2022).
+
+Related Collections
 
 ## In Context Learning
 

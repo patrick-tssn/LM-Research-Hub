@@ -1,5 +1,9 @@
 # Efficiency
 
+## Table of Contents
+
+- [Papers](#papers)
+
 ## Papers
 
 | Title                                                                          | Pub       | Preprint                                    | Supplementary                                                         |
