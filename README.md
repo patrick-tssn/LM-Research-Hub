@@ -4,10 +4,10 @@
 
 </div>
 
-Welcome to the Language Modeling Research Hub, an open-source nexus for enthusiasts and scholars diving into the world of large language models (LLM). This repository is neatly organized into:
+Welcome to the Language Modeling Research Hub, a comprehensive compendium for enthusiasts and scholars delving into the fascinating realm of language models (LMs), with a particular focus on large language models (LLMs). This repository is meticulously organized to facilitate easy navigation and access to a wealth of information.
 
-- **Learning Resources**: A selection of articles, courses, open-source projects, and data designed to enhance your LLM knowledge.
-- **Practices**: A showcase of my experiments and code, offering interactive demos and frameworks that highlight LLM's potential.
+- **Learning Resources**: A selection of articles, courses, open-source projects, and data designed to enhance your LM knowledge.
+- **Practices**: A showcase of my experiments and code, offering interactive demos and frameworks that highlight LM's potential.
 
 Dive in to explore, contribute, and expand the horizons of language modeling with us!
 
@@ -72,16 +72,13 @@ Collection of various open-source LLMs, see [Open-source LLMs](Learning_Resource
 >   - evaluation
 >   - deployment/demo
 
-
 Related Collections
+
 - [open-llms](https://github.com/eugeneyan/open-llms) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/eugeneyan/open-llms?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/eugeneyan/open-llms.svg?style=social&label=Star), A list of open LLMs available for commercial use.
 - [LLM-Zoo](https://github.com/DAMO-NLP-SG/LLM-Zoo) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/DAMO-NLP-SG/LLM-Zoo?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/DAMO-NLP-SG/LLM-Zoo.svg?style=social&label=Star), collects information of various open- and closed-source LLMs
 - [FindTheChatGPTer](https://github.com/chenking2020/FindTheChatGPTer) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/chenking2020/FindTheChatGPTer?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/chenking2020/FindTheChatGPTer.svg?style=social&label=Star), 汇总那些ChatGPT的开源平替们，包括文本大模型、多模态大模型等
-
-
 - [中国大模型](https://github.com/wgwang/LLMs-In-China) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/wgwang/LLMs-In-China?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/wgwang/LLMs-In-China.svg?style=social&label=Star), 旨在记录中国大模型情况
 - [Awesome-Chinese-LLM](https://github.com/HqWu-HITCS/Awesome-Chinese-LLM) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/HqWu-HITCS/Awesome-Chinese-LLM?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/HqWu-HITCS/Awesome-Chinese-LLM.svg?style=social&label=Star), 整理开源的中文大语言模型，以规模较小、可私有化部署、训练成本较低的模型为主，包括底座模型，垂直领域微调及应用，数据集与教程等
-
 
 ### Dataset Collections
 
