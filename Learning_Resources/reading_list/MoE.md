@@ -4,7 +4,7 @@ Table of Content
 
 - [Papers](#papers)
 - [Blogs](#blogs)
-- [Reference](#reference)
+- [Projects](#projects)
 
 ## Papers
 
@@ -29,6 +29,3 @@ Table of Content
 
 - [2022-11] [Mixture-of-Experts with Expert Choice Routing](https://ai.googleblog.com/2022/11/mixture-of-experts-with-expert-choice.html), Google
 
-## Reference
-
-[last update: 2022.10] [Awesome-Mixture-of-Experts-Papers](https://github.com/codecaution/Awesome-Mixture-of-Experts-Papers), A curated reading list of research in Mixture-of-Experts(MoE).

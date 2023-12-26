@@ -1,10 +1,1 @@
 # Safety
-
-## Papers
-
-Survey 
-
-
-
-
-## Reference

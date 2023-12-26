@@ -1,6 +1,11 @@
 # Human Alignment
 
-## Reading List
+## Table of Contents
 
-## Reference
-[AlignLLMHumanSurvey](https://github.com/GaryYufei/AlignLLMHumanSurvey)
+- [Papers](#papers)
+
+## Papers
+
+Surveys
+
+- [2023.09] AI Alignment: A Comprehensive Survey, [paper](https://arxiv.org/abs/2310.19852), [blog](https://alignmentsurvey.com/)

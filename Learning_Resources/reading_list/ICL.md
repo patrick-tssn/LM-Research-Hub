@@ -3,7 +3,6 @@
 Table of Content
 
 - [Papers](#papers)
-- [Reference](#reference)
 
 ## Papers
 
@@ -23,9 +22,3 @@ Reading List
 | Fantastically Ordered Prompts and Where to Find Them: Overcoming Few-Shot Prompt Order Sensitivity  | ACL 2022          | [2104.08786](https://arxiv.org/abs/2104.08786) | prompt order matters, UCL                                 |
 | Language Models are Few-Shot Learners                                                                |                   | [2005.14165](https://arxiv.org/abs/2005.14165) | GPT3, propose In-Context Learning, OpenAI                 |
 
-## Reference
-
-- [ICL_PaperList](https://github.com/dqxiu/ICL_PaperList), Paper List for In-context Learning
-- [LMaaS-Papers](https://github.com/txsun1997/LMaaS-Papers), Awesome papers on Language-Model-as-a-Service (LMaaS)
-  > [black-box optimization](https://github.com/txsun1997/LMaaS-Papers#black-box-optimization)
-  >
