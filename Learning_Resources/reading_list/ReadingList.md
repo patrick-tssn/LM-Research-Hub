@@ -6,10 +6,9 @@ Table of Contents
 
 *arranged in alphabetical order*
 
-- [Architecture](#architecture)
 - [Code Learning](#code-learning)
 - [Efficiency](#efficiency)
-- [Extensibility](#extensibility)
+- [Human Alignment](#human-alignment)
 - [Instruction Tuning](#instruction-tuning)
 - [Interpretability](#interpretability)
 - [In Context Learning](#in-context-learning)
@@ -33,12 +32,6 @@ Table of Contents
 | Language Models are Few-Shot Learners                                 |              | [2005.14165](https://arxiv.org/abs/2005.14165)    <br /> ![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.semanticscholar.org%2Fgraph%2Fv1%2Fpaper%2F6b85b63579a916f705a8e10a49bd8d849d91b1fc%3Ffields%3DcitationCount&query=%24.citationCount&label=citation)         | GPT3, OpenAI                       |
 | Scaling Laws for Neural Language Models                               |              | [2001.08361](https://arxiv.org/abs/2001.08361) <br />   ![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.semanticscholar.org%2Fgraph%2Fv1%2Fpaper%2Fe6c561d02500b2596a230b341a8eb8b921ca5bf2%3Ffields%3DcitationCount&query=%24.citationCount&label=citation)          | scaling law, OpenAI                |
 
-## Architecture
-
-Papers about Architecturn/Framework of neural network/language model beyond Transformer, see [Architecture](Architecture.md) for details.
-
-> - Papers
-
 ## Code Learning
 
 Papers about code generation, see [Code](Code.md) for details.
@@ -54,20 +47,18 @@ Related Collections
 Papers about Efficiency/Compression of neural network/language model, see [Efficiency](Efficiency.md) for details.
 
 > - Papers
-
-Related Collections
-
-- [Awesome-LLM-Inference](https://github.com/DefTruth/Awesome-LLM-Inference) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/DefTruth/Awesome-LLM-Inference?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/DefTruth/Awesome-LLM-Inference.svg?style=social&label=Star), A small Collection for Awesome LLM Inference [Papers|Blogs|Docs] with codes, contains TensorRT-LLM, streaming-llm, SmoothQuant, WINT8/4, Continuous Batching, FlashAttention, PagedAttention etc.
-- [Awesome-LLM-Compression](https://github.com/HuangOwen/Awesome-LLM-Compression) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/HuangOwen/Awesome-LLM-Compression?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/HuangOwen/Awesome-LLM-Compression.svg?style=social&label=Star), Awesome LLM compression research papers and tools to accelerate the LLM training and inference
-
-## Extensibility
-
-Papers concentrate on the scalability and extensibility of LMs, i.e. longer context, see [Extensibility](Extensibility.md) for details
-
+>   - Adapt
+>   - Architecture
+>   - Pruning
+>   - Quantization
+> - Blogs
 > - Projects
 
 Related Collections
 
+- [Awesome-Efficient-LLM](https://github.com/horseee/Awesome-Efficient-LLM) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/horseee/Awesome-Efficient-LLM?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/horseee/Awesome-Efficient-LLM.svg?style=social&label=Star), A curated list for Efficient Large Language Models
+- [Awesome-LLM-Inference](https://github.com/DefTruth/Awesome-LLM-Inference) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/DefTruth/Awesome-LLM-Inference?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/DefTruth/Awesome-LLM-Inference.svg?style=social&label=Star), A small Collection for Awesome LLM Inference [Papers|Blogs|Docs] with codes, contains TensorRT-LLM, streaming-llm, SmoothQuant, WINT8/4, Continuous Batching, FlashAttention, PagedAttention etc.
+- [Awesome-LLM-Compression](https://github.com/HuangOwen/Awesome-LLM-Compression) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/HuangOwen/Awesome-LLM-Compression?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/HuangOwen/Awesome-LLM-Compression.svg?style=social&label=Star), Awesome LLM compression research papers and tools to accelerate the LLM training and inference
 - [Awesome-Long-Context](https://github.com/showlab/Awesome-Long-Context) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/showlab/Awesome-Long-Context?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/showlab/Awesome-Long-Context.svg?style=social&label=Star), A curated list of resources about long-context in large-language models and video understanding.
 
 ## Human Alignment

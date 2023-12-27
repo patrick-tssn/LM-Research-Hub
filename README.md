@@ -40,12 +40,15 @@ Reading list and related notes for LLM research, see [Reading List](Learning_Res
 
 > - Architecture
 > - Efficiency
+> - Human Alignment
 > - Instruction Tuning
+> - Interpretability
 > - In Context Learning
-> - Mixture of Experts
+> - Mixture of Experts (MoE)
 > - Reasoning
 >   - Abstract Reasoning
 >   - Chain of Thought
+>   - Symbolic Reasoning
 
 ### Courses
 
