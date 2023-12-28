@@ -19,6 +19,7 @@ Dive in to explore, contribute, and expand the horizons of language modeling wit
 
   - [Reading List](#reading-list)
   - [Courses](#courses)
+  - [Blogs](#blogs)
   - [Open-source LLMs](#open-source-llms)
   - [Dataset Collections](#dataset-collections)
   - [Evaluation Benchmarks](#evaluation-benchmarks)
@@ -56,6 +57,14 @@ Reading list and related notes for LLM research, see [Reading List](Learning_Res
 - **Princeton University**: COS 597G: Understanding Large Language Models [Fall 2022](https://www.cs.princeton.edu/courses/archive/fall22/cos597G/)
 - **Stanford University**: CS25: Transformers United V2 [Fall 2021](https://web.stanford.edu/class/cs25/prev_years/2021_fall/)/[Winter 2023](https://web.stanford.edu/class/cs25/)
 - **Stanford University**: CS 324 - Advances in Foundation Models [Winter 2022](https://stanford-cs324.github.io/winter2022/)/[Winter 2023](https://stanford-cs324.github.io/winter2023/)
+
+
+### Blogs
+
+- [Jay Alammar's Blog](https://jalammar.github.io/)
+- [Yao Fu's Blog](https://yaofu.notion.site/Yao-Fu-s-Blog-b536c3d6912149a395931f1e871370db)
+- [科学空间 (Jianlin Su's Blog)](https://spaces.ac.cn/)
+- [Lil'Log (Lilian Weng's Blog)](https://lilianweng.github.io/)
 
 ### Open Source LLMs
 
