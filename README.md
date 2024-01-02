@@ -65,6 +65,7 @@ Reading list and related notes for LLM research, see [Reading List](Learning_Res
 - [Yao Fu's Blog](https://yaofu.notion.site/Yao-Fu-s-Blog-b536c3d6912149a395931f1e871370db)
 - [科学空间 (Jianlin Su's Blog)](https://spaces.ac.cn/)
 - [Lil'Log (Lilian Weng's Blog)](https://lilianweng.github.io/)
+- [llm-course (Mlabonne's Blog)](https://github.com/mlabonne/llm-course)
 
 ### Open Source LLMs
 
