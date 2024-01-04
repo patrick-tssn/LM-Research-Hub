@@ -76,6 +76,8 @@ Related Collections
 
 - [AlignLLMHumanSurvey](https://github.com/GaryYufei/AlignLLMHumanSurvey) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/GaryYufei/AlignLLMHumanSurvey?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/GaryYufei/AlignLLMHumanSurvey.svg?style=social&label=Star), A collection of papers and resources about aligning large language models (LLMs) with human.
 
+- [awesome-hallucination-detection](https://github.com/EdinburghNLP/awesome-hallucination-detection) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/EdinburghNLP/awesome-hallucination-detection?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/EdinburghNLP/awesome-hallucination-detection.svg?style=social&label=Star), List of papers on hallucination detection in LLMs.
+
 ## Instruction Tuning
 
 Papers/blogs about Instruction Tuning, see [Instruction Tuning](InstructionTuning.md) for details.
