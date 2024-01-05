@@ -147,3 +147,5 @@ Papers about symbolic reasoning, see [Symbolic](reasoning/Symbolic.md) for detai
 Related Collections
 
 - [Awesome-Reasoning-Foundation-Models](https://github.com/reasoning-survey/Awesome-Reasoning-Foundation-Models) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/reasoning-survey/Awesome-Reasoning-Foundation-Models?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/reasoning-survey/Awesome-Reasoning-Foundation-Models.svg?style=social&label=Star), A curated list of awesome large AI models, or foundation models, for reasoning
+
+- [Awesome-Graph-LLM](https://github.com/XiaoxinHe/Awesome-Graph-LLM) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/XiaoxinHe/Awesome-Graph-LLM?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/XiaoxinHe/Awesome-Graph-LLM.svg?style=social&label=Star), A collection of AWESOME things about Graph-Related Large Language Models (LLMs).
