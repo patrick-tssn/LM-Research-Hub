@@ -12,6 +12,7 @@ Table of Contents
 - [Instruction Tuning](#instruction-tuning)
 - [Interpretability](#interpretability)
 - [In Context Learning](#in-context-learning)
+- [Knowledge Update](#knowledge-update)
 - [Mixture of Experts (MoE)](#mixture-of-experts-moe)
 - [Reasoning](#reasoning)
   - [Abstract Reasoning](#abstract-reasoning)
@@ -66,6 +67,12 @@ Related Collections (extensibility)
 
 - [Awesome-LLM-Long-Context-Modeling](https://github.com/Xnhyacinth/Awesome-LLM-Long-Context-Modeling), ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/Xnhyacinth/Awesome-LLM-Long-Context-Modeling?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/Xnhyacinth/Awesome-LLM-Long-Context-Modeling.svg?style=social&label=Star) This repo includes papers and blogs about Efficient Transformers, Length Extrapolation, Long Term Memory, Retrieval Augmented Generation(RAG), and Evaluation for Long Context Modeling.
 
+Related Collections (system)
+
+- [awesome-AI-system](https://github.com/lambda7xx/awesome-AI-system) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/lambda7xx/awesome-AI-system?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/lambda7xx/awesome-AI-system.svg?style=social&label=Star), paper and its code for AI System
+
+
+
 ## Human Alignment
 
 Papers about human alignment, see [Human Alignment](Humanalignment.md) for details
@@ -107,6 +114,14 @@ Related Collections
 
 - [ICL_PaperList](https://github.com/dqxiu/ICL_PaperList) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/dqxiu/ICL_PaperList?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/dqxiu/ICL_PaperList.svg?style=social&label=Star), Paper List for In-context Learning
 - [LMaaS-Papers](https://github.com/txsun1997/LMaaS-Papers) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/txsun1997/LMaaS-Papers?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/txsun1997/LMaaS-Papers.svg?style=social&label=Star), Awesome papers on Language-Model-as-a-Service (LMaaS)
+
+## Knowledge update
+
+Papers about knowledge update
+
+Related Collections
+
+- (KnowledgeEditingPapers)[https://github.com/zjunlp/KnowledgeEditingPapers] ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/zjunlp/KnowledgeEditingPapers?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/zjunlp/KnowledgeEditingPapers.svg?style=social&label=Star), Must-read Papers on Knowledge Editing for Large Language Models.
 
 ## Mixture of Experts (MoE)
 
