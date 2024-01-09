@@ -9,10 +9,9 @@
 - [Relative Position Encoding](#3-relative-position-encoding)
 - [Rotary Position Embedding](#4-rotary-position-embedding)
 
-## 1. Sinusoidal Position Encoding 
+## 1. Sinusoidal Position Encoding
 
 TAG: `Fixed`, `Absolute`
-
 
 **Brief Introduction:**
 $t$ is the position step, $d$ is the hidden size of the model, $i$ is the dimension of the hidden size
@@ -78,7 +77,7 @@ position_embedding[:, 1::2] = torch.FloatTensor(np.cos(position_enc[:, 1::2]))
 > - Vaswani, Ashish et al. “Attention is All you Need.” Neural Information Processing Systems (2017).
 > - Yan, Hang et al. “TENER: Adapting Transformer Encoder for Named Entity Recognition.” ArXiv abs/1911.04474 (2019): n. pag.
 > - [The Annotated Transformer
-](https://nlp.seas.harvard.edu/2018/04/03/attention.html), HarvardNLP's blog
+>   ](https://nlp.seas.harvard.edu/2018/04/03/attention.html), HarvardNLP's blog
 
 ## 2. Absolute Position Embedding
 
@@ -101,7 +100,6 @@ position_embedding = position_embedding(position_id)
 > - Devlin, Jacob et al. “BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding.” North American Chapter of the Association for Computational Linguistics (2019).
 > - Liu, Yinhan et al. “RoBERTa: A Robustly Optimized BERT Pretraining Approach.” ArXiv abs/1907.11692 (2019): n. pag.
 
-
 ## 3. Relative Position Encoding
 
 TAG: `Learnable`, `Relative`
@@ -109,11 +107,12 @@ TAG: `Learnable`, `Relative`
 **Comments**: The core of self-attention is dot-product
 
 **Brief Introduction**
+
 - Original Self-Attention
-$W^Q, W^K, W^V$ are parameter matrices, the attention score is calculated as $e_{ij}=\frac{(x_iW^Q)(x_jW^K)^T}{\sqrt{d}}$, where $d$ is the hidden size of single head, $x_i$ is the embedding $i^{th}$ token, here is a row vector. So the attention weight is calculated as $\alpha_{ij}=\frac{exp(e_{ij})}{\sum_{k=1}^nexp(e_{ij})}$. The output is $z_i=\sum_{j=1}^n\alpha_{ij}(x_jW^V)$. 
+  $W^Q, W^K, W^V$ are parameter matrices, the attention score is calculated as $e_{ij}=\frac{(x_iW^Q)(x_jW^K)^T}{\sqrt{d}}$, where $d$ is the hidden size of single head, $x_i$ is the embedding $i^{th}$ token, here is a row vector. So the attention weight is calculated as $\alpha_{ij}=\frac{exp(e_{ij})}{\sum_{k=1}^n exp(e_{ij})}$. The output is $z_i=\sum_{j=1}^n \alpha_{ij}(x_jW^V)$.
 - Fuse Relative Position Information into Self-Attention
-the relative position is actually pair-wise relationship between input elements, represented by vectors $a_{ij}^K, a_{ij}^V$. We first add it into attention score $e_{ij}=\frac{(x_iW^Q)(x_jW^K + a_{ij}^K)^T}{\sqrt{d}}$, then add it into output $z_i=\sum_{j=1}^n\alpha_{ij}(x_jW^V + a_{ij}^V)$. In practice, there will be clip operation.
-**Implementation**
+  the relative position is actually pair-wise relationship between input elements, represented by vectors $a_{ij}^K, a_{ij}^V$. We first add it into attention score $e_{ij}=\frac{(x_iW^Q)(x_jW^K + a_{ij}^K)^T}{\sqrt{d}}$, then add it into output $z_i=\sum_{j=1}^n \alpha_{ij}(x_jW^V + a_{ij}^V)$. In practice, there will be clip operation.
+  **Implementation**
 
 ```python
 # in the attention part (relative key)
@@ -133,11 +132,12 @@ attention_scores = attention_scores + relative_position_scores
 > - Shaw, Peter et al. “Self-Attention with Relative Position Representations.” North American Chapter of the Association for Computational Linguistics (2018).
 
 ## 4. Rotary Position Embedding
+
 TAG: `Fixed`, `Relative`
 
 **Brief Introduction**
-The primary objective of RoPE (Rotary Position Embedding) is to identify an operation that enables the inner product to incorporate relative positional information effectively. i.e. find a solution of the equation $<f(q, m), f(k, n)>=g(q,k,m-n)$ 
-Intuitively, we introduce complex number, let arbitrary $\theta \in (0, \frac{\pi}{2N}]$ 
+The primary objective of RoPE (Rotary Position Embedding) is to identify an operation that enables the inner product to incorporate relative positional information effectively. i.e. find a solution of the equation $< f(q, m), f(k, n)>=g(q,k,m-n)$
+Intuitively, we introduce complex number, let arbitrary $\theta \in (0, \frac{\pi}{2N}]$
 
 $$
 \begin{align}
@@ -150,7 +150,6 @@ RoPE(x, m) &= xe^{im\theta}\\
 $$
 
 For detailed derivation, please refer to the [original paper](https://arxiv.org/pdf/2104.09864.pdf).
-
 
 **Implementation**
 In a two-dimensional context, a complex number can be represented in the form of a matrix, which geometrically corresponds to a rotation vector
@@ -178,12 +177,22 @@ $$
 \vdots & \vdots & \vdots & \vdots & \ddots & \vdots & \vdots \\ 
 0 & 0 & 0 & 0 & \cdots & \cos m\theta_{d/2-1} & -\sin m\theta_{d/2-1} \\ 
 0 & 0 & 0 & 0 & \cdots & \sin m\theta_{d/2-1} & \cos m\theta_{d/2-1} \\ 
-\end{pmatrix} \begin{pmatrix}q_0 \\ q_1 \\ q_2 \\ q_3 \\ \vdots \\ q_{d-2} \\ q_{d-1}
+\end{pmatrix} 
+\begin{pmatrix}
+q_0 \\ 
+q_1 \\ 
+q_2 \\ 
+q_3 \\ 
+\vdots \\ 
+q_{d-2} \\ 
+q_{d-1}
 \end{pmatrix}
 $$
 
 visualize the implementation
+
 <!-- ![image](assets/rope.png) -->
+
 <center>
   <img src="assets/rope.png">
   <figcaption>implementation of RoPE</figcaption>
@@ -210,8 +219,8 @@ rotate_half_KEY = torch.stack([-KEY[..., 1::2], KEY[..., ::2]], dim=-1).reshape_
 KEY = KEY * cos_pos + rotate_half_KEY * sin_pos
 ```
 
-
 **References**
+
 > - Su, Jianlin et al. “RoFormer: Enhanced Transformer with Rotary Position Embedding.” ArXiv abs/2104.09864 (2021): n. pag.
 > - [让研究人员绞尽脑汁的Transformer位置编码](https://spaces.ac.cn/archives/8130), Jianlin Su's blog
 > - [Transformer升级之路：2、博采众长的旋转式位置编码](https://spaces.ac.cn/archives/8265), Jianlin Su's blog
