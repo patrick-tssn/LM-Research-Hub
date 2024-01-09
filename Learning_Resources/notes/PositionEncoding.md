@@ -138,6 +138,7 @@ TAG: `Fixed`, `Relative`
 **Brief Introduction**
 The primary objective of RoPE (Rotary Position Embedding) is to identify an operation that enables the inner product to incorporate relative positional information effectively. i.e. find a solution of the equation $<f(q, m), f(k, n)>=g(q,k,m-n)$ 
 Intuitively, we introduce complex number, let arbitrary $\theta \in (0, \frac{\pi}{2N}]$ 
+
 $$
 \begin{align}
 RoPE(x, m) &= xe^{im\theta}\\
@@ -147,6 +148,7 @@ RoPE(x, m) &= xe^{im\theta}\\
  &=RoPE(q_jk_j, m-n) 
 \end{align}
 $$
+
 For detailed derivation, please refer to the [original paper](https://arxiv.org/pdf/2104.09864.pdf).
 
 
