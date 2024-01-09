@@ -158,7 +158,7 @@ $$\boldsymbol{f}(\boldsymbol{q}, m) = \boldsymbol{q}e^{im\theta}=
 $$
 the rotary matrix could be a combination of several 2D rotary matrix
 $$
-\scriptsize{\underbrace{\begin{pmatrix} 
+\underbrace{\begin{pmatrix} 
 \cos m\theta_0 & -\sin m\theta_0 & 0 & 0 & \cdots & 0 & 0 \\ 
 \sin m\theta_0 & \cos m\theta_0 & 0 & 0 & \cdots & 0 & 0 \\ 
 0 & 0 & \cos m\theta_1 & -\sin m\theta_1 & \cdots & 0 & 0 \\ 
@@ -166,10 +166,14 @@ $$
 \vdots & \vdots & \vdots & \vdots & \ddots & \vdots & \vdots \\ 
 0 & 0 & 0 & 0 & \cdots & \cos m\theta_{d/2-1} & -\sin m\theta_{d/2-1} \\ 
 0 & 0 & 0 & 0 & \cdots & \sin m\theta_{d/2-1} & \cos m\theta_{d/2-1} \\ 
-\end{pmatrix}}_{\boldsymbol{\mathcal{R}}_m} \begin{pmatrix}q_0 \\ q_1 \\ q_2 \\ q_3 \\ \vdots \\ q_{d-2} \\ q_{d-1}\end{pmatrix}}
+\end{pmatrix}}_{\boldsymbol{\mathcal{R}}_m} \begin{pmatrix}q_0 \\ q_1 \\ q_2 \\ q_3 \\ \vdots \\ q_{d-2} \\ q_{d-1}\end{pmatrix}
 $$
 visualize the implementation
-![image](assets/rope.png)
+<!-- ![image](assets/rope.png) -->
+<center>
+  <img src="assets/rope.png">
+  <figcaption>implementation of RoPE</figcaption>
+</center>
 
 ```python
 # in the embedding part (apply rotary position to QUERY and KEY)
