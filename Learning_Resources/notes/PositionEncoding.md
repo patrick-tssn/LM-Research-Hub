@@ -34,16 +34,16 @@ $$
 
 Property1: $PE_{t+k}$ can be represented as linear function of $PE_{t}$, Therefore, $PE_{t}^TPE_{t+k}$ is dependent on $k$, which indicates this kind of position encoding methods have the potentials of applying relative position
 
-let $\omega_i = \frac{1}{10000^{2i/d}}$
+let $\theta_i = \frac{1}{10000^{2i/d}}$
 
 $$
 PE_{t} = 
 \begin{bmatrix}
-sin(\omega_0t)\\
-cos(\omega_0t)\\
+sin(\theta_0t)\\
+cos(\theta_0t)\\
 \cdots\\
-sin(\omega_{\frac{d}{2}-1}t) \\
-cos(\omega_{\frac{d}{2}-1}t)
+sin(\theta_{\frac{d}{2}-1}t) \\
+cos(\theta_{\frac{d}{2}-1}t)
 \end{bmatrix}
 $$
 
@@ -51,9 +51,9 @@ Property2:
 
 $$
 \begin{align}
-PE_{t}^TPE_{t+k} &= \sum_{i=0}^{\frac{d}{2}-1}[sin(c_it)sin(c_i(t+k)) + cos(c_it)cos(c_i(t+k))] \\
-& = \sum_{i=0}^{\frac{d}{2}-1}cos(c_i(t-(t+k))) \\
-& = \sum_{i=0}^{\frac{d}{2}-1}cos(c_ik)\\
+PE_{t}^TPE_{t+k} &= \sum_{i=0}^{\frac{d}{2}-1}[sin(\theta_it)sin(\theta_i(t+k)) + cos(\theta_it)cos(\theta_i(t+k))] \\
+& = \sum_{i=0}^{\frac{d}{2}-1}cos(\theta_i(t-(t+k))) \\
+& = \sum_{i=0}^{\frac{d}{2}-1}cos(\theta_ik)\\
 & = PE_{t'}^TPE_{t'+k} \\
 & = PE_{t}^TPE_{t-k}
 \end{align}
@@ -109,9 +109,9 @@ TAG: `Learnable`, `Relative`
 **Brief Introduction**
 
 - Original Self-Attention
-  $W^Q, W^K, W^V$ are parameter matrices, the attention score is calculated as $e_{ij}=\frac{(x_iW^Q)(x_jW^K)^T}{\sqrt{d}}$, where $d$ is the hidden size of single head, $x_i$ is the embedding $i^{th}$ token, here is a row vector. So the attention weight is calculated as $\alpha_{ij}=\frac{exp(e_{ij})}{\sum_{k=1}^{n} exp(e_{ij})}$. The output is $z_i=\sum_{j=1}^{n} \alpha_{ij}(x_jW^V)$.
+  $W^Q, W^K, W^V$ are parameter matrices, the attention score is calculated as $e_{ij}=\frac{(x_iW^Q)(x_jW^K)^T}{\sqrt{d}}$, where $d$ is the hidden size of single head, $x_i$ is the embedding $i^{th}$ token, here is a row vector. So the attention weight is calculated as $\alpha_{ij}=\frac{exp(e_{ij})}{{\sum}_{k=1}^{n} exp(e_{ij})}$. The output is $z_i={\sum}_{j=1}^{n} \alpha_{ij}(x_jW^V)$.
 - Fuse Relative Position Information into Self-Attention
-  the relative position is actually pair-wise relationship between input elements, represented by vectors $a_{ij}^K, a_{ij}^V$. We first add it into attention score $e_{ij}=\frac{(x_iW^Q)(x_jW^K + a_{ij}^K)^T}{\sqrt{d}}$, then add it into output $z_i=\sum_{j=1}^{n} \alpha_{ij}(x_jW^V + a_{ij}^V)$. In practice, there will be clip operation.
+  the relative position is actually pair-wise relationship between input elements, represented by vectors $a_{ij}^K, a_{ij}^V$. We first add it into attention score $e_{ij}=\frac{(x_iW^Q)(x_jW^K + a_{ij}^K)^T}{\sqrt{d}}$, then add it into output $z_i={\sum}_{j=1}^{n} \alpha_{ij}(x_jW^V + a_{ij}^V)$. In practice, there will be clip operation.
   **Implementation**
 
 ```python
