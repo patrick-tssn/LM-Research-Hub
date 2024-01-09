@@ -156,8 +156,8 @@ In a two-dimensional context, a complex number can be represented in the form of
 $$
 f(q, m) = qe^{im\theta}=
 \begin{pmatrix}
-cos (m\theta) & -sin(m\theta)\\ 
-sin (m\theta) & cos(m\theta)
+\cos m\theta & -\sin m\theta\\ 
+\sin m\theta & \cos m\theta
 \end{pmatrix}
 \begin{pmatrix}
 q_0 \\ 
@@ -168,7 +168,7 @@ $$
 the rotary matrix could be a combination of several 2D rotary matrix
 
 $$
-\underbrace{\begin{pmatrix} 
+\begin{pmatrix} 
 \cos m\theta_0 & -\sin m\theta_0 & 0 & 0 & \cdots & 0 & 0 \\ 
 \sin m\theta_0 & \cos m\theta_0 & 0 & 0 & \cdots & 0 & 0 \\ 
 0 & 0 & \cos m\theta_1 & -\sin m\theta_1 & \cdots & 0 & 0 \\ 
@@ -176,7 +176,8 @@ $$
 \vdots & \vdots & \vdots & \vdots & \ddots & \vdots & \vdots \\ 
 0 & 0 & 0 & 0 & \cdots & \cos m\theta_{d/2-1} & -\sin m\theta_{d/2-1} \\ 
 0 & 0 & 0 & 0 & \cdots & \sin m\theta_{d/2-1} & \cos m\theta_{d/2-1} \\ 
-\end{pmatrix}}_{\mathcal{R}_m} \begin{pmatrix}q_0 \\ q_1 \\ q_2 \\ q_3 \\ \vdots \\ q_{d-2} \\ q_{d-1}\end{pmatrix}
+\end{pmatrix} \begin{pmatrix}q_0 \\ q_1 \\ q_2 \\ q_3 \\ \vdots \\ q_{d-2} \\ q_{d-1}
+\end{pmatrix}
 $$
 
 visualize the implementation
