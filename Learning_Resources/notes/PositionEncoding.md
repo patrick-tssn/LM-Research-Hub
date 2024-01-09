@@ -155,8 +155,8 @@ In a two-dimensional context, a complex number can be represented in the form of
 $$
 f(q, m) = qe^{im\theta}=
 \begin{pmatrix}
-\cos m\theta & -\sin m\theta\\ 
-\sin m\theta & \cos m\theta
+cos (m\theta) & -sin(m\theta)\\ 
+sin (m\theta) & cos(m\theta)
 \end{pmatrix}
 \begin{pmatrix}
 q_0 \\ 
