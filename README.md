@@ -18,6 +18,7 @@ Dive in to explore, contribute, and expand the horizons of language modeling wit
 - [📖 Learning Resources](#-learning-resources)
 
   - [Reading List](#reading-list)
+  - [Notes](#notes)
   - [Courses](#courses)
   - [Blogs](#blogs)
   - [Open-source LLMs](#open-source-llms)
@@ -50,6 +51,12 @@ Reading list and related notes for LLM research, see [Reading List](Learning_Res
 >   - Abstract Reasoning
 >   - Chain of Thought
 >   - Symbolic Reasoning
+
+### Notes
+
+Useful notes for NLP research, see `Learning_Resources/notes/` for details.
+
+> - Position Encoding
 
 ### Courses
 
