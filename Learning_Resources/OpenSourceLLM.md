@@ -202,16 +202,6 @@ Additional open source projects for LLM research
 - [FinGPT](https://github.com/AI4Finance-Foundation/FinGPT): Open-source for open finance
   - domain: finance
 
-### accelerate
-
-- [QLoRA](https://github.com/artidoro/qlora): an efficient finetuning approach that reduces memory usage enough to finetune a 65B parameter model on a single 48GB GPU while preserving full 16-bit finetuning task performance
-  - *by UW NLP, 2023.05*, [paper](https://arxiv.org/abs/2305.14314)
-- [LLaMA.cpp](https://github.com/ggerganov/llama.cpp): Inference of LLaMA model in pure C/C++
-  - *2023.04*
-- [GPTQ-for-LLaMA](https://github.com/qwopqwop200/GPTQ-for-LLaMa): 4 bits quantization of LLaMA using GPTQ
-  - *2023.04*
-- [Alpaca-LoRA](https://github.com/tloen/alpaca-lora): This repository contains code for reproducing the Stanford Alpaca results using low-rank adaptation (LoRA)
-  - *2023.03*
 
 ### evaluation
 
@@ -220,6 +210,7 @@ Additional open source projects for LLM research
 
 ### deployment/demo
 
+- [FMEngine](https://github.com/eth-easl/fmengine), FMEngine is a utility library for training very large foundation models.
 - [vLLM](https://github.com/vllm-project/vllm): A high-throughput and memory-efficient inference and serving engine for LLMs
 - [OpenAssistant](https://github.com/LAION-AI/Open-Assistant): Open Assistant is a project meant to give everyone access to a great chat based large language model.
   - *by LAION-AI, 2023.04*, [doc](https://projects.laion.ai/Open-Assistant/docs/intro), [demo](https://huggingface.co/chat)

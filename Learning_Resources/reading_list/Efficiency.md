@@ -100,6 +100,11 @@ extensibility
 
 efficiency
 
+- [SwiftInfer](https://github.com/hpcaitech/SwiftInfer), Efficient AI Inference & Serving
 - [MemGPT](https://github.com/cpacker/MemGPT), Memory-GPT (or MemGPT in short) is a system that intelligently manages different memory tiers in LLMs in order to effectively provide extended context within the LLM's limited context window
 - [peft](https://github.com/huggingface/peft), Parameter-Efficient Fine-Tuning (PEFT) methods enable efficient adaptation of pre-trained language models (PLMs) to various downstream applications without fine-tuning all the model's parameters
+- [QLoRA](https://github.com/artidoro/qlora): an efficient finetuning approach that reduces memory usage enough to finetune a 65B parameter model on a single 48GB GPU while preserving full 16-bit finetuning task performance
+- [LLaMA.cpp](https://github.com/ggerganov/llama.cpp): Inference of LLaMA model in pure C/C++
+- [GPTQ-for-LLaMA](https://github.com/qwopqwop200/GPTQ-for-LLaMa): 4 bits quantization of LLaMA using GPTQ
+- [Alpaca-LoRA](https://github.com/tloen/alpaca-lora): This repository contains code for reproducing the Stanford Alpaca results using low-rank adaptation (LoRA)
 
