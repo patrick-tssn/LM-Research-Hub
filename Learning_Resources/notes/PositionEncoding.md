@@ -152,6 +152,7 @@ For detailed derivation, please refer to the [original paper](https://arxiv.org/
 
 **Implementation**
 In a two-dimensional context, a complex number can be represented in the form of a matrix, which geometrically corresponds to a rotation vector
+
 $$
 f(q, m) = qe^{im\theta}=
 \begin{pmatrix}
@@ -165,6 +166,7 @@ q_1
 $$
 
 the rotary matrix could be a combination of several 2D rotary matrix
+
 $$
 \underbrace{\begin{pmatrix} 
 \cos m\theta_0 & -\sin m\theta_0 & 0 & 0 & \cdots & 0 & 0 \\ 
@@ -176,6 +178,7 @@ $$
 0 & 0 & 0 & 0 & \cdots & \sin m\theta_{d/2-1} & \cos m\theta_{d/2-1} \\ 
 \end{pmatrix}}_{\mathcal{R}_m} \begin{pmatrix}q_0 \\ q_1 \\ q_2 \\ q_3 \\ \vdots \\ q_{d-2} \\ q_{d-1}\end{pmatrix}
 $$
+
 visualize the implementation
 <!-- ![image](assets/rope.png) -->
 <center>
