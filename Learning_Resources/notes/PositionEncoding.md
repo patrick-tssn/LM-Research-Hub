@@ -4,14 +4,34 @@
 
 ## Table of Contents
 
-- [Sinusoidal Position Encoding](#1-sinusoidal-position-encoding)
-- [Absolute Position Embedding](#2-absolute-position-embedding)
-- [Relative Position Encoding](#3-relative-position-encoding)
-- [Rotary Position Embedding](#4-rotary-position-embedding)
+- [Absolute Position Embedding `Learnable` `Absolute`](#1-absolute-position-embedding)
+- [Sinusoidal Position Encoding `Fixed` `Absolute`](#2-sinusoidal-position-encoding)
+- [Relative Position Encoding `Learnable` `Relative`](#3-relative-position-encoding)
+- [Rotary Position Embedding `Fixed` `Relative`](#4-rotary-position-embedding)
 
-## 1. Sinusoidal Position Encoding
 
-TAG: `Fixed`, `Absolute`
+## 1. Absolute Position Embedding
+
+
+**Implementation**
+
+```python
+# in the embedding part
+import torch
+from torch import nn
+position_ids = torch.arange(INPUT_LENGTH).unsqueeze(0)
+position_embedding = nn.Embedding(MAX_POSITION, HIDDEN_SIZE)
+position_embedding = position_embedding(position_id)
+# Then add into word embedding
+```
+
+**References**
+
+> - Devlin, Jacob et al. “BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding.” North American Chapter of the Association for Computational Linguistics (2019).
+> - Liu, Yinhan et al. “RoBERTa: A Robustly Optimized BERT Pretraining Approach.” ArXiv abs/1907.11692 (2019): n. pag.
+
+## 2. Sinusoidal Position Encoding
+
 
 **Brief Introduction:**
 $t$ is the position step, $d$ is the hidden size of the model, $i$ is the dimension of the hidden size
@@ -79,43 +99,38 @@ position_embedding[:, 1::2] = torch.FloatTensor(np.cos(position_enc[:, 1::2]))
 > - [The Annotated Transformer
 >   ](https://nlp.seas.harvard.edu/2018/04/03/attention.html), HarvardNLP's blog
 
-## 2. Absolute Position Embedding
-
-TAG: `Learnable`, `Absolute`
-
-**Implementation**
-
-```python
-# in the embedding part
-import torch
-from torch import nn
-position_ids = torch.arange(INPUT_LENGTH).unsqueeze(0)
-position_embedding = nn.Embedding(MAX_POSITION, HIDDEN_SIZE)
-position_embedding = position_embedding(position_id)
-# Then add into word embedding
-```
-
-**References**
-
-> - Devlin, Jacob et al. “BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding.” North American Chapter of the Association for Computational Linguistics (2019).
-> - Liu, Yinhan et al. “RoBERTa: A Robustly Optimized BERT Pretraining Approach.” ArXiv abs/1907.11692 (2019): n. pag.
 
 ## 3. Relative Position Encoding
 
-TAG: `Learnable`, `Relative`
 
 **Comments**: The core of self-attention is dot-product
 
 **Brief Introduction**
 
 - Original Self-Attention
-  $W^Q, W^K, W^V$ are parameter matrices, the attention score is calculated as $e_{ij}=\frac{(x_iW^Q)(x_jW^K)^T}{\sqrt{d}}$, where $d$ is the hidden size of single head, $x_i$ is the embedding $i^{th}$ token, here is a row vector. So the attention weight is calculated as $\alpha_{ij}=\frac{exp(e_{ij})}{ \sum\limits_{k=1}^{n} exp(e_{ij})}$. The output is $z_i= \sum\limits_{j=1}^{n} \alpha_{ij}(x_jW^V)$.
-- Fuse Relative Position Information into Self-Attention
-  the relative position is actually pair-wise relationship between input elements, represented by vectors $a_{ij}^K, a_{ij}^V$. We first add it into attention score $e_{ij}=\frac{(x_iW^Q)(x_jW^K + a_{ij}^K)^T}{\sqrt{d}}$, then add it into output $z_i= \sum\limits_{j=1}^{n} \alpha_{ij}(x_jW^V + a_{ij}^V)$. In practice, there will be clip operation.
-  **Implementation**
 
+$W^Q, W^K, W^V$ are parameter matrices, the attention score is calculated as $e_{ij}=\frac{(x_iW^Q)(x_jW^K)^T}{\sqrt{d}}$, where $d$ is the hidden size of single head, $x_i$ is the embedding $i^{th}$ token, here is a row vector. So the attention weight is calculated as $\alpha_{ij}=\frac{exp(e_{ij})}{ \sum\limits_{k=1}^{n} exp(e_{ij})}$. The output is $z_i= \sum\limits_{j=1}^{n} \alpha_{ij}(x_jW^V)$.
+
+- Fuse Relative Position Information into Self-Attention
+
+the relative position is actually pair-wise relationship between input elements, represented by vectors $a_{ij}^K, a_{ij}^V$. We first add it into attention score $e_{ij}=\frac{(x_iW^Q)(x_jW^K + a_{ij}^K)^T}{\sqrt{d}}$, then add it into output $z_i= \sum\limits_{j=1}^{n} \alpha_{ij}(x_jW^V + a_{ij}^V)$. In practice, there will be clip operation.
+
+- Transformations
+
+$$
+\begin{align}
+q_ik_j^T &= ((x_i+p_i)W^Q)((x_j+p_j)W^K)^T \\
+&= x_iW^Q{W^K}^Tx_j^T + x_iW^Q{W^K}^Tp_j^T+p_iW^Q{W^K}^Tx_j^T+p_iW^Q{W^K}^Tp_j^T\\
+&\approx x_iW^Q{W^K}^Tx_j^T + x_iW^Q{W^K}^TR_{i-j}^T+uW^Q{W^K}^Tx_j^T+vW^Q{W^K}^TR_{i-j}^T\\
+&\approx x_iW^Q{W^K}^Tx_j^T + x_iW^Q{W^{K,R}}^TR_{i-j}^T+u{W^K}^Tx_j^T+v{W^{K,R}}^TR_{i-j}^T \quad (XLNet)\\
+&\approx x_iW^Q{W^K}^Tx_j^T + x_iW^Q{W^K}^TR_{i,j}^T+R_{j,i}{W^K}^Tx_j^T \quad (DeBERTa)\\
+&\approx x_iW^Q{W^K}^Tx_j^T + \beta_{i,j} \quad (T5)\\
+\end{align}
+$$
+
+**Implementation 1**
 ```python
-# in the attention part (relative key)
+# in the attention part (clipping)
 import torch
 from torch import nn
 position_ids_l = torch.arange(QUERY_LENGTH).view(-1, 1)
@@ -127,13 +142,32 @@ relative_position_scores = torch.matmul(QUERY, position_embedding) # bhld @ lrd 
 attention_scores = attention_scores + relative_position_scores
 ```
 
+**Implementation 2**
+```python
+# in attention part (sinusoidal)
+import torch
+from torch import nn
+position_ids = torch.arange(INPUT_LENGTH-1, -1, -1.0)
+position_embedding = 1 / (10000 ** (torch.arange(0.0, HIDDEN_SIZE, 2.0) / HIDDEN_SIZE))
+position_embedding = torch.outer(position_embedding, position_ids).unsqueeze(1) # l1d
+r = nn.Linear(HIDDEN_SIZE, HEAD * HEAD_SIZE, bias=False)
+position_embedding = r(position_embedding)
+position_embedding = position_embedding.view(INPUT_LENGTH, HEAD, HEAD_SIZE)
+relative_position_score = torch.einsum("ibnd,jbnd->bnij", QUERY, position_embedding)
+attention_scores = attention_scores + relative_position_score
+```
+
 **References**
 
 > - Shaw, Peter et al. “Self-Attention with Relative Position Representations.” North American Chapter of the Association for Computational Linguistics (2018).
+> - Dai, Zihang et al. “Transformer-XL: Attentive Language Models beyond a Fixed-Length Context.” ArXiv abs/1901.02860 (2019): n. pag.
+> - Yang, Zhilin et al. “XLNet: Generalized Autoregressive Pretraining for Language Understanding.” Neural Information Processing Systems (2019).
+> - Raffel, Colin et al. “Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer.” J. Mach. Learn. Res. 21 (2019): 140:1-140:67.
+> - He, Pengcheng et al. “DeBERTa: Decoding-enhanced BERT with Disentangled Attention.” ArXiv abs/2006.03654 (2020): n. pag.
+> - [让研究人员绞尽脑汁的Transformer位置编码](https://spaces.ac.cn/archives/8130), Jianlin Su's blog
 
 ## 4. Rotary Position Embedding
 
-TAG: `Fixed`, `Relative`
 
 **Brief Introduction**
 The primary objective of RoPE (Rotary Position Embedding) is to identify an operation that enables the inner product to incorporate relative positional information effectively. i.e. find a solution of the equation $< f(q, m), f(k, n)>=g(q,k,m-n)$
@@ -222,7 +256,6 @@ KEY = KEY * cos_pos + rotate_half_KEY * sin_pos
 **References**
 
 > - Su, Jianlin et al. “RoFormer: Enhanced Transformer with Rotary Position Embedding.” ArXiv abs/2104.09864 (2021): n. pag.
-> - [让研究人员绞尽脑汁的Transformer位置编码](https://spaces.ac.cn/archives/8130), Jianlin Su's blog
 > - [Transformer升级之路：2、博采众长的旋转式位置编码](https://spaces.ac.cn/archives/8265), Jianlin Su's blog
 > - [Rotary Embeddings: A Relative Revolution](https://blog.eleuther.ai/rotary-embeddings/), Eleuther's blog
 > - [Positional Encodings I. Main Approaches](https://medium.com/mantisnlp/positional-encodings-i-main-approaches-bd1199d6770d), Medium
