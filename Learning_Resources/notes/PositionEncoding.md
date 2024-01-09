@@ -152,12 +152,16 @@ For detailed derivation, please refer to the [original paper](https://arxiv.org/
 
 **Implementation**
 In a two-dimensional context, a complex number can be represented in the form of a matrix, which geometrically corresponds to a rotation vector
-$$f(q, m) = qe^{im\theta}=
+$$
+f(q, m) = qe^{im\theta}=
 \begin{pmatrix}
 \cos m\theta & -\sin m\theta\\ 
 \sin m\theta & \cos m\theta
 \end{pmatrix}
-
+\begin{pmatrix}
+q_0 \\ 
+q_1
+\end{pmatrix}
 $$
 
 the rotary matrix could be a combination of several 2D rotary matrix
