@@ -11,4 +11,5 @@ Useful Resources:
 
 Research Purpose
 
+- [prompthub](https://github.com/deepset-ai/prompthub), PromptHub serves a collection of ready-made prompts for the most common NLP tasks
 - [open-source chat LLMs templates](https://github.com/chujiezheng/chat_templates), This is a repository that includes proper chat templates (or input formats) for large language models (LLMs), to support `transformers`'s `chat_template` [feature](https://huggingface.co/docs/transformers/chat_templating).
