@@ -96,6 +96,8 @@ Papers/blogs about Instruction Tuning, see [Instruction Tuning](InstructionTunin
 
 Related Collections
 
+- [awesome-instruction-learning](https://github.com/RenzeLou/awesome-instruction-learning) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/RenzeLou/awesome-instruction-learning?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/RenzeLou/awesome-instruction-learning.svg?style=social&label=Star), Papers and Datasets on Instruction Tuning and Following.
+
 - [Instruction-Tuning-Papers](https://github.com/SinclairCoder/Instruction-Tuning-Papers) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/SinclairCoder/Instruction-Tuning-Papers?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/SinclairCoder/Instruction-Tuning-Papers.svg?style=social&label=Star), A trend starts from Natrural-Instruction (ACL 2022), FLAN (ICLR 2022) and T0 (ICLR 2022).
 
 ## Interpretability
