@@ -130,7 +130,9 @@ Collection of automatic evaluation benchmarks, see [Evaluation Benchmarks](Learn
 
 Related Collections
 
-[Evaluations of LLM](https://github.com/MLGroupJLU/LLM-eval-survey) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/MLGroupJLU/LLM-eval-survey?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/MLGroupJLU/LLM-eval-survey.svg?style=social&label=Star), The official GitHub page for the survey paper "A Survey on Evaluation of Large Language Models"
+- [Evaluations of LLM](https://github.com/MLGroupJLU/LLM-eval-survey) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/MLGroupJLU/LLM-eval-survey?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/MLGroupJLU/LLM-eval-survey.svg?style=social&label=Star), The official GitHub page for the survey paper "A Survey on Evaluation of Large Language Models"
+
+- [EvaluationPapers4ChatGPT](https://github.com/THU-KEG/EvaluationPapers4ChatGPT) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/THU-KEG/EvaluationPapers4ChatGPT?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/THU-KEG/EvaluationPapers4ChatGPT.svg?style=social&label=Star),
 
 ### Prompt Engineering
 

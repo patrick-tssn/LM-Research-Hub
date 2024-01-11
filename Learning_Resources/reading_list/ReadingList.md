@@ -45,7 +45,7 @@ Related Collections
 
 ## Efficiency
 
-Papers about Efficiency/Compression/Extrapolation of neural network/language model, see [Efficiency](Efficiency.md) for details.
+Papers about Efficiency/Compression/Extrapolation of neural network/language model, possible some papers from MLSys, see [Efficiency](Efficiency.md) for details.
 
 > - Papers
 >   - Adapt
