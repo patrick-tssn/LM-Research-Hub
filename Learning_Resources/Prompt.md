@@ -2,6 +2,7 @@
 
 Useful Resources:
 
+- [Leaked-GPTs](https://github.com/friuns2/Leaked-GPTs), Leaked GPTs Prompts Bypass the 25 message limit or to try out GPTs without a Plus subscription
 - [openai/prompt-engineering](https://platform.openai.com/docs/guides/prompt-engineering), This guide shares strategies and tactics for getting better results from large language models (sometimes referred to as GPT models) like GPT-4. The methods described here can sometimes be deployed in combination for greater effect. We encourage experimentation to find the methods that work best for you.
 - [ChatGPT Prompts for Academic Writing](https://github.com/ahmetbersoz/chatgpt-prompts-for-academic-writing), This list of writing prompts covers a range of topics and tasks, including brainstorming research ideas, improving language and style, conducting literature reviews, and developing research plans.
 - [GPTs](https://github.com/linexjlin/GPTs), This repo collects leaked prompts of GPTs.

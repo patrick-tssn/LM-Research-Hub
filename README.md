@@ -43,8 +43,10 @@ Reading list and related notes for LLM research, see [Reading List](Learning_Res
 > - Architecture
 > - Efficiency
 > - Human Alignment
+> - Information Extraction
 > - Instruction Tuning
 > - Interpretability
+> - Knowledge Update
 > - In Context Learning
 > - Mixture of Experts (MoE)
 > - Reasoning
@@ -111,6 +113,7 @@ Related Collections
 
 - [LLMDataHub](https://github.com/Zjh-819/LLMDataHub) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/Zjh-819/LLMDataHub?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/Zjh-819/LLMDataHub.svg?style=social&label=Star), A quick guide (especially) for trending instruction finetuning datasets
 - [Awesome Instruction Datasets](https://github.com/jianzhnie/awesome-instruction-datasets) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/jianzhnie/awesome-instruction-datasets?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/jianzhnie/awesome-instruction-datasets.svg?style=social&label=Star), A collection of awesome-prompt-datasets, awesome-instruction-dataset, to train ChatLLM such as chatgpt 收录各种各样的指令数据集, 用于训练 ChatLLM 模型
+- [sft_datasets](https://github.com/chaoswork/sft_datasets) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/chaoswork/sft_datasets?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/chaoswork/sft_datasets.svg?style=social&label=Star), 开源SFT数据集整理,随时补充
 
 ### Evaluation Benchmarks
 

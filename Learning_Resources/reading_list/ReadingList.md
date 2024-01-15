@@ -9,6 +9,7 @@ Table of Contents
 - [Code Learning](#code-learning)
 - [Efficiency](#efficiency)
 - [Human Alignment](#human-alignment)
+- [Information Extraction](#information-extraction)
 - [Instruction Tuning](#instruction-tuning)
 - [Interpretability](#interpretability)
 - [In Context Learning](#in-context-learning)
@@ -87,6 +88,12 @@ Related Collections
 
 - [awesome-hallucination-detection](https://github.com/EdinburghNLP/awesome-hallucination-detection) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/EdinburghNLP/awesome-hallucination-detection?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/EdinburghNLP/awesome-hallucination-detection.svg?style=social&label=Star), List of papers on hallucination detection in LLMs.
 
+## Information Extraction
+
+Related Collections
+
+- [Awesome-LLM4IE-Papers](https://github.com/quqxui/Awesome-LLM4IE-Papers), ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/quqxui/Awesome-LLM4IE-Papers?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/quqxui/Awesome-LLM4IE-Papers.svg?style=social&label=Star)
+
 ## Instruction Tuning
 
 Papers/blogs about Instruction Tuning, see [Instruction Tuning](InstructionTuning.md) for details.
@@ -125,7 +132,7 @@ Papers about knowledge update
 
 Related Collections
 
-- (KnowledgeEditingPapers)[https://github.com/zjunlp/KnowledgeEditingPapers] ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/zjunlp/KnowledgeEditingPapers?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/zjunlp/KnowledgeEditingPapers.svg?style=social&label=Star), Must-read Papers on Knowledge Editing for Large Language Models.
+- [KnowledgeEditingPapers](https://github.com/zjunlp/KnowledgeEditingPapers) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/zjunlp/KnowledgeEditingPapers?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/zjunlp/KnowledgeEditingPapers.svg?style=social&label=Star), Must-read Papers on Knowledge Editing for Large Language Models.
 
 ## Mixture of Experts (MoE)
 
