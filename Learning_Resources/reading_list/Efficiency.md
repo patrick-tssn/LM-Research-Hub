@@ -5,6 +5,7 @@
 - [Papers](#papers)
   - [Adapt](#adapt)
   - [Architecture](#architecture)
+  - [Decoding & Sampling](#decoding--sampling)
   - [Extensibility](#extensibility)
   - [Hardware](#hardware)
   - [Pruning](#pruning)
@@ -53,20 +54,21 @@
 | Generating Long Sequences with Sparse Transformers                                            |                      | [1904.10509](https://arxiv.org/abs/1904.10509) | Sparse Attention, OpenAI                                                             |
 | Efficient Attention: Attention with Linear Compexities                                        | WACV 2021            | [1812.01243](https://arxiv.org/abs/1812.01243) | Linear Attention, Sensetime                                                          |
 
-### Decoding
-
-| Title                                                                             | Pub        | Preprint                                    | Supplementary                                               |
-| --------------------------------------------------------------------------------- | ---------- | ------------------------------------------- | ----------------------------------------------------------- |
-| LLMLingua: Compressing Prompts for Accelerated Inference of Large Language Models | EMNLP 2023 | [2310.05736](https://arxiv.org/abs/2310.05736) | [LLMLingua](https://github.com/microsoft/LLMLingua), Microsoft |
-|   Learning to Compress Prompts with Gist Tokens                                                                                |            |          [2304.08467](https://arxiv.org/abs/2304.08467)                                   |      [gisting](https://github.com/jayelm/gisting), Stanford                                                       |
-
-### Extensibility
+### Decoding & Sampling
 
 | Title                                                                             | Pub        | Preprint                                    | Supplementary                                               |
 | --------------------------------------------------------------------------------- | ---------- | ------------------------------------------- | ----------------------------------------------------------- |
 |   Breaking the Sequential Dependency of LLM Inference Using Lookahead Decoding                                                                               |            |          [2311.blog](https://lmsys.org/blog/2023-11-21-lookahead-decoding/)                                   |      [LookaheadDecoding](https://github.com/hao-ai-lab/LookaheadDecoding), UCSD                                                       |
 | Accelerating Transformer Inference for Translation via Parallel Decoding | ACL 2023 | [2305.10427](https://arxiv.org/abs/2305.10427) | [parallel-decoding](https://github.com/teelinsan/parallel-decoding), Uniromal |
+| Accelerating Large Language Model Decoding with Speculative Sampling |           | [2302.01318](https://arxiv.org/pdf/2302.01318) | Google        |
+| Fast Inference from Transformers via Speculative Decoding            | ICML 2023 | [2211.17888](https://arxiv.org/abs/2305.17192) | Google        |
 
+### Extensibility
+
+| Title                                                                             | Pub        | Preprint                                    | Supplementary                                               |
+| --------------------------------------------------------------------------------- | ---------- | ------------------------------------------- | ----------------------------------------------------------- |
+| LLMLingua: Compressing Prompts for Accelerated Inference of Large Language Models | EMNLP 2023 | [2310.05736](https://arxiv.org/abs/2310.05736) | [LLMLingua](https://github.com/microsoft/LLMLingua), Microsoft |
+|   Learning to Compress Prompts with Gist Tokens                                                                                |            |          [2304.08467](https://arxiv.org/abs/2304.08467)                                   |      [gisting](https://github.com/jayelm/gisting), Stanford         
 
 ### Hardware
 
@@ -86,12 +88,6 @@
 | ------------------------------------------------------------------------ | --- | ------------------------------------------- | ------------- |
 | LLM-QAT: Data-Free Quantization Aware Training for Large Language Models |     | [2305.17888](https://arxiv.org/abs/2305.17888) | Meta          |
 
-### Sampling
-
-| Title                                                                | Pub       | Preprint                                    | Supplementary |
-| -------------------------------------------------------------------- | --------- | ------------------------------------------- | ------------- |
-| Accelerating Large Language Model Decoding with Speculative Sampling |           | [2302.01318](https://arxiv.org/pdf/2302.01318) | Google        |
-| Fast Inference from Transformers via Speculative Decoding            | ICML 2023 | [2211.17888](https://arxiv.org/abs/2305.17192) | Google        |
 
 ## Blogs
 

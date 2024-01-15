@@ -51,10 +51,11 @@ Papers about Efficiency/Compression/Extrapolation of neural network/language mod
 > - Papers
 >   - Adapt
 >   - Architecture
+>   - Decoding & Sampling
+>   - Extensibility
 >   - Hardware
 >   - Pruning
 >   - Quantization
->   - Sampling
 > - Blogs
 > - Benchmarks
 > - Projects
