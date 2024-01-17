@@ -19,7 +19,8 @@ Dive in to explore, contribute, and expand the horizons of language modeling wit
 
   - [Reading List](#reading-list)
   - [Notes](#notes)
-  - [Courses](#courses)
+  - [Courses](#courses)、
+  - [Books](#book)
   - [Blogs](#blogs)
   - [Open-source LLMs](#open-source-llms)
   - [Dataset Collections](#dataset-collections)
@@ -58,6 +59,7 @@ Reading list and related notes for LLM research, see [Reading List](Learning_Res
 
 Useful notes for NLP research, see `Learning_Resources/notes/` for details.
 
+> - Tokenization
 > - Position Encoding
 
 ### Courses
@@ -66,6 +68,13 @@ Useful notes for NLP research, see `Learning_Resources/notes/` for details.
 - **Princeton University**: COS 597G: Understanding Large Language Models [Fall 2022](https://www.cs.princeton.edu/courses/archive/fall22/cos597G/)
 - **Stanford University**: CS25: Transformers United V2 [Fall 2021](https://web.stanford.edu/class/cs25/prev_years/2021_fall/)/[Winter 2023](https://web.stanford.edu/class/cs25/)
 - **Stanford University**: CS 324 - Advances in Foundation Models [Winter 2022](https://stanford-cs324.github.io/winter2022/)/[Winter 2023](https://stanford-cs324.github.io/winter2023/)
+
+
+### Book
+
+- [Foundations of Statistical Natural Language Processing](https://nlp.stanford.edu/fsnlp/), [Chris Manning](http://nlp.stanford.edu/~manning/) and [Hinrich Schütze](http://www-csli.stanford.edu/~schuetze),
+- [Speech and Language Processing](https://web.stanford.edu/~jurafsky/slp3/), [Dan Jurafsky](http://web.stanford.edu/people/jurafsky/) and [James H. Martin](http://www.cs.colorado.edu/~martin/)
+- The Oxford Handbook of Computational Linguistics, [Ruslan Mitkov](https://wp.lancs.ac.uk/mitkov/)
 
 
 ### Blogs
