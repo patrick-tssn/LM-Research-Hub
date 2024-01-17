@@ -19,6 +19,7 @@ Table of Contents
   - [Abstract Reasoning](#abstract-reasoning)
   - [Chain of Thought](#chain-of-thought)
   - [Symbolic Reasoning](#symbolic-reasoning)
+- [Retrieval](#retrival)
 
 ## Key Findings
 
@@ -176,3 +177,10 @@ Related Collections
 - [Awesome-Reasoning-Foundation-Models](https://github.com/reasoning-survey/Awesome-Reasoning-Foundation-Models) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/reasoning-survey/Awesome-Reasoning-Foundation-Models?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/reasoning-survey/Awesome-Reasoning-Foundation-Models.svg?style=social&label=Star), A curated list of awesome large AI models, or foundation models, for reasoning
 
 - [Awesome-Graph-LLM](https://github.com/XiaoxinHe/Awesome-Graph-LLM) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/XiaoxinHe/Awesome-Graph-LLM?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/XiaoxinHe/Awesome-Graph-LLM.svg?style=social&label=Star), A collection of AWESOME things about Graph-Related Large Language Models (LLMs).
+
+
+## Retrival
+
+Related Collections
+
+- [awesome-generative-information-retrieval](https://github.com/gabriben/awesome-generative-information-retrieval) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/gabriben/awesome-generative-information-retrieval?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/gabriben/awesome-generative-information-retrieval.svg?style=social&label=Star), We tentatively devide the field in two main topics: Grounded Answer Generation and Generative Document Retrieval. We also include generative recommendation, generative grounded summarization etc.

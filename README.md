@@ -54,6 +54,7 @@ Reading list and related notes for LLM research, see [Reading List](Learning_Res
 >   - Abstract Reasoning
 >   - Chain of Thought
 >   - Symbolic Reasoning
+> - Retrieval
 
 ### Notes
 
