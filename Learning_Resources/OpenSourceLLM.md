@@ -210,6 +210,7 @@ Additional open source projects for LLM research
 
 ### deployment/demo
 
+- [SGLang](https://github.com/sgl-project/sglang), SGLang is a structured generation language designed for large language models (LLMs). It makes your interaction with LLMs faster and more controllable.
 - [FMEngine](https://github.com/eth-easl/fmengine), FMEngine is a utility library for training very large foundation models.
 - [vLLM](https://github.com/vllm-project/vllm): A high-throughput and memory-efficient inference and serving engine for LLMs
 - [OpenAssistant](https://github.com/LAION-AI/Open-Assistant): Open Assistant is a project meant to give everyone access to a great chat based large language model.
