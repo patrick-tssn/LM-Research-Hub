@@ -8,6 +8,7 @@ Table of Contents
 
 - [Causality](#causality)
 - [Code Learning](#code-learning)
+- [Dialogue](#dialogue)
 - [Efficiency](#efficiency)
 - [Human Alignment](#human-alignment)
 - [Information Extraction](#information-extraction)
@@ -55,6 +56,12 @@ Papers about code generation, see [Code](Code.md) for details.
 Related Collections
 
 - [Awesome-Code-LLM](https://github.com/huybery/Awesome-Code-LLM) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/huybery/Awesome-Code-LLM?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/huybery/Awesome-Code-LLM.svg?style=social&label=Star), An awesome and curated list of best code-LLM for research.
+
+## Dialogue
+
+Related Collections
+
+- [Paper-Reading](https://github.com/iwangjian/Paper-Reading) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/iwangjian/Paper-Reading?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/iwangjian/Paper-Reading.svg?style=social&label=Star), paper reading list in dialogue systems and natural language generation
 
 ## Efficiency
 

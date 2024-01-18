@@ -44,6 +44,7 @@ Reading list and related notes for LLM research, see [Reading List](Learning_Res
 > - Architecture
 > - Causality
 > - Code Learning
+> - Dialogue
 > - Efficiency
 > - Human Alignment
 > - Information Extraction
