@@ -81,10 +81,11 @@ Useful notes for NLP research, see `Learning_Resources/notes/` for details.
 ### Blogs
 
 - [Jay Alammar's Blog](https://jalammar.github.io/)
-- [Yao Fu's Blog](https://yaofu.notion.site/Yao-Fu-s-Blog-b536c3d6912149a395931f1e871370db)
-- [科学空间 (Jianlin Su's Blog)](https://spaces.ac.cn/)
 - [Lil'Log (Lilian Weng's Blog)](https://lilianweng.github.io/)
 - [llm-course (Mlabonne's Blog)](https://github.com/mlabonne/llm-course)
+- [Sebastian Ruder's Blog](https://www.ruder.io/)
+- [Yao Fu's Blog](https://yaofu.notion.site/Yao-Fu-s-Blog-b536c3d6912149a395931f1e871370db)
+- [科学空间 (Jianlin Su's Blog)](https://spaces.ac.cn/)
 
 ### Open Source LLMs
 

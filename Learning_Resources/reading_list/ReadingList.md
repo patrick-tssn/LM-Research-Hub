@@ -6,6 +6,7 @@ Table of Contents
 
 *arranged in alphabetical order*
 
+- [Causality](#causality)
 - [Code Learning](#code-learning)
 - [Efficiency](#efficiency)
 - [Human Alignment](#human-alignment)
@@ -35,6 +36,15 @@ Table of Contents
 | Scaling Laws for Neural Language Models                               |              | [2001.08361](https://arxiv.org/abs/2001.08361) <br />   ![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.semanticscholar.org%2Fgraph%2Fv1%2Fpaper%2Fe6c561d02500b2596a230b341a8eb8b921ca5bf2%3Ffields%3DcitationCount&query=%24.citationCount&label=citation)          | scaling law, OpenAI                |
 | Attention Is All You Need                               |              | [1706.03762](https://arxiv.org/abs/1706.03762) <br />   ![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.semanticscholar.org%2Fgraph%2Fv1%2Fpaper%2F204e3073870fae3d05bcbc2f6a8e263d9b72e776%3Ffields%3DcitationCount&query=%24.citationCount&label=citation)          | Transformer, Google                |
 
+
+## Causality
+
+Related Collections
+
+
+- [Causality4NLP_Papers](https://github.com/zhijing-jin/Causality4NLP_Papers) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/zhijing-jin/Causality4NLP_Papers?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/zhijing-jin/Causality4NLP_Papers.svg?style=social&label=Star), A reading list for papers on causality for natural language processing (NLP)
+- [Awesome-Causal-Papers](https://github.com/nuster1128/Awesome-Causal-Papers) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/nuster1128/Awesome-Causal-Papers?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/nuster1128/Awesome-Causal-Papers.svg?style=social&label=Star), For benefiting the research community and promoting causal direction, we organize papers related to causal that published on top conferences recently.
+
 ## Code Learning
 
 Papers about code generation, see [Code](Code.md) for details.
@@ -63,6 +73,7 @@ Papers about Efficiency/Compression/Extrapolation of neural network/language mod
 
 Related Collections (efficiency)
 
+- [SpeculativeDecodingPapers](https://github.com/hemingkx/SpeculativeDecodingPapers) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/hemingkx/SpeculativeDecodingPapers?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/hemingkx/SpeculativeDecodingPapers.svg?style=social&label=Star), Paper List for Speculative Decoding
 - [Awesome-Efficient-LLM](https://github.com/horseee/Awesome-Efficient-LLM) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/horseee/Awesome-Efficient-LLM?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/horseee/Awesome-Efficient-LLM.svg?style=social&label=Star), A curated list for Efficient Large Language Models
 - [Awesome-LLM-Inference](https://github.com/DefTruth/Awesome-LLM-Inference) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/DefTruth/Awesome-LLM-Inference?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/DefTruth/Awesome-LLM-Inference.svg?style=social&label=Star), A small Collection for Awesome LLM Inference [Papers|Blogs|Docs] with codes, contains TensorRT-LLM, streaming-llm, SmoothQuant, WINT8/4, Continuous Batching, FlashAttention, PagedAttention etc.
 - [Awesome-LLM-Compression](https://github.com/HuangOwen/Awesome-LLM-Compression) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/HuangOwen/Awesome-LLM-Compression?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/HuangOwen/Awesome-LLM-Compression.svg?style=social&label=Star), Awesome LLM compression research papers and tools to accelerate the LLM training and inference
@@ -186,3 +197,10 @@ Related Collections
 Related Collections
 
 - [awesome-generative-information-retrieval](https://github.com/gabriben/awesome-generative-information-retrieval) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/gabriben/awesome-generative-information-retrieval?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/gabriben/awesome-generative-information-retrieval.svg?style=social&label=Star), We tentatively devide the field in two main topics: Grounded Answer Generation and Generative Document Retrieval. We also include generative recommendation, generative grounded summarization etc.
+
+## Social
+
+Related Collections
+
+- [NLP4SocialGood_Papers](https://github.com/zhijing-jin/NLP4SocialGood_Papers) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/zhijing-jin/NLP4SocialGood_Papers?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/zhijing-jin/NLP4SocialGood_Papers.svg?style=social&label=Star), A reading list of up-to-date papers on NLP for Social Good.
+
