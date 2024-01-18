@@ -86,6 +86,8 @@ Papers about human alignment, see [Human Alignment](Humanalignment.md) for detai
 
 Related Collections
 
+- [lm-ssp](https://github.com/ThuCCSLab/lm-ssp) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/ThuCCSLab/lm-ssp?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/ThuCCSLab/lm-ssp.svg?style=social&label=Star), The resources related to the trustworthiness of large models (LMs) across multiple dimensions (e.g., safety, security, and privacy), with a special focus on multi-modal LMs (e.g., vision-language models and diffusion models).
+
 - [AlignLLMHumanSurvey](https://github.com/GaryYufei/AlignLLMHumanSurvey) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/GaryYufei/AlignLLMHumanSurvey?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/GaryYufei/AlignLLMHumanSurvey.svg?style=social&label=Star), A collection of papers and resources about aligning large language models (LLMs) with human.
 
 - [awesome-hallucination-detection](https://github.com/EdinburghNLP/awesome-hallucination-detection) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/EdinburghNLP/awesome-hallucination-detection?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/EdinburghNLP/awesome-hallucination-detection.svg?style=social&label=Star), List of papers on hallucination detection in LLMs.
