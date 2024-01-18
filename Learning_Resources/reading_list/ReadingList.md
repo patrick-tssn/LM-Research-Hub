@@ -21,6 +21,7 @@ Table of Contents
   - [Chain of Thought](#chain-of-thought)
   - [Symbolic Reasoning](#symbolic-reasoning)
 - [Retrieval](#retrival)
+- [Social](#social)
 
 ## Key Findings
 

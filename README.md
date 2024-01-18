@@ -19,7 +19,7 @@ Dive in to explore, contribute, and expand the horizons of language modeling wit
 
   - [Reading List](#reading-list)
   - [Notes](#notes)
-  - [Courses](#courses)、
+  - [Courses](#courses)
   - [Books](#book)
   - [Blogs](#blogs)
   - [Open-source LLMs](#open-source-llms)
@@ -42,6 +42,8 @@ Reading list and related notes for LLM research, see [Reading List](Learning_Res
 > - Key Findings
 
 > - Architecture
+> - Causality
+> - Code Learning
 > - Efficiency
 > - Human Alignment
 > - Information Extraction
@@ -55,10 +57,11 @@ Reading list and related notes for LLM research, see [Reading List](Learning_Res
 >   - Chain of Thought
 >   - Symbolic Reasoning
 > - Retrieval
+> - Social
 
 ### Notes
 
-Useful notes for NLP research, see `Learning_Resources/notes/` for details.
+My notes for NLP research, see `Learning_Resources/notes/` for details.
 
 > - Tokenization
 > - Position Encoding
@@ -71,7 +74,7 @@ Useful notes for NLP research, see `Learning_Resources/notes/` for details.
 - **Stanford University**: CS 324 - Advances in Foundation Models [Winter 2022](https://stanford-cs324.github.io/winter2022/)/[Winter 2023](https://stanford-cs324.github.io/winter2023/)
 
 
-### Book
+### Books
 
 - [Foundations of Statistical Natural Language Processing](https://nlp.stanford.edu/fsnlp/), [Chris Manning](http://nlp.stanford.edu/~manning/) and [Hinrich Schütze](http://www-csli.stanford.edu/~schuetze),
 - [Speech and Language Processing](https://web.stanford.edu/~jurafsky/slp3/), [Dan Jurafsky](http://web.stanford.edu/people/jurafsky/) and [James H. Martin](http://www.cs.colorado.edu/~martin/)
