@@ -210,6 +210,7 @@ Additional open source projects for LLM research
 
 ### deployment/demo
 
+- [Inferflow](https://github.com/inferflow/inferflow), Inferflow is an efficient and highly configurable inference engine for large language models (LLMs)
 - [SGLang](https://github.com/sgl-project/sglang), SGLang is a structured generation language designed for large language models (LLMs). It makes your interaction with LLMs faster and more controllable.
 - [FMEngine](https://github.com/eth-easl/fmengine), FMEngine is a utility library for training very large foundation models.
 - [vLLM](https://github.com/vllm-project/vllm): A high-throughput and memory-efficient inference and serving engine for LLMs
