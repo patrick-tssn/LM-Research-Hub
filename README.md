@@ -159,7 +159,7 @@ Collection of tricks of writing a perfect prompt, see [Prompt](Learning_Resource
 
 ### API
 
-LLM API demos (including mirror links), see [API](Practice/API/README.md) for details.
+LLM API demos (including mirror links), see [API](Practices/API/README.md) for details.
 
 > - openai
 
@@ -174,7 +174,7 @@ Related Collections
 1. Instruction Construct: Construct Instruction by mixture or self-instruct
 2. Fine Tuning: Instruction Tuning on 4 LLM with multilingual instructions
 
-see [Instruction Tuning](Practice/Instruction_Tuning/READEME.md) for details.
+see [Instruction Tuning](Practices/Instruction_Tuning/READEME.md) for details.
 
 > - Experiments
 >   - Datasets
@@ -186,7 +186,7 @@ see [Instruction Tuning](Practice/Instruction_Tuning/READEME.md) for details.
 
 ### Constrained Generation
 
-constrain LLM to generate specific answer (e.g., some open ended QA, limited vocabulary tasks), see [Constrained Generate](Practice/ConstrainedGenerate/README.md) for details.
+constrain LLM to generate specific answer (e.g., some open ended QA, limited vocabulary tasks), see [Constrained Generate](Practices/ConstrainedGenerate/README.md) for details.
 
 > - Common method (constrain vocabulary + sample algorithm)
 > - Trie + Beam search (has issues currently)
