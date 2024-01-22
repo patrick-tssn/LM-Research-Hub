@@ -22,6 +22,10 @@
 | -------------------------------------------------- | --------- | ------------------------------------------- | --------------- |
 | LoRA: Low-Rank Adaptation of Large Language Models | ICLR 2022 | [2106.09685](https://arxiv.org/abs/2106.09685) | LoRA, Microsoft |
 
+Projects
+
+- [Adapters](https://github.com/adapter-hub/adapters), A Unified Library for Parameter-Efficient and Modular Transfer Learning
+
 ### Architecture
 
 | Title                                                                                         | Pub                  | Preprint                                    | Supplementary                                                                        |

@@ -204,6 +204,8 @@ Related Collections
 
 Related Collections
 
+- [Awesome-LLM-RAG](https://github.com/jxzhangjhu/Awesome-LLM-RAG) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/jxzhangjhu/Awesome-LLM-RAG?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/jxzhangjhu/Awesome-LLM-RAG.svg?style=social&label=Star), a curated list of advanced retrieval augmented generation (RAG) in Large Language Models
+
 - [awesome-generative-information-retrieval](https://github.com/gabriben/awesome-generative-information-retrieval) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/gabriben/awesome-generative-information-retrieval?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/gabriben/awesome-generative-information-retrieval.svg?style=social&label=Star), We tentatively devide the field in two main topics: Grounded Answer Generation and Generative Document Retrieval. We also include generative recommendation, generative grounded summarization etc.
 
 ## Social
@@ -212,3 +214,6 @@ Related Collections
 
 - [NLP4SocialGood_Papers](https://github.com/zhijing-jin/NLP4SocialGood_Papers) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/zhijing-jin/NLP4SocialGood_Papers?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/zhijing-jin/NLP4SocialGood_Papers.svg?style=social&label=Star), A reading list of up-to-date papers on NLP for Social Good.
 
+## Other Reading List
+
+- [ML-Papers-of-the-Week](https://github.com/dair-ai/ML-Papers-of-the-Week) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/dair-ai/ML-Papers-of-the-Week?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/dair-ai/ML-Papers-of-the-Week.svg?style=social&label=Star), Highlighting the top ML papers every week.
