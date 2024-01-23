@@ -184,7 +184,7 @@ Additional open source projects for LLM research
   - *by OptimalScale, 2023.03,* [paper](https://arxiv.org/abs/2306.12420)
   - chat-model: [Robin](https://github.com/OptimalScale/LMFlow#model-zoo) (LLaMA+INST), [Parakeets](https://github.com/OptimalScale/LMFlow#model-zoo) (GPT-NEO-2.7B + INST), [Cockatoo](https://github.com/OptimalScale/LMFlow#model-zoo) (StableLM-3B/7B + INST)
 
-#### (2) RLHF
+#### (2-1) RLHF
 
 - [PKU Beaver](https://github.com/PKU-Alignment/safe-rlhf): Beaver is a highly modular open-source RLHF framework developed by the PKU-Alignment team at Peking University
   - *by PKU, 2023.05*, [PKU-RLHF-Dataset](https://github.com/PKU-Alignment/safe-rlhf#pku-saferlhf-dataset)
@@ -197,6 +197,9 @@ Additional open source projects for LLM research
 - [ColossalChat](https://github.com/hpcaitech/ColossalAI/tree/main/applications/Chat): a project to implement LLM with RLHF, powered by the Colossal-AI project
   - *by Collosal.AI, 2023.03*
   - chat-model: Coati-7B
+
+#### (2-2) DPO
+- [Bagel](https://github.com/jondurbin/bagel), supervised fine-tuning (SFT) + direct preference optimization (DPO)
 
 #### (3) Specific domain
 
