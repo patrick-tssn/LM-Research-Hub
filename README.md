@@ -22,6 +22,7 @@ Dive in to explore, contribute, and expand the horizons of language modeling wit
   - [Courses](#courses)
   - [Books](#book)
   - [Blogs](#blogs)
+  - [Talks](#talks)
   - [Open-source LLMs](#open-source-llms)
   - [Dataset Collections](#dataset-collections)
   - [Evaluation Benchmarks](#evaluation-benchmarks)
@@ -90,6 +91,10 @@ My notes for NLP research, see `Learning_Resources/notes/` for details.
 - [Sebastian Ruder's Blog](https://www.ruder.io/)
 - [Yao Fu's Blog](https://yaofu.notion.site/Yao-Fu-s-Blog-b536c3d6912149a395931f1e871370db)
 - [科学空间 (Jianlin Su's Blog)](https://spaces.ac.cn/)
+
+### Talks
+
+- [LLM-Talk](https://github.com/srush/LLM-Talk), LLMs in Five Formulas, by Alexander Rush
 
 ### Open Source LLMs
 

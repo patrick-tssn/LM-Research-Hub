@@ -23,6 +23,7 @@ Table of Content
 ## Projects
 
 - [LLaMA-MoE](https://github.com/pjlab-sys4nlp/llama-moe), LLaMA-MoE is a series of open-sourced Mixture-of-Expert (MoE) models based on LLaMA and SlimPajama. 
+- [OpenMoE](https://github.com/XueFuzhao/OpenMoE), A family of open-sourced Mixture-of-Experts (MoE) Large Language Models
 
 
 ## Blogs
