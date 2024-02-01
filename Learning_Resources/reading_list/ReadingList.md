@@ -98,7 +98,7 @@ Related Collections (system)
 
 - [awesome-AI-system](https://github.com/lambda7xx/awesome-AI-system) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/lambda7xx/awesome-AI-system?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/lambda7xx/awesome-AI-system.svg?style=social&label=Star), paper and its code for AI System
 
-
+- [CUDA MODE Resource Stream](https://github.com/cuda-mode/resource-stream) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/cuda-mode/resource-stream?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/cuda-mode/resource-stream.svg?style=social&label=Star), Here you find a collection of CUDA related material (books, papers, blog-post, youtube videos, tweets, implementations etc.). We also collect information to higher level tools for performance optimization and kernel development like Triton and torch.compile() ... whatever makes the GPUs go brrrr.
 
 ## Human Alignment
 
@@ -177,6 +177,8 @@ Papers about Mixture of Experts (MoE), see [Mixture of Experts](MoE.md) for deta
 Papers about Chain of Thought, see [Chain of Thought](reasoning/CoT.md) for details.
 
 > - Papers
+
+Related Collections
 
 - [Chain-of-ThoughtsPapers](https://github.com/Timothyxxx/Chain-of-ThoughtsPapers) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/Timothyxxx/Chain-of-ThoughtsPapers?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/Timothyxxx/Chain-of-ThoughtsPapers.svg?style=social&label=Star), A trend starts from "Chain of Thought Prompting Elicits Reasoning in Large Language Models"
 - [Reasoning in Large Language Models](https://github.com/atfortes/LLM-Reasoning-Papers) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/atfortes/LLM-Reasoning-Papers?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/atfortes/LLM-Reasoning-Papers.svg?style=social&label=Star), Collection of papers and resources on how to unlock the reasoning ability of Large Language Models.
