@@ -60,18 +60,20 @@ Projects
 
 ### Decoding & Sampling
 
-| Title                                                                        | Pub       | Preprint                                                        | Supplementary                                                              |
-| ---------------------------------------------------------------------------- | --------- | --------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| Breaking the Sequential Dependency of LLM Inference Using Lookahead Decoding |           | [2311.blog](https://lmsys.org/blog/2023-11-21-lookahead-decoding/) | [LookaheadDecoding](https://github.com/hao-ai-lab/LookaheadDecoding), UCSD    |
-|     Medusa: Simple Framework for Accelerating LLM Generation with Multiple Decoding Heads                                                                         |           |   [2309.blog](https://sites.google.com/view/medusa-llm)                                                              |      [Medusa](https://github.com/FasterDecoding/Medusa), Princeton                                                                      |
-| Accelerating Transformer Inference for Translation via Parallel Decoding     | ACL 2023  | [2305.10427](https://arxiv.org/abs/2305.10427)                     | [parallel-decoding](https://github.com/teelinsan/parallel-decoding), Uniromal |
-| Accelerating Large Language Model Decoding with Speculative Sampling         |           | [2302.01318](https://arxiv.org/pdf/2302.01318)                     | Google                                                                     |
-| Fast Inference from Transformers via Speculative Decoding                    | ICML 2023 | [2211.17888](https://arxiv.org/abs/2305.17192)                     | Google                                                                     |
+| Title                                                                                 | Pub       | Preprint                                                        | Supplementary                                                              |
+| ------------------------------------------------------------------------------------- | --------- | --------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| Breaking the Sequential Dependency of LLM Inference Using Lookahead Decoding          |           | [2311.blog](https://lmsys.org/blog/2023-11-21-lookahead-decoding/) | [LookaheadDecoding](https://github.com/hao-ai-lab/LookaheadDecoding), UCSD    |
+| Medusa: Simple Framework for Accelerating LLM Generation with Multiple Decoding Heads |           | [2309.blog](https://sites.google.com/view/medusa-llm)              | [Medusa](https://github.com/FasterDecoding/Medusa), Princeton                 |
+| Accelerating Transformer Inference for Translation via Parallel Decoding              | ACL 2023  | [2305.10427](https://arxiv.org/abs/2305.10427)                     | [parallel-decoding](https://github.com/teelinsan/parallel-decoding), Uniromal |
+| Accelerating Large Language Model Decoding with Speculative Sampling                  |           | [2302.01318](https://arxiv.org/pdf/2302.01318)                     | Google                                                                     |
+| Fast Inference from Transformers via Speculative Decoding                             | ICML 2023 | [2211.17888](https://arxiv.org/abs/2305.17192)                     | Google                                                                     |
 
 ### Extensibility
 
 | Title                                                                             | Pub        | Preprint                                    | Supplementary                                               |
 | --------------------------------------------------------------------------------- | ---------- | ------------------------------------------- | ----------------------------------------------------------- |
+| Data Engineering for Scaling Language Models to 128K Context                      |            | [2402.10171](https://arxiv.org/abs/2402.10171) | Edinburgh                                                   |
+|     LLM Maybe LongLM: SelfExtend LLM Context Window Without Tuning                                                                              |            |          [2401.01325](https://arxiv.org/abs/2401.01325)                                   |                                          TAMU                   |
 | LLMLingua: Compressing Prompts for Accelerated Inference of Large Language Models | EMNLP 2023 | [2310.05736](https://arxiv.org/abs/2310.05736) | [LLMLingua](https://github.com/microsoft/LLMLingua), Microsoft |
 | Learning to Compress Prompts with Gist Tokens                                     |            | [2304.08467](https://arxiv.org/abs/2304.08467) | [gisting](https://github.com/jayelm/gisting), Stanford         |
 

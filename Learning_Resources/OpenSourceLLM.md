@@ -161,6 +161,12 @@ notes:
 
 *Toys*: [Robin-medical](https://github.com/OptimalScale/LMFlow#model-zoo) (LLamA+INST-medical)
 
+## Representation (Embedding) Model
+
+| Model  | Available Size | Base Model | Notes               | Link                                                                                  | Date  | Affiliation |
+| ------ | -------------- | ---------- | ------------------- | ------------------------------------------------------------------------------------- | ----- | ----------- |
+| GritLM | 7B             | Mistral    | Rep Loss + Gen Loss | [paper](https://arxiv.org/abs/2402.09906), [code](https://github.com/ContextualAI/gritlm) | 02/24 |  MSR        |
+
 ## Open Source Projects
 
 Additional open source projects for LLM research
