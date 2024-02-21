@@ -115,6 +115,7 @@ efficiency
 
 extensibility
 
+- [Needle In A Haystack - Pressure Testing LLMs](https://github.com/gkamradt/LLMTest_NeedleInAHaystack), Doing simple retrieval from LLM models at various context lengths to measure accuracy
 - [LongAlign](https://github.com/THUDM/LongAlign), LongAlign: A Recipe for Long Context Alignment Encompassing Data, Training, and Evaluation
 - [Long-Context](https://github.com/abacusai/Long-Context), This repository contains code and tooling for the Abacus.AI LLM Context Expansion project. Also included are evaluation scripts and benchmark tasks that evaluate a model’s information retrieval capabilities with context expansion. We also include key experimental results and instructions for reproducing and building on them
 
