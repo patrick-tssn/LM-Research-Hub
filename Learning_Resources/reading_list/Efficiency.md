@@ -72,8 +72,9 @@ Projects
 
 | Title                                                                             | Pub        | Preprint                                    | Supplementary                                               |
 | --------------------------------------------------------------------------------- | ---------- | ------------------------------------------- | ----------------------------------------------------------- |
+| Long-Context Language Modeling with Parallel Encodings                            |            | [2402.16617](https://arxiv.org/abs/2402.16617) | Princeton                                                   |
 | Data Engineering for Scaling Language Models to 128K Context                      |            | [2402.10171](https://arxiv.org/abs/2402.10171) | Edinburgh                                                   |
-|     LLM Maybe LongLM: SelfExtend LLM Context Window Without Tuning                                                                              |            |          [2401.01325](https://arxiv.org/abs/2401.01325)                                   |                                          TAMU                   |
+| LLM Maybe LongLM: SelfExtend LLM Context Window Without Tuning                    |            | [2401.01325](https://arxiv.org/abs/2401.01325) | TAMU                                                        |
 | LLMLingua: Compressing Prompts for Accelerated Inference of Large Language Models | EMNLP 2023 | [2310.05736](https://arxiv.org/abs/2310.05736) | [LLMLingua](https://github.com/microsoft/LLMLingua), Microsoft |
 | Learning to Compress Prompts with Gist Tokens                                     |            | [2304.08467](https://arxiv.org/abs/2304.08467) | [gisting](https://github.com/jayelm/gisting), Stanford         |
 
