@@ -51,9 +51,10 @@ Reading list and related notes for LLM research, see [Reading List](Learning_Res
 > - Information Extraction
 > - Instruction Tuning
 > - Interpretability
-> - Knowledge Update
 > - In Context Learning
+> - Knowledge Update
 > - Mixture of Experts (MoE)
+> - Non-Autoregressive Generation
 > - Reasoning
 >   - Abstract Reasoning
 >   - Chain of Thought

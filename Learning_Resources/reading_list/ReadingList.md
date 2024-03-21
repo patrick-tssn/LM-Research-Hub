@@ -17,6 +17,7 @@ Table of Contents
 - [In Context Learning](#in-context-learning)
 - [Knowledge Update](#knowledge-update)
 - [Mixture of Experts (MoE)](#mixture-of-experts-moe)
+- [Non-Autoregressive Generation](#non-autoregressive-generation)
 - [Reasoning](#reasoning)
   - [Abstract Reasoning](#abstract-reasoning)
   - [Chain of Thought](#chain-of-thought)
@@ -169,6 +170,15 @@ Papers about Mixture of Experts (MoE), see [Mixture of Experts](MoE.md) for deta
 > - Blogs
 
 - [Awesome-Mixture-of-Experts-Papers](https://github.com/codecaution/Awesome-Mixture-of-Experts-Papers) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/codecaution/Awesome-Mixture-of-Experts-Papers?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/codecaution/Awesome-Mixture-of-Experts-Papers.svg?style=social&label=Star), A curated reading list of research in Mixture-of-Experts(MoE).
+
+
+## Non-Autoregressive Generation
+
+Papers about Non-Autoregressive Generation 
+
+Related Collections
+- [DiffusionInNlp_PaperList](https://github.com/bansky-cl/DiffusionInNlp_PaperList) ![GitHub last commit (by committer)](https://img.shields.io/github/last-commit/bansky-cl/DiffusionInNlp_PaperList?style=flat)![Dynamic JSON Badge](https://img.shields.io/github/stars/bansky-cl/DiffusionInNlp_PaperList.svg?style=social&label=Star), Listing some diffusion papers in NLP domain I have read, text generation is main, table will continue to be updated.
+
 
 ## Reasoning
 
