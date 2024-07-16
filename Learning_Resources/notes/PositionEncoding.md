@@ -90,6 +90,7 @@ position_embedding = torch.zeros(MAX_POSITION, HIDDEN_SIZE).unsqueeze(0)
 position_enc = np.array([[pos / np.power(10000, 2*(j//2)/HIDDEN_SIZE) for j in range(HIDDEN_SIZE)] for pos in range(MAX_POSITION)])
 position_embedding[:, 0::2] = torch.FloatTensor(np.sin(position_enc[:, 0::2]))
 position_embedding[:, 1::2] = torch.FloatTensor(np.cos(position_enc[:, 1::2]))
+# inputs + PE
 ```
 
 **References**
@@ -259,3 +260,35 @@ KEY = KEY * cos_pos + rotate_half_KEY * sin_pos
 > - [Transformer升级之路：2、博采众长的旋转式位置编码](https://spaces.ac.cn/archives/8265), Jianlin Su's blog
 > - [Rotary Embeddings: A Relative Revolution](https://blog.eleuther.ai/rotary-embeddings/), Eleuther's blog
 > - [Positional Encodings I. Main Approaches](https://medium.com/mantisnlp/positional-encodings-i-main-approaches-bd1199d6770d), Medium
+
+
+### 4.1 NTK
+
+NTK-Aware Scaled RoPE allows LLaMA models to have extended (8k+) context size without any fine-tuning and minimal perplexity degradation. See [blog](https://www.reddit.com/r/LocalLLaMA/comments/14lz7j5/ntkaware_scaled_rope_allows_llama_models_to_have/)
+
+Common methods for context length extension:
+
+- Extrapolation: direct
+- Interpolation: [SuperHOT](https://kaiokendev.github.io/til#extending-context-to-8k)/[PI](https://arxiv.org/abs/2306.15595): position n --> position n/k
+- NTK
+
+NTK derivation (simple version):
+
+sinusoidal position at n
+
+$$
+[cos(\frac{n}{\beta^0}), sin(\frac{n}{\beta^0}), \ldots, cos(\frac{n}{\beta^{d/2-1}}), sin(\frac{n}{\beta^{d/2-1}})]
+$$
+
+NTK want to combine Extrapolation for low frequency with Interpolation in high frequency, specifically, they introduce $k$ to $\beta$, then making the value equal to the interpolation format
+
+$$
+\frac{n}{(\lambda\beta)^{d/2-1}} = \frac{n/k}{\beta^{d/2-1}}
+$$
+
+we get $\lambda=k^{2/(d-2)}$
+
+Another interpretation is $\beta$ base, see reference[1] for details
+
+**Reference**
+> [1] [Transformer升级之路：10、RoPE是一种β进制编码](https://kexue.fm/archives/9675) Jianlin Su's blog
