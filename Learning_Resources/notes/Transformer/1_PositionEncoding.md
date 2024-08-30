@@ -8,10 +8,10 @@
 - [Sinusoidal Position Encoding `Fixed` `Absolute`](#2-sinusoidal-position-encoding)
 - [Relative Position Encoding `Learnable` `Relative`](#3-relative-position-encoding)
 - [Rotary Position Embedding `Fixed` `Relative`](#4-rotary-position-embedding)
-
+  - [NTK](#41-ntk)
+  - [2-d RoPE](#42-2-d-rope)
 
 ## 1. Absolute Position Embedding
-
 
 **Implementation**
 
@@ -31,7 +31,6 @@ position_embedding = position_embedding(position_id)
 > - Liu, Yinhan et al. “RoBERTa: A Robustly Optimized BERT Pretraining Approach.” ArXiv abs/1907.11692 (2019): n. pag.
 
 ## 2. Sinusoidal Position Encoding
-
 
 **Brief Introduction:**
 $t$ is the position step, $d$ is the hidden size of the model, $i$ is the dimension of the hidden size
@@ -100,9 +99,7 @@ position_embedding[:, 1::2] = torch.FloatTensor(np.cos(position_enc[:, 1::2]))
 > - [The Annotated Transformer
 >   ](https://nlp.seas.harvard.edu/2018/04/03/attention.html), HarvardNLP's blog
 
-
 ## 3. Relative Position Encoding
-
 
 **Comments**: The core of self-attention is dot-product
 
@@ -130,6 +127,7 @@ q_ik_j^T &= ((x_i+p_i)W^Q)((x_j+p_j)W^K)^T \\
 $$
 
 **Implementation 1**
+
 ```python
 # in the attention part (clipping)
 import torch
@@ -144,6 +142,7 @@ attention_scores = attention_scores + relative_position_scores
 ```
 
 **Implementation 2**
+
 ```python
 # in attention part (sinusoidal)
 import torch
@@ -168,7 +167,6 @@ attention_scores = attention_scores + relative_position_score
 > - [让研究人员绞尽脑汁的Transformer位置编码](https://spaces.ac.cn/archives/8130), Jianlin Su's blog
 
 ## 4. Rotary Position Embedding
-
 
 **Brief Introduction**
 The primary objective of RoPE (Rotary Position Embedding) is to identify an operation that enables the inner product to incorporate relative positional information effectively. i.e. find a solution of the equation $< f(q, m), f(k, n)>=g(q,k,m-n)$
@@ -242,8 +240,8 @@ position_ids = torch.arange(0, KEY_LENGTH)
 position_embedding = nn.Embedding(MAX_POSITION, HEAD_SIZE)
 position_embedding.weight.requires_grad = False
 position_enc = np.array([[pos/np.power(10000, 2*(j//2)/dim) for j in range(dim)] for pos in range(n_pos)])
-position_embedding.weight[:, 0::2] = torch.FloatTensor(np.sin(position_enc[:, 0::2]))
-position_embedding.weight[:, 1::2] = torch.FloatTensor(np.cos(position_enc[:, 1::2]))
+position_embedding.weight[:, :dim//2] = torch.FloatTensor(np.sin(position_enc[:, 0::2]))
+position_embedding.weight[:, dim//2:] = torch.FloatTensor(np.cos(position_enc[:, 1::2]))
 sinusoidal_pos = position_embedding(position_ids)
 sin, cos = sinusoidal_pos.chunk(2, dim=-1)
 sin_pos = torch.stack([sin, sin], dim=-1).reshape_as(sinusoidal_pos)
@@ -260,7 +258,6 @@ KEY = KEY * cos_pos + rotate_half_KEY * sin_pos
 > - [Transformer升级之路：2、博采众长的旋转式位置编码](https://spaces.ac.cn/archives/8265), Jianlin Su's blog
 > - [Rotary Embeddings: A Relative Revolution](https://blog.eleuther.ai/rotary-embeddings/), Eleuther's blog
 > - [Positional Encodings I. Main Approaches](https://medium.com/mantisnlp/positional-encodings-i-main-approaches-bd1199d6770d), Medium
-
 
 ### 4.1 NTK
 
@@ -291,4 +288,70 @@ we get $\lambda=k^{2/(d-2)}$
 Another interpretation is $\beta$ base, see reference[1] for details
 
 **Reference**
+
 > [1] [Transformer升级之路：10、RoPE是一种β进制编码](https://kexue.fm/archives/9675) Jianlin Su's blog
+
+### 4.2 2-d RoPE
+
+$$
+\begin{equation}\boldsymbol{\mathcal{R}}_{x,y}=\left(
+\begin{array}{cc:cc}
+\cos x\theta & -\sin x\theta & 0 & 0 \\
+\sin x\theta & \cos x\theta & 0 & 0 \\
+\hdashline
+0 & 0 & \cos y\theta & -\sin y\theta \\
+0 & 0 & \sin y\theta & \cos y\theta \\
+\end{array}\right)\end{equation}
+$$
+
+we get
+
+`Relative`: $\boldsymbol{\mathcal{R}}_{x_1,y_1}^{\top}\boldsymbol{\mathcal{R}}_{x_2,y_2}=\boldsymbol{\mathcal{R}}_{x_2-x_1,y_2-y_1}$
+
+`Reversible (lossless)`: Given $\boldsymbol{\mathcal{R}}_{x,y}$, we could obtain $x, y$
+
+**Reference**
+
+> [1] [Transformer升级之路：4、二维位置的旋转式位置编码](https://kexue.fm/archives/8397) Jianlin Su's blog
+> [2] [恒等式 det(exp(A)) = exp(Tr(A)) 赏析](https://kexue.fm/archives/6377) Jianlin Su's blog
+> [3] [SAM 2: Segment Anything in Images and Videos](https://arxiv.org/abs/2408.00714) Meta
+
+### 4.3 mixture of 1-d RoPE for multi-modal task
+
+
+```python
+# in the embedding part (apply rotary position to QUERY and KEY)
+# we comment code in origianl 1-d rope for comparison
+import numpy as np
+import torch
+from torch import nn
+# position_ids = torch.arange(0, KEY_LENGTH)
+position_ids = torch.arange(0, KEY_LENGTH).expand(3, 1, KEY_LENGTH) # position for temporal, height, weight
+position_embedding = nn.Embedding(MAX_POSITION, HEAD_SIZE)
+position_embedding.weight.requires_grad = False
+position_enc = np.array([[pos/np.power(10000, 2*(j//2)/dim) for j in range(dim)] for pos in range(n_pos)])
+position_embedding.weight[:, :dim//2] = torch.FloatTensor(np.sin(position_enc[:, 0::2]))
+position_embedding.weight[:, dim//2:] = torch.FloatTensor(np.cos(position_enc[:, 1::2]))
+sinusoidal_pos = position_embedding(position_ids)
+sin, cos = sinusoidal_pos.chunk(2, dim=-1)
+sin_pos = torch.stack([sin, sin], dim=-1).reshape_as(sinusoidal_pos)
+cos_pos = torch.stack([cos, cos], dim=-1).reshape_as(sinusoidal_pos)
+############apply mrope here############
+mrope_section = mrope_section * 2 # temporal, height, weight e.g. in Qwen2-VL [16, 24, 24]
+sin_pos = torch.cat([m[i%3] for i, m in enumerate(sin.split(mrope_section, dim=-1))], dim=-1).unsqueeze(unsqueeze_dim) # unsqueeze for broadcast on head
+cos_pos = torch.cat([m[i%3] for i, m in enumerate(cos.split(mrope_section, dim=-1))], dim=-1).unsqueeze(unsqueeze_dim) # unsqueeze for broadcast on head
+#########################################
+rotate_half_QUERY = torch.stack([-QUERY[..., 1::2], QUERY[..., ::2]], dim=-1).reshape_as(QUERY)
+QUERY = QUERY * cos_pos + rotate_hals_QUERY * sin_pos
+rotate_half_KEY = torch.stack([-KEY[..., 1::2], KEY[..., ::2]], dim=-1).reshape_as(KEY)
+KEY = KEY * cos_pos + rotate_half_KEY * sin_pos
+```
+
+<center>
+  <img src="assets/mrope.png">
+  <figcaption>implementation of MRoPE</figcaption>
+</center>
+
+**Reference**
+
+> [1] [Qwen2-VL](https://qwenlm.github.io/blog/qwen2-vl/) Alibaba
