@@ -339,8 +339,8 @@ sin_pos = torch.stack([sin, sin], dim=-1).reshape_as(sinusoidal_pos)
 cos_pos = torch.stack([cos, cos], dim=-1).reshape_as(sinusoidal_pos)
 ############apply mrope here############
 mrope_section = mrope_section * 2 # temporal, height, weight e.g. in Qwen2-VL [16, 24, 24]
-sin_pos = torch.cat([m[i%3] for i, m in enumerate(sin.split(mrope_section, dim=-1))], dim=-1).unsqueeze(unsqueeze_dim) # unsqueeze for broadcast on head
-cos_pos = torch.cat([m[i%3] for i, m in enumerate(cos.split(mrope_section, dim=-1))], dim=-1).unsqueeze(unsqueeze_dim) # unsqueeze for broadcast on head
+sin_pos = torch.cat([m[i%3] for i, m in enumerate(sin_pos.split(mrope_section, dim=-1))], dim=-1).unsqueeze(unsqueeze_dim) # unsqueeze for broadcast on head
+cos_pos = torch.cat([m[i%3] for i, m in enumerate(cos_pos.split(mrope_section, dim=-1))], dim=-1).unsqueeze(unsqueeze_dim) # unsqueeze for broadcast on head
 #########################################
 rotate_half_QUERY = torch.stack([-QUERY[..., 1::2], QUERY[..., ::2]], dim=-1).reshape_as(QUERY)
 QUERY = QUERY * cos_pos + rotate_hals_QUERY * sin_pos
