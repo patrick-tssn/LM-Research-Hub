@@ -10,6 +10,7 @@
 - [Rotary Position Embedding `Fixed` `Relative`](#4-rotary-position-embedding)
   - [NTK](#41-ntk)
   - [2-d RoPE](#42-2-d-rope)
+  - [mixture of 1-d RoPE for multi-modal task](#43-mixture-of-1-d-rope-for-multi-modal-task)
 
 ## 1. Absolute Position Embedding
 
@@ -227,7 +228,7 @@ visualize the implementation
 <!-- ![image](assets/rope.png) -->
 
 <center>
-  <img src="assets/rope.png">
+  <img src="../assets/rope.png">
   <figcaption>implementation of RoPE</figcaption>
 </center>
 
@@ -348,7 +349,7 @@ KEY = KEY * cos_pos + rotate_half_KEY * sin_pos
 ```
 
 <center>
-  <img src="assets/mrope.png">
+  <img src="../assets/mrope.png">
   <figcaption>implementation of MRoPE</figcaption>
 </center>
 
