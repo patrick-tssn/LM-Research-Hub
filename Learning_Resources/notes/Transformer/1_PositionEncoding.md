@@ -307,15 +307,15 @@ $$
 
 we get
 
-`Relative`: $\boldsymbol{\mathcal{R}}_{x_1,y_1}^{\top}\boldsymbol{\mathcal{R}}_{x_2,y_2}=\boldsymbol{\mathcal{R}}_{x_2-x_1,y_2-y_1}$
+`Relative`: $$\boldsymbol{\mathcal{R}}_{x_1,y_1}^{\top}\boldsymbol{\mathcal{R}}_{x_2,y_2}=\boldsymbol{\mathcal{R}}_{x_2-x_1,y_2-y_1}$$
 
 `Reversible (lossless)`: Given $\boldsymbol{\mathcal{R}}_{x,y}$, we could obtain $x, y$
 
 **Reference**
 
-> [1] [Transformer升级之路：4、二维位置的旋转式位置编码](https://kexue.fm/archives/8397) Jianlin Su's blog
-> [2] [恒等式 det(exp(A)) = exp(Tr(A)) 赏析](https://kexue.fm/archives/6377) Jianlin Su's blog
-> [3] [SAM 2: Segment Anything in Images and Videos](https://arxiv.org/abs/2408.00714) Meta
+> - [1] [Transformer升级之路：4、二维位置的旋转式位置编码](https://kexue.fm/archives/8397) Jianlin Su's blog
+> - [2] [恒等式 det(exp(A)) = exp(Tr(A)) 赏析](https://kexue.fm/archives/6377) Jianlin Su's blog
+> - [3] [SAM 2: Segment Anything in Images and Videos](https://arxiv.org/abs/2408.00714) Meta
 
 ### 4.3 mixture of 1-d RoPE for multi-modal task
 
@@ -355,4 +355,4 @@ KEY = KEY * cos_pos + rotate_half_KEY * sin_pos
 
 **Reference**
 
-> [1] [Qwen2-VL](https://qwenlm.github.io/blog/qwen2-vl/) Alibaba
+> - [1] [Qwen2-VL](https://qwenlm.github.io/blog/qwen2-vl/) Alibaba
