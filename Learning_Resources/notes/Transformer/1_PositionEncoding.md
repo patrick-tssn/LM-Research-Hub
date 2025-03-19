@@ -383,13 +383,17 @@ $$
 
 we get
 
-`Relative`: $\boldsymbol{\mathcal{R}}_{x_1,y_1}^{\top}\boldsymbol{\mathcal{R}}_{x_2,y_2}=\boldsymbol{\mathcal{R}}_{x_2-x_1,y_2-y_1}$
+`Relative`: 
+
+```math
+\boldsymbol{\mathcal{R}}_{x_1,y_1}^{\top}\boldsymbol{\mathcal{R}}_{x_2,y_2} = \boldsymbol{\mathcal{R}}_{x_2-x_1,y_2-y_1}
+```
 
 `Reversible (lossless)`: Given $\boldsymbol{\mathcal{R}}_{x,y}$, we could obtain $x, y$
 
 comparison of RoPE-1D and RoPE-2D
 
-$$
+```math
 \scriptsize{\begin{array}{c}\begin{array}{c}\text{RoPE-1D}\\ (\boldsymbol{\mathcal{R}}_n)\end{array}= \begin{pmatrix} 
 \cos n\theta_0 & -\sin n\theta_0 & 0 & 0 & \cdots & 0 & 0 & 0 & 0 \\ 
 \sin n\theta_0 & \cos n\theta_0 & 0 & 0 & \cdots & 0 & 0 & 0 & 0 \\ 
@@ -412,7 +416,7 @@ $$
 0 & 0 & 0 & 0 & \cdots & 0 & 0 & \cos y\theta_{d/2-1} & -\sin y\theta_{d/2-1} \\ 
 0 & 0 & 0 & 0 & \cdots & 0 & 0 & \sin y\theta_{d/2-1} & \cos y\theta_{d/2-1} \\ 
 \end{pmatrix}\end{array}}
-$$
+```
 
 we can natually derive N-d RoPE
 
