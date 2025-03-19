@@ -169,8 +169,8 @@ class Attention(nn.Module):
 
 **A:** additive attention: $v^{T}tanh(W_qq+W_kk)$[2]; dot-product attention: $\frac{qk^T}{\sqrt{d_k}}$; While the two are similar in theoretical complexity, dot-product attention is much faster and more space-efficient in practice, since it can be implemented using highly optimized matrix multiplication code.[1]
 
-> [1] [Attention is all you need](https://arxiv.org/pdf/1706.03762), google
-> [2] [Neural machine translation by jointly learning to align and translate](https://arxiv.org/pdf/1409.0473), UdeM
+> - [1] [Attention is all you need](https://arxiv.org/pdf/1706.03762), google
+> - [2] [Neural machine translation by jointly learning to align and translate](https://arxiv.org/pdf/1409.0473), UdeM
 
 ## 4. The Multi-query Attention (MQA)
 
@@ -235,7 +235,7 @@ class Attention(nn.Module):
         return context
 ```
 
-> [1] [GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints](https://arxiv.org/pdf/2305.13245), google
+> - [1] [GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints](https://arxiv.org/pdf/2305.13245), google
 
 
 
@@ -303,9 +303,9 @@ mask = c1 & c2 # causal stride mask
 ```
 
 
-> [为节约而生：从标准Attention到稀疏Attention](https://www.spaces.ac.cn/archives/6853) Jianlin Su's blog
-> [Generating Long Sequences with Sparse Transformers](https://arxiv.org/abs/1904.10509) OpenAI
-> [Scaling Local Self-Attention for Parameter Efficient Visual Backbones](https://arxiv.org/pdf/2103.12731) google
-> [sparse_attention](https://github.com/openai/sparse_attention/tree/master) OpenAI
+> - [为节约而生：从标准Attention到稀疏Attention](https://www.spaces.ac.cn/archives/6853) Jianlin Su's blog
+> - [Generating Long Sequences with Sparse Transformers](https://arxiv.org/abs/1904.10509) OpenAI
+> - [Scaling Local Self-Attention for Parameter Efficient Visual Backbones](https://arxiv.org/pdf/2103.12731) google
+> - [sparse_attention](https://github.com/openai/sparse_attention/tree/master) OpenAI
 
 
