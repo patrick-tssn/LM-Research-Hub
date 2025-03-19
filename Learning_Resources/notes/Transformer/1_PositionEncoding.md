@@ -12,6 +12,7 @@
   - [Frequency/theta summary](#42-frequenciestheta-summary)
   - [N-d RoPE](#43-n-d-rope)
   - [MRoPE](#44-mrope)
+  - [VideoRoPE](#45-videorope)
 
 ## 1. Absolute Position Embedding
 
